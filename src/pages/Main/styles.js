@@ -39,6 +39,9 @@ export const ListContainer = styled.div`
   margin-right: auto;
   width: 1320px;
   background-color: transparent;
+  @media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    width: 80%;
+  }
   @media only screen and (max-width: 1200px) {
     width: 90%;
     margin-top: 15px;
