@@ -33,7 +33,7 @@ export default function Main() {
   useEffect(() => {
     handleLoad();
   }, [handleLoad]);
-  console.log('render')
+
   return (
     <div style={{ maxWidth: '100%', width: '100%' }}>
       <LogoIMG src={Logo} alt="logo_image" />
