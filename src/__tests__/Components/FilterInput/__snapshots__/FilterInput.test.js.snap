@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterInput component tests renders correctly 1`] = `
+<styled.div>
+  <styled.input
+    onChange={[Function]}
+  />
+  <GoSearch
+    color="#fff"
+    size={24}
+  />
+</styled.div>
+`;

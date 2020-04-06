@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main page tests renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <styled.img
+    alt="logo_image"
+    src="logo.png"
+  />
+  <styled.div>
+    <h2>
+      Clique nos personagens para visualizar suas informações.
+    </h2>
+  </styled.div>
+  <Loading />
+</div>
+`;

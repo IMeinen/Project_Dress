@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component tests renders correctly 1`] = `
+<styled.div>
+  <Styled(MdClose)
+    onClick={[Function]}
+  />
+  <div
+    className="core-informations"
+  >
+    <div
+      className="image-container"
+    >
+      <img
+        alt="bg of 1"
+        src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
+      />
+    </div>
+    <div
+      className="description-container"
+    >
+      <div
+        className="description-line"
+      >
+        <h1>
+          Nome:
+        </h1>
+        <p>
+          Walter White
+        </p>
+      </div>
+      <div
+        className="description-line"
+      >
+        <h1>
+          Aniversário:
+        </h1>
+        <p>
+          09/07/1958
+        </p>
+      </div>
+      <div
+        className="description-line"
+      >
+        <h1>
+          Ocupação:
+        </h1>
+        <p>
+          High School Chemistry Teacher, Meth King Pin
+        </p>
+      </div>
+      <div
+        className="description-line"
+      >
+        <h1>
+          Situação:
+        </h1>
+        <p>
+          Presumed dead
+        </p>
+      </div>
+      <div
+        className="description-line"
+      >
+        <h1>
+          Apelido:
+        </h1>
+        <p>
+          Heisenberg
+        </p>
+      </div>
+      <div
+        className="description-line"
+      >
+        <h1>
+          Aparece nas temporadas:
+        </h1>
+        <p>
+          1, 2, 3, 4, 5
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer-informations"
+  >
+    <h2>
+      O personagem Walter White é intrepertado por Bryan Cranston que atuou nas seguintes séries: Breaking Bad.
+    </h2>
+  </div>
+</styled.div>
+`;

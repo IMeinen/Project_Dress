@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay component tests renders correctly 1`] = `
+<styled.div
+  test-id="overlay-container"
+>
+  <styled.div
+    test-id="overlay-content"
+  >
+    <div />
+  </styled.div>
+</styled.div>
+`;
