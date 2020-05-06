@@ -25,6 +25,12 @@ export const SearchInput = styled.input`
   color: #fff;
   font-size: 22px;
 
+  ::placeholder{
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+  }
+
   @media only screen and (max-width: 468px) {
     width: 80%;
 

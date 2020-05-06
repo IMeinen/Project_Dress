@@ -8,6 +8,7 @@ export default function FilterInput({ data, set }) {
   return (
     <InputContainer>
       <SearchInput
+        placeholder="Digite o nome de um personagem"
         onChange={(event) => set(filterData(data, event.currentTarget.value))}
       />
       <GoSearch size={24} color="#fff" />

@@ -1,66 +1,69 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-import Logo from '../../images/logo.png';
-import { LogoIMG, ListContainer, HintText } from './styles';
-import FilterInput from '../../components/FilterInput';
+import Vestido1 from '../../images/vestido1.jpg';
+import { Content, DescriptionContent, Footer } from './styles';
 import Modal from '../../components/Modal';
 import Overlay from '../../components/Overlay';
-import ListComponent from './Components/ListComponent';
-import Loading from '../../components/Loading';
-
-import { api } from '../../services/api';
+import SlideShow from '../../components/SlideShow';
+import FacebookIcon from '../../assets/icons/facebook_icon.png';
+import InstagramIcon from '../../assets/icons/instagram_icon.png';
+import PintrestIcon from '../../assets/icons/pintrest_icon.png';
+import WhatsIcon from '../../assets/icons/whats_icon.png';
+import YoutubeIcon from '../../assets/icons/youtube_icon.png';
 
 export default function Main() {
-  const [characters, setCharacters] = useState();
-  const [currentCharacters, setCurrentCharacters] = useState();
-  const [openModal, setOpenModal] = useState(false);
-  const [selectedChar, setSelectedChar] = useState();
-  const [loading, setLoading] = useState(true);
-
-  const handleLoad = useCallback(async () => {
-    const [error, response] = await api.getCharactersData();
-
-    if (response) {
-      setCurrentCharacters(response);
-      setCharacters(response);
-      setLoading(false);
-    }
-    if (error) {
-      console.log(error.message);
-    }
-  },[]);
-
-  useEffect(() => {
-    handleLoad();
-  }, [handleLoad]);
-
+  const [modalOpened, setModalOpened] = useState(false);
   return (
-    <div style={{ maxWidth: '100%', width: '100%' }}>
-      <LogoIMG src={Logo} alt="logo_image" />
-      <HintText>
-        <h2>Clique nos personagens para visualizar suas informações.</h2>
-      </HintText>
-      {openModal && (
+    <>
+      {modalOpened && (
         <Overlay>
-          <Modal charInfo={selectedChar[0]} modalOpened={setOpenModal} />
+          <Modal modalOpened={setModalOpened}> </Modal>
         </Overlay>
       )}
-      {!loading && (
-        <ListContainer>
-          {currentCharacters && (
-            <FilterInput data={characters} set={setCurrentCharacters} />
-          )}
 
-          <ListComponent
-            characters={characters}
-            currentCharacters={currentCharacters}
-            setSelectedChar={setSelectedChar}
-            setOpenModal={setOpenModal}
-          />
-        </ListContainer>
+      <Content>
+        <SlideShow />
+        <Footer>
+          <div className="descriptions">
+            <h5>FALE CONOSCO</h5>
+            <p>contato@sandraferraz.com.br</p>
+          </div>
+          <div className="icons_container">
+            <a
+              href="https://www.youtube.com/user/AtelierSandraFerraz"
+              target="_blank"
+              rel="noopener noreferrer"
 
-      )}
-      {loading && (<Loading /> )}
-    </div>
+            >
+              <img  src={YoutubeIcon} alt="" width="40" height="40" />
+            </a>
+            <a
+              href="https://www.instagram.com/sandraferrazoficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={InstagramIcon} alt="" width="40" height="40" />
+            </a>
+            <a
+              href="https://www.facebook.com/sandraferrazoficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={FacebookIcon} alt="" width="40" height="40" />
+            </a>
+            <a
+              href="https://www.pinterest.de/sandraferrazoficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={PintrestIcon} alt="" width="40" height="40" />
+            </a>
+            <a href="https://api.whatsapp.com/send?text=Artigo%20https://rockcontent.com/blog/o-que-e-inbound-marketing" target="_blank" rel="noopener noreferrer">
+            <img src={WhatsIcon} alt="" width="40" height="40" />
+            </a>
+          </div>
+        </Footer>
+      </Content>
+    </>
   );
 }

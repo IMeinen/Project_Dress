@@ -5,8 +5,8 @@ import { OverlayContainer,Content } from './styles';
 export default function Overlay({children}) {
 
   return (
-    <OverlayContainer test-id="overlay-container">
-      <Content test-id="overlay-content">{children}</Content>
+    <OverlayContainer >
+      <Content>{children}</Content>
     </OverlayContainer>
   );
 }
