@@ -1,10 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Logo from '../../images/logo_sandra_original.png';
 import { Header, LogoIMG, StyledBars } from './styles';
+import BarsMenu from '../BarsMenu';
 
 export default function HeaderGlobal() {
+  const [menuOpened,setMenuOpened] = useState(false);
+
   return (
     <>
+      {menuOpened && <BarsMenu menuOpened={setMenuOpened}/>}
       <Header>
         <LogoIMG src={Logo} />
         <div className="header-links">
@@ -23,7 +27,7 @@ export default function HeaderGlobal() {
             </div>
           </ul>
         </div>
-        <StyledBars />
+        <StyledBars onClick={() => setMenuOpened(true)} />
       </Header>
       <div style={{ width: '100%', height: '100px' }} />
     </>

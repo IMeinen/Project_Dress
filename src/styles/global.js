@@ -29,7 +29,7 @@ export default createGlobalStyle`
 
  }
 
- h1,h2,h3,h4,h5,p,a{
+ h1,h2,h3,h4,h5,p,a,li{
   font-family: 'MontSerrat', sans-serif;
  }
  button {
