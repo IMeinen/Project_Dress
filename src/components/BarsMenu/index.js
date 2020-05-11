@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { CustomMenu, ListLinks, StyledClose } from './styles';
 
@@ -7,7 +8,7 @@ export default function BarsMenu({ menuOpened }) {
     <CustomMenu>
       <StyledClose onClick={() => menuOpened(false)} />
       <ListLinks>
-        <li>SOBRE NÓS</li>
+        <Link to="/about" onClick={() => menuOpened(false)} >SOBRE NÓS</Link>
         <li>NOIVAS</li>
         <li>COLEÇÃO // NÉVOA</li>
         <li>COLEÇÃO // ROSE WHITE</li>
