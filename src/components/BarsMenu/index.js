@@ -9,9 +9,9 @@ export default function BarsMenu({ menuOpened }) {
       <StyledClose onClick={() => menuOpened(false)} />
       <ListLinks>
         <Link to="/about" onClick={() => menuOpened(false)} >SOBRE NÓS</Link>
-        <li>NOIVAS</li>
-        <li>COLEÇÃO // NÉVOA</li>
-        <li>COLEÇÃO // ROSE WHITE</li>
+        <Link to="/collection/nevoa" onClick={() => menuOpened(false)} >COLEÇÃO // NÉVOA</Link>
+        <Link to="/collection/rose-white" onClick={() => menuOpened(false)} >COLEÇÃO // ROSE WHITE</Link>
+
         <li>SAPATOS</li>
         <li>ACESSÓRIOS DE CABELO</li>
         <li>VESTIDOS SOB-MEDIDA</li>

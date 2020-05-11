@@ -3,6 +3,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 
 import Main from './pages/Main';
 import About from './pages/About';
+import Collections from './pages/Collections';
 import HeaderGlobal from "./components/Header"
 
 export default function Routes(){
@@ -12,6 +13,7 @@ export default function Routes(){
     <Switch>
       <Route path="/" exact component={Main} />
       <Route path="/about" exact component={About} />
+      <Route path="/collection/:collection" exact component={Collections} />
     </Switch>
   </BrowserRouter>);
 }

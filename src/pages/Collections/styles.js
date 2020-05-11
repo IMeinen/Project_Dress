@@ -52,3 +52,8 @@ export const DescriptionContent = styled.div`
     }
   }
 `;
+
+export const DressImage = styled.img`
+  max-width: 100%;
+  margin: 10px 0px 5px 0px;
+`;
