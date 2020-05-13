@@ -31,7 +31,7 @@ export default function SlideShow() {
       <span>{dresses[counter].collection}</span>
       <LinkButton to={dresses[counter].link} color={dresses[counter].color}>
         <p>DESCUBRA </p>
-        < RightIndicator />
+        < RightIndicator color={dresses[counter].color} />
       </LinkButton>
     </Discovery>
 
