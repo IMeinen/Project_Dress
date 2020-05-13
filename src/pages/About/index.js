@@ -21,7 +21,7 @@ export default function About() {
           peças únicas para mulheres incríveis.
         </p>
       </div>
-      <ContactContainer />
+      <ContactContainer noHeader isHeader={false}/>
       <Footer />
     </ContainerAbout>
   );

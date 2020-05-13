@@ -11,6 +11,7 @@ function Footer() {
     <FooterContainer>
           <div className="descriptions">
             <h5>FALE CONOSCO</h5>
+            <p>(51) 99262-4347</p>
             <p>contato@sandraferraz.com.br</p>
           </div>
           <div className="icons_container">

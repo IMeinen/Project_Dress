@@ -10,14 +10,15 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   background: #F6F4F0;
-  margin-top: 30px;
-  padding: 40px 10px 20px 30px;
-
+  padding: 34.6px 42px 0px;
+  padding-bottom: 34.6px;
+  margin-top: ${props => (props.isHeader ? `-30px` : "0px")};
   h1{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 29px;
     line-height: 31px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
   }
 `;
 
@@ -26,7 +27,7 @@ export const ContainerIcon = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 20px 0px;
+  margin: 15px 0px;
   position: relative;
   .anchor{
     position: absolute;
@@ -46,6 +47,15 @@ export const ContainerIcon = styled.div`
     margin-left: 10px;
 
     >h4{
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+
+    >span{
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
       margin-bottom: 5px;
     }
   }

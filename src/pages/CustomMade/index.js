@@ -20,7 +20,7 @@ export default function CustomMade() {
           possível, um vestido com estilo e sua personalidade.
         </p>
       </div>
-      <ContactContainer />
+      <ContactContainer isHeader={false} />
       <Footer />
     </ContainerAbout>
   );

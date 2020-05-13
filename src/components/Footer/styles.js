@@ -18,19 +18,20 @@ background: #000;
   justify-content: flex-start;
   margin-top: 33px;
 
+
   h5{
     font-size: 16px;
     line-height: 16px;
     font-weight: 700px;
     color: #fff;
+    margin-bottom: 5px;
   }
-
   p{
     font-size: 11px;
     line-height: 20px;
     font-weight: 500px;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -39,7 +40,7 @@ background: #000;
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 60px;
   .icon {
     width: 40px;
     height: 40px;

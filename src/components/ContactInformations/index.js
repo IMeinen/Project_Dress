@@ -8,10 +8,10 @@ import {
   StyledPhone,
 } from './styles';
 
-export default function ContactInformations() {
+export default function ContactInformations({noHeader,isHeader}) {
   return (
-    <Container>
-      <h1>Entre em contato</h1>
+    <Container isHeader={isHeader}>
+      {!noHeader && <h1>Entre em contato</h1>}
       <ContainerIcon>
         <StyledInstagram />
         <div className="link-container">

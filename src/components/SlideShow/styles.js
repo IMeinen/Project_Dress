@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+import {FiChevronRight} from 'react-icons/fi';
 
 export const Container = styled.div`
   width: 100%;
@@ -6,44 +8,60 @@ export const Container = styled.div`
   background: ${props => `url(${props.BGImage}) no-repeat`};
   background-size: cover;
   background-position: ${props => `${props.align} center`};
+  position: relative;
 
-  /* Fading animation */
+`;
 
-  -webkit-animation: fadein 10s infinite; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 10s infinite; /* Firefox < 16 */
-        -ms-animation: fadein 10s infinite; /* Internet Explorer */
-         -o-animation: fadein 10s infinite; /* Opera < 12.1 */
-            animation: fadein 10s infinite;
-            transition-timing-function: cubic-bezier(0.2, 0.1,0.2,0.1);
-}
-}
+export const Discovery = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 193px;
+  left: 50%;
+  bottom: 50px;
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  transform: translateX(-50%);
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: ${props => `${props.color}`};
+  }
+`;
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0.8; }
-    to   { opacity: 1; }
-}
+export const LinkButton = styled(Link)`
+  position: relative;
+  width: 152px;
+  height:46px;
+  padding: 12px 35px;
+  border: 1px solid;
+  border-color: ${props => `${props.color}`};
+  margin-top: 5px;
+  margin-left: 5px;
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0.8; }
-    to   { opacity: 1; }
-}
+  P{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: ${props => `${props.color}`};
+  }
+`;
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0.8; }
-    to   { opacity: 1; }
-}
+export const RightIndicator = styled(FiChevronRight)`
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  color: ${props => `${props.color}`};
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 `;

@@ -20,7 +20,7 @@ export const ContainerAbout = styled.div`
     margin-top: 30px;
     padding: 0px 10%;
     text-align: center;
-
+    margin-bottom: 30px;
     h1{
       font-weight: 700;
       font-size: 21px;
