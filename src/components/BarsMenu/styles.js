@@ -33,6 +33,14 @@ export const ListLinks = styled.ul`
   width: 100%;
   padding: 20px 0px 0px 15px;
 
+  h1{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #000;
+  }
+
   .appointment {
       margin-top: 5%;
       margin-right: 5%;
@@ -41,8 +49,11 @@ export const ListLinks = styled.ul`
       height: 64px;
       padding: 16px;
       align-self: center;
-
-      li{
+      display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      a{
         text-align : center;
       }
     }

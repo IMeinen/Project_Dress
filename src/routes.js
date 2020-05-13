@@ -4,6 +4,10 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Main from './pages/Main';
 import About from './pages/About';
 import Collections from './pages/Collections';
+import CustomMade from './pages/CustomMade';
+import Shoes from './pages/Shoes';
+import Acessories from './pages/Acessories';
+import Contact from './pages/Contact';
 import HeaderGlobal from "./components/Header"
 
 export default function Routes(){
@@ -14,6 +18,11 @@ export default function Routes(){
       <Route path="/" exact component={Main} />
       <Route path="/about" exact component={About} />
       <Route path="/collection/:collection" exact component={Collections} />
+      <Route path="/custom-made" exact component={CustomMade} />
+      <Route path="/shoes/:collection" exact component={Shoes} />
+      <Route path="/acessories/:year" exact component={Acessories} />
+      <Route path="/contact" exact component={Contact} />
+
     </Switch>
   </BrowserRouter>);
 }

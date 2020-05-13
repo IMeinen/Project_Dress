@@ -8,16 +8,18 @@ export default function BarsMenu({ menuOpened }) {
     <CustomMenu>
       <StyledClose onClick={() => menuOpened(false)} />
       <ListLinks>
-        <Link to="/about" onClick={() => menuOpened(false)} >SOBRE NÓS</Link>
-        <Link to="/collection/nevoa" onClick={() => menuOpened(false)} >COLEÇÃO // NÉVOA</Link>
-        <Link to="/collection/rose-white" onClick={() => menuOpened(false)} >COLEÇÃO // ROSE WHITE</Link>
+        <Link to="/about" onClick={() => menuOpened(false)} ><h1>SOBRE NÓS</h1></Link>
+        <Link to="/collection/nevoa" onClick={() => menuOpened(false)} ><h1>COLEÇÃO // NÉVOA</h1></Link>
+        <Link to="/collection/rose-white" onClick={() => menuOpened(false)} ><h1>COLEÇÃO // ROSE WHITE</h1></Link>
 
-        <li>SAPATOS</li>
-        <li>ACESSÓRIOS DE CABELO</li>
-        <li>VESTIDOS SOB-MEDIDA</li>
-        <li>CONTATO</li>
+        <Link to="/shoes/2019" onClick={() => menuOpened(false)} ><h1>SAPATOS</h1></Link>
+        <Link to="/acessories/2019" onClick={() => menuOpened(false)} ><h1>ACESSÓRIOS DE CABELO</h1></Link>
+
+        <Link to="/custom-made" onClick={() => menuOpened(false)} ><h1>VESTIDO SOB-MEDIDA</h1></Link>
+        <Link to="/contact" onClick={() => menuOpened(false)} ><h1>CONTATO</h1></Link>
+
         <div className="appointment">
-          <li>MARQUE SEU HORÁRIO</li>
+          <a href="https://sandra-ferraz.reservio.com/">MARQUE SEU HORÁRIO</a>
         </div>
       </ListLinks>
     </CustomMenu>
