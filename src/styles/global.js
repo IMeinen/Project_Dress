@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 // import backgroundImage from '../images/background-LG.png';
 // import { LogoIMG } from '../pages/Main/styles';
-import myFont from "../assets/fonts/Montserrat-Light.otf";
+import myFont from "../assets/fonts/Montserrat-Regular.otf";
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');

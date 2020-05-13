@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
+
 import Logo from '../../images/logo_sandra_original.png';
-import { Header, LogoIMG, StyledBars } from './styles';
+import { Header, LogoIMG, StyledBars,StyledLink } from './styles';
 import BarsMenu from '../BarsMenu';
 
 export default function HeaderGlobal() {
@@ -9,8 +10,11 @@ export default function HeaderGlobal() {
   return (
     <>
       {menuOpened && <BarsMenu menuOpened={setMenuOpened}/>}
+
       <Header>
+      <StyledLink to="/">
         <LogoIMG src={Logo} />
+        </StyledLink>
         <div className="header-links">
           <ul>
             <li>

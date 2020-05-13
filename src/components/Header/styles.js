@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {FaBars} from 'react-icons/fa';
+import {Link } from 'react-router-dom';
 
 export const LogoIMG = styled.img`
   display: block;
@@ -7,6 +8,7 @@ export const LogoIMG = styled.img`
   width: 225px;
   height: 40px;
   left: 80px;
+  z-index: 6;
   @media only screen and (max-width: 468px) {
     width: 225px;
     height: 40px;
@@ -89,4 +91,11 @@ export const StyledBars = styled(FaBars)`
     transform: scale(1.2);
     color: #aaa;
   }
+`;
+
+export const StyledLink = styled(Link)`
+  position: absolute;
+  width: 225px;
+  height: 40px;
+  left: 10px;
 `;
