@@ -9,6 +9,8 @@ import Footer from '../../components/Footer';
 export default function Collections() {
   const { collection } = useParams();
   const [currentCollection, setCurrentCollection] = useState([]);
+  const [modalOpened,setModalOpened] = useState(false);
+
 
   useEffect(() => {
     setCurrentCollection(CollectionData.filter((obj) => obj.link === collection)[0]);
@@ -17,6 +19,9 @@ export default function Collections() {
     <>
       {currentCollection && (
         <>
+          {modalOpened && <Overlay>
+              <Modal modalOpened={setModalOpened} />
+            </Overlay>}
           <DescriptionContent>
             <h1>{currentCollection.title}</h1>
             <div className="subdescription">
@@ -24,7 +29,7 @@ export default function Collections() {
             </div>
           </DescriptionContent>
           {(currentCollection.images || []).map((image) => {
-            return <DressImage src={image} alt="test" />;
+            return <DressImage src={image.image} alt="test" onClick={() => setModalOpened(true)}/>;
           })}
           <Footer />
         </>

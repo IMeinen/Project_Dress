@@ -33,7 +33,7 @@ export const ModalContainer = styled.div`
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 30px;
-
+  z-index: 999;
   @media only screen and (max-width: 468px) {
     padding: 5px;
   }

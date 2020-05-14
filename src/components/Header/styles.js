@@ -24,7 +24,7 @@ export const Header = styled.div`
   background: #fff;
   position: absolute;
 
-  z-index: 1001;
+  z-index: 99;
   -webkit-box-shadow: 0px 4px 0px 0px rgba(233, 234, 236, 0.92);
   -moz-box-shadow: 0px 4px 0px 0px rgba(233, 234, 236, 0.92);
   box-shadow: 0px 4px 0px 0px rgba(233, 234, 236, 0.92);
