@@ -26,6 +26,7 @@ export const ModalContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: column;
   background: #fff;
   height: 90vh;
   width: 95%;
@@ -34,6 +35,7 @@ export const ModalContainer = styled.div`
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 30px;
   z-index: 999;
+  overflow-y: scroll;
   @media only screen and (max-width: 468px) {
     padding: 5px;
   }
@@ -57,12 +59,14 @@ export const ModalContainer = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     background: #fff;
-    width: 43%;
+    width: 100%;
     height: 85%;
     margin-left: 1%;
     padding: 20px;
-    @media only screen and (max-width: 468px) {
-     display: none;
+
+    h1 {
+      font-size: 18px;
+      line-height: 18px;
     }
   }
 `;
