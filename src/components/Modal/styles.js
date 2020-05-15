@@ -28,7 +28,7 @@ export const ModalContainer = styled.div`
   justify-content: flex-start;
   background: #fff;
   height: 90vh;
-  width: 90%;
+  width: 95%;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);

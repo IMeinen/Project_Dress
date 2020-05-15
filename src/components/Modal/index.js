@@ -6,7 +6,7 @@ import PhotoScroller from '../PhotoScroller';
 import Input from '../Input';
 import TextArea from '../TextArea';
 import ImageChanger from '../ImageChanger';
-import IMG1 from '../../images/img1.jpeg';
+import IMG1 from '../../images/teste_mq.jpg';
 import IMG2 from '../../images/img2.jpeg';
 import IMG3 from '../../images/img3.jpeg';
 import IMG4 from '../../images/img4.jpeg';
