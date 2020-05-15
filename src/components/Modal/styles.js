@@ -68,5 +68,11 @@ export const ModalContainer = styled.div`
       font-size: 18px;
       line-height: 18px;
     }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 `;
