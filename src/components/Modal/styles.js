@@ -46,8 +46,9 @@ export const ModalContainer = styled.div`
     height: 85%;
     @media only screen and (max-width: 468px) {
       width: 100%;
-      justify-content: center;
-      align-items: flex-start;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
     }
   }
   .data-container {
