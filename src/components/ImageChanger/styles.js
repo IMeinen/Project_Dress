@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 
-
-
-
 export const CustomImage = styled.div`
   width: 100%;
-  max-height: 60vh;
+  height: 60vh;
   object-fit: cover;
 
-  .image{
+  .image {
     width: 100%;
   }
 `;
