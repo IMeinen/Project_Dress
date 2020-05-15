@@ -46,7 +46,6 @@ export const ModalContainer = styled.div`
     height: 85%;
     @media only screen and (max-width: 468px) {
       width: 100%;
-      margin-top: 30px;
       justify-content: center;
       align-items: flex-start;
     }

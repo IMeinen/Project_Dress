@@ -20,7 +20,6 @@ export default function Modal({modalOpened}) {
 
 
       <ModalContainer>
-        <StyledClose onClick={() => modalOpened(false)} />
         <div className="images-container">
         <PhotoScroller listImages={images} setImage={setCurrentImage}/>
         <ImageChanger image={images[currentImage]} />

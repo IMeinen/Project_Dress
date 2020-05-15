@@ -6,9 +6,16 @@ import { CustomImage } from './styles';
 
 export default function ImageChanger({image}) {
   return (
-    <TransformWrapper>
+    <TransformWrapper
+      defaultScale={1}
+        defaultPositionX={200}
+        defaultPositionY={100}>
       <TransformComponent>
-        <CustomImage src={image}  />
+
+          <CustomImage image={image}>
+            <img src={image} className="image"/>
+          </CustomImage>
+
       </TransformComponent>
     </TransformWrapper>
   );
