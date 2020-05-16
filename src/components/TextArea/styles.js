@@ -15,6 +15,6 @@ export const CustomTextArea = styled.textarea`
 
   &:hover {
     border: 2px solid;
-    border-color: #000;
+    border-color: #373739;
   }
 `;

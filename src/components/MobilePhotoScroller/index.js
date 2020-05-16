@@ -25,7 +25,7 @@ export default function MobilePhotoScroller({listImages,setImage}) {
     <Container>
       <StyledLeft onClick={() => handleSubtract()} />
       {(filterScroll(listImages,currentStart) || []).map((item,index) => {
-        return <ImgItem image={item} onClick={() => setImage(index)}/>
+        return <ImgItem image={item} onClick={() => setImage(currentStart + index)}/>
       })}
       <StyledRight onClick={() => handleAdd()}/>
     </Container>

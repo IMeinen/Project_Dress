@@ -6,29 +6,27 @@ export const ButtonPrimary = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 56px;
-  width: 220px;
-  background: #000;
-  border: 2px solid #000;
+  height: 66px!important;
+  width: 93%;
+  background: #373739;
+  border: 2px solid #373739;
   color: #fff;
   text-transform: none;
   margin: 10px 0px;
 
   span {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 66px;
   }
   &:hover {
     transition: background-color 0.3s ease;
     transition: color 0.3s ease;
     background-color: #fff;
-    color: #000;
+    color: #373739;
 
   }
 
-  @media only screen and (max-width: 468px) {
-    height: 48px;
-  }
+
 `;
 
 export const ButtonSecondary = styled.button`
@@ -36,8 +34,8 @@ export const ButtonSecondary = styled.button`
   width: 200px;
   background: #fff;
   box-sizing: border-box;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid #373739;
+  color: #373739;
   text-transform: none;
   margin-left: 20px;
 
@@ -45,7 +43,7 @@ export const ButtonSecondary = styled.button`
   &:hover {
     transition: background-color 0.3s ease;
     transition: color 0.3s ease;
-    background-color: #000;
+    background-color: #373739;
     color: #fff;
 
   }

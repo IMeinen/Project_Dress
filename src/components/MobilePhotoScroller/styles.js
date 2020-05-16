@@ -27,11 +27,11 @@ export const ImgItem = styled.div`
 export const StyledLeft = styled(FiChevronLeft)`
   width: 26px;
   height: 26px;
-  color: #000;
+  color: #373739;
 `;
 
 export const StyledRight = styled(FiChevronRight)`
   width: 26px;
   height: 26px;
-  color: #000;
+  color: #373739;
 `;

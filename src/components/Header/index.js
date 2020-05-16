@@ -24,7 +24,7 @@ export default function HeaderGlobal() {
               <a href="/">NOIVAS</a>
             </li>
             <li>
-              <a href="/">CONTATOS</a>
+              <a href="/">CONTATO</a>
             </li>
             <div className="appointment">
               <a href="/">MARQUE SEU HORÁRIO</a>

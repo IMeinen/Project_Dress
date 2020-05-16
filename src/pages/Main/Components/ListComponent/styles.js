@@ -37,7 +37,7 @@ export const CharItem = styled.li`
     color: #fff;
     text-align: center;
     font-weight: 700;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 2px 2px 2px #373739;
 
     @media only screen and (max-width: 468px) {
       bottom: 8px;

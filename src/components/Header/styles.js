@@ -50,7 +50,7 @@ export const Header = styled.div`
     padding: 0;
 
     .appointment {
-      border: 1px solid black !important;
+      border: 1px solid #373739 !important;
       width: 240px;
       height: 64px;
       padding: 16px;
@@ -63,7 +63,7 @@ export const Header = styled.div`
       a {
         font-size: 15px;
         text-decoration: none;
-        color: #000;
+        color: #373739;
       }
     }
   }
@@ -75,7 +75,7 @@ export const StyledBars = styled(FaBars)`
 
   right: 95px;
   transition: all 0.3s;
-  color: #222;
+  color: #373739;
   font-size: 56px;
 
   @media only screen and (min-width: 469px) {

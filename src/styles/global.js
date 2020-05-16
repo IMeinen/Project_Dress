@@ -32,6 +32,7 @@ export default createGlobalStyle`
 
  h1,h2,h3,h4,h5,p,a,li,span{
   font-family: 'MontSerrat', sans-serif;
+  color: #373739;
  }
 
  a{
