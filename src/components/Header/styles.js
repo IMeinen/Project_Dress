@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {FaBars} from 'react-icons/fa';
-import {Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export const LogoIMG = styled.img`
   display: block;
@@ -14,13 +14,17 @@ export const LogoIMG = styled.img`
     height: 40px;
     left: 10px;
   }
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    left: 40px;
+  }
 `;
 export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 129px;
+  height: 300px;
   background: #fff;
   position: absolute;
 
@@ -30,10 +34,12 @@ export const Header = styled.div`
   box-shadow: 0px 4px 0px 0px rgba(233, 234, 236, 0.92);
 
   @media only screen and (max-width: 468px) {
-    width: 100%;
     height: 70px;
   }
 
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    height: 11.5vh;
+  }
   .header-links {
     display: flex;
     align-items: center;
@@ -42,29 +48,36 @@ export const Header = styled.div`
     padding-left: 20%;
     @media only screen and (max-width: 468px) {
       display: none;
-     }
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    .appointment {
-      border: 1px solid #373739 !important;
-      width: 240px;
-      height: 64px;
-      padding: 16px;
     }
-    li,
-    .appointment {
-      display: inline;
-      margin-left: 60px;
-      cursor: pointer;
-      a {
-        font-size: 15px;
-        text-decoration: none;
-        color: #373739;
-      }
+    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+      width: 80%;
+      padding-left: 30%;
+    }
+  }
+
+  .appointment {
+    border: 1px solid #373739 !important;
+    width: 240px;
+    height: 64px;
+    padding: 16px;
+    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .appointment {
+    display: inline;
+    margin-left: 60px;
+    cursor: pointer;
+    a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #373739;
+    }
+  }
+  .appointment {
+    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+      display: none;
     }
   }
 `;
@@ -98,4 +111,44 @@ export const StyledLink = styled(Link)`
   width: 225px;
   height: 40px;
   left: 10px;
+`;
+
+export const Gambia = styled.div`
+  width: 100%;
+
+  @media only screen and (max-width: 468px) {
+    height: 100px;
+  }
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    height: 11.5vh;
+  }
+`;
+
+export const PathLink = styled(Link)`
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+
+  span {
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+`;
+
+export const BrideLink = styled.div`
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+
+  span {
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;

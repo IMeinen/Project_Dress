@@ -41,7 +41,7 @@ export const DescriptionContent = styled.div`
       text-decoration: none;
       text-transform: none;
       letter-spacing: -1.5px;
-      color: #333;
+      color: #373739;
     }
     @media only screen and (max-width: 468px) {
       width: 100%;

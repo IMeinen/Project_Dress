@@ -5,7 +5,7 @@ export const CharItem = styled.li`
   width: 250px;
   height: 300px;
   margin: 5px;
-  background-color: #333;
+  background-color: #373739;
   overflow: hidden;
 
   @media only screen and (max-width: 468px) {
