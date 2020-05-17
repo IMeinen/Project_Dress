@@ -10,6 +10,8 @@ export const Container = styled.a`
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   z-index: 1001;
+  border: 1px solid #fff;
+  border-right: #373739;
   h1{
     color: #fff;
     font-size: 14px;
