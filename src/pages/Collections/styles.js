@@ -81,9 +81,13 @@ export const DescriptionContent = styled.div`
 
 export const DressImage = styled.img`
 
-  max-width: 100%;
-  width: ${props => props.width  ? `${props.width}%` : '100%'};
-  margin-top: ${props => props.adjustTop ? `-45%` : '0'};
-  margin-bottom: 20px;
+  width: 100%;
+  margin: 6px 0;
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+    margin-bottom: 20px;
+  }
 
 `;
