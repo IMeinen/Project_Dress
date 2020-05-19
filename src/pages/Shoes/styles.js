@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  position: relative;
+  width: 100%;
+  padding: 0 3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
 export const DescriptionContent = styled.div`
   width: 100%;
   padding: 0% 10% 5% 10%;
@@ -54,6 +64,8 @@ export const DescriptionContent = styled.div`
 `;
 
 export const ShoesImage = styled.img`
+
   max-width: 100%;
   margin: 10px 0px 5px 0px;
+  margin-left: ${props => props.align === 'left' ? 'auto' : '0'};
 `;

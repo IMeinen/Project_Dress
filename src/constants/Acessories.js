@@ -6,23 +6,21 @@ import acessorie5 from '../images/acessories5.jpg';
 import acessorie6 from '../images/acessories6.jpg';
 import acessorie7 from '../images/acessories7.jpg';
 
-
 const AcessoriesCollections = [
   {
     link: '2019',
     title: '',
-    description:
-      '',
+    description: '',
     images: [
-      acessorie1,
-      acessorie2,
-      acessorie3,
-      acessorie4,
-      acessorie5,
-      acessorie6,
-      acessorie7
+      { image: acessorie1 },
+      { image: acessorie2, width: '49' },
+      { image: acessorie3, width: '49' },
+      { image: acessorie4 },
+      { image: acessorie5, width: '49' },
+      { image: acessorie6, width: '49' },
+      { image: acessorie7 },
     ],
-  }
+  },
 ];
 
 export default AcessoriesCollections;

@@ -13,12 +13,12 @@ const ShoesCollections = [
     description:
       '',
     images: [
-      shoe2019_1,
-      shoe2019_2,
-      shoe2019_3,
-      shoe2019_4,
-      shoe2019_5,
-      shoe2019_6
+      {shoe: shoe2019_1, align: 'right'},
+      {shoe: shoe2019_2, align: 'left'},
+      {shoe: shoe2019_3, align: 'right'},
+      {shoe: shoe2019_4, align: 'left'},
+      {shoe: shoe2019_5, align: 'right'},
+      {shoe: shoe2019_6, align: 'left'}
     ],
   }
 ];

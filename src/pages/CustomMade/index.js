@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 import BackGroundImage from '../../images/custom_made.jpg';
-import { ContainerAbout } from './styles';
+import { ContainerAbout,ContainerInfos} from './styles';
 import ContactContainer from '../../components/ContactInformations';
 import Footer from '../../components/Footer';
 
@@ -9,6 +9,7 @@ import Footer from '../../components/Footer';
 export default function CustomMade() {
   return (
     <ContainerAbout>
+      <ContainerInfos>
       <img alt="author" src={BackGroundImage} />
       <div className="description-container">
         <h1>// SOB MEDIDA</h1>
@@ -20,6 +21,7 @@ export default function CustomMade() {
           possível, um vestido com estilo e sua personalidade.
         </p>
       </div>
+      </ContainerInfos>
       <ContactContainer isHeader={false} />
       <Footer />
     </ContainerAbout>

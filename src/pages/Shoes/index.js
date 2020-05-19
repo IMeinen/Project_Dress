@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Shoes';
-import { Content, DescriptionContent,ShoesImage } from './styles';
+import { Container, DescriptionContent,ShoesImage } from './styles';
 
 import Footer from '../../components/Footer';
 
@@ -15,19 +15,20 @@ export default function Collections() {
   return (
     <>
       {currentCollection && (
-        <>
+        <Container>
           {/* <DescriptionContent>
             <h1>{currentCollection.title}</h1>
             <div className="subdescription">
               <p>{currentCollection.description}</p>
             </div>
           </DescriptionContent> */}
-          {(currentCollection.images || []).map((image) => {
-            return <ShoesImage src={image} alt="test" />;
+          {(currentCollection.images || []).map((shoe) => {
+            return <ShoesImage src={shoe.shoe} alt="test" align={shoe.align}/>;
           })}
-          <Footer />
-        </>
+
+        </Container>
       )}
+      <Footer />
     </>
   );
 }

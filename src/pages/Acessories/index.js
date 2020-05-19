@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Acessories';
-import { AcessorieImage } from './styles';
+import {Container, AcessorieImage } from './styles';
 
 import Footer from '../../components/Footer';
 
@@ -16,19 +16,20 @@ export default function Acessories() {
   return (
     <>
       {currentCollection && (
-        <>
+        <Container>
           {/* <DescriptionContent>
             <h1>{currentCollection.title}</h1>
             <div className="subdescription">
               <p>{currentCollection.description}</p>
             </div>
           </DescriptionContent> */}
-          {(currentCollection.images || []).map((image) => {
-            return <AcessorieImage src={image} alt="test" />;
+          {(currentCollection.images || []).map((acessorie) => {
+            return <AcessorieImage src={acessorie.image} alt="test" width={acessorie.width}/>;
           })}
-          <Footer />
-        </>
+
+        </Container>
       )}
+       <Footer />
     </>
   );
 }

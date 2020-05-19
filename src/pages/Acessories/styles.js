@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  position: relative;
+  width: 100%;
+  padding: 0 3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
 export const DescriptionContent = styled.div`
   width: 100%;
   padding: 0% 10% 5% 10%;
@@ -54,6 +64,12 @@ export const DescriptionContent = styled.div`
 `;
 
 export const AcessorieImage = styled.img`
-  max-width: 100%;
+ width: 100%;
   margin: 10px 0px 5px 0px;
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+    margin-bottom: 20px;
+  }
 `;
