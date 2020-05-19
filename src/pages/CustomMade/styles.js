@@ -44,12 +44,12 @@ export const ContainerAbout = styled.div`
 `;
 
 export const ContainerInfos = styled.div`
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 2%;
+
 
   >img{
     max-width: 100%;
@@ -57,6 +57,9 @@ export const ContainerInfos = styled.div`
 
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     flex-direction: row;
+
+    width: 98%;
+    margin: 2%;
     margin-top: 50px;
     >img{
       max-width: 60%;
