@@ -24,7 +24,7 @@ export const Header = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 129px;
   background: #fff;
   position: absolute;
 
@@ -56,19 +56,24 @@ export const Header = styled.div`
   }
 
   .appointment {
+
     border: 1px solid #373739 !important;
     width: 240px;
     height: 64px;
-    padding: 16px;
     @media only screen and (min-width: 469px) and (max-width: 1024px) {
       display: none;
     }
   }
 
   .appointment {
+
     display: inline;
     margin-left: 60px;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
       font-size: 15px;
       text-decoration: none;
@@ -123,6 +128,9 @@ export const Gambia = styled.div`
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     height: 11.5vh;
   }
+  @media only screen and (min-width: 1025px) {
+    height: 131px;
+  }
 `;
 
 export const PathLink = styled(Link)`
@@ -145,7 +153,7 @@ export const BrideLink = styled.div`
   justify-content: center;
   width: 120px;
   height: 40px;
-
+  cursor: pointer;
   span {
     font-weight: 500px;
     font-size: 14px;

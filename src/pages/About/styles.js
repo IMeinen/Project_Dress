@@ -19,9 +19,8 @@ export const ContainerAbout = styled.div`
     padding: 0px 10%;
     text-align: center;
     margin-bottom: 40px;
-    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    @media only screen and (min-width: 469px)  {
       padding: 0 30px ;
-
       text-align: left;
       align-items: flex-start;
     }
@@ -36,7 +35,7 @@ export const ContainerAbout = styled.div`
       font-weight: 590;
       font-size: 17px;
       line-height: 20px;
-      @media only screen and (min-width: 469px) and (max-width: 1024px) {
+      @media only screen and (min-width: 469px){
         font-size: 13px;
       }
     }
@@ -55,7 +54,8 @@ export const ContainerInfos = styled.div`
     max-width: 100%;
   }
 
-  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+
+  @media only screen and (min-width: 469px) {
     flex-direction: row;
 
     width: 98%;
@@ -64,5 +64,10 @@ export const ContainerInfos = styled.div`
     >img{
       max-width: 60%;
     }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    width: 96%;
+    margin: 4%;
   }
 `;

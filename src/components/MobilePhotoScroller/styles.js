@@ -7,11 +7,14 @@ export const Container = styled.div`
 
   align-items: center;
   justify-content:space-evenly;
-  width: 100%;
+  width: 300px;
   height: 80px;
   overflow: hidden;
 
-
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    margin-top: 30px;
+    width: 500px;
+  }
 `;
 
 export const ImgItem = styled.div`
@@ -19,7 +22,10 @@ export const ImgItem = styled.div`
   height: 50px;
 
 
-
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    width: 80px;
+    height: 80px;
+  }
   background: ${props => `url(${props.image}) no-repeat`};
   background-size: cover;
 `;

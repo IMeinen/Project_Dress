@@ -7,9 +7,12 @@ export const Container = styled.div`
   height: 48vh;
   background: ${props => `url(${props.BGImage}) no-repeat`};
   background-size: cover;
-  background-position: ${props => `${props.align} center`};
+  background-position: ${props => `${props.align} top`};
   position: relative;
 
+  @media only screen and (min-width: 1025px) {
+    height: 600px;
+  }
 `;
 
 export const Discovery = styled.div`

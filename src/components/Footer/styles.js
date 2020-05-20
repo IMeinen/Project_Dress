@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
+
   width: 100%;
-  height: 46vh;
+  height: 242px;
   padding: 17px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background: #373739;
-
+  margin-top: auto;
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     height: 42vh;
   }

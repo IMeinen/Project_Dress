@@ -8,7 +8,7 @@ export const ButtonPrimary = styled(Link)`
   justify-content: center;
   height: 66px!important;
   width: 93%;
-  background: #373739;
+  background: #fff;
   border: 2px solid #373739;
   color: #fff;
   text-transform: none;
@@ -22,7 +22,7 @@ export const ButtonPrimary = styled(Link)`
     transition: background-color 0.3s ease;
     transition: color 0.3s ease;
     background-color: #fff;
-    color: #373739;
+    color: #fff;
 
   }
 

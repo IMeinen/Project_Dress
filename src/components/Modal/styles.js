@@ -10,7 +10,7 @@ export const StyledClose = styled(MdClose)`
   font-size: 56px;
   z-index: 1000;
 
-  @media only screen and (max-width: 468px) {
+  @media only screen and (max-width: 1025px) {
     top: 10px;
     right: 10px;
     font-size: 28px;
@@ -36,7 +36,7 @@ export const ModalContainer = styled.div`
   padding: 30px;
   z-index: 999;
   overflow-y: scroll;
-  @media only screen and (max-width: 468px) {
+  @media only screen and (max-width: 1025px) {
     padding: 5px;
   }
   .images-container {
@@ -46,7 +46,7 @@ export const ModalContainer = styled.div`
     background: #fff;
     width: 55%;
     height: 85%;
-    @media only screen and (max-width: 468px) {
+    @media only screen and (max-width: 1025px) {
       width: 100%;
       justify-content: flex-start;
       align-items: center;

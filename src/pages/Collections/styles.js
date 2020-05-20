@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media only screen and (min-width: 1025px) {
+    padding: 0 5%;
+  }
 `;
 
 export const DescriptionContent = styled.div`
@@ -90,4 +94,9 @@ export const DressImage = styled.img`
     margin-bottom: 20px;
   }
 
+  @media only screen and (min-width: 1025px) {
+    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+    margin-bottom: 20px;
+  }
 `;

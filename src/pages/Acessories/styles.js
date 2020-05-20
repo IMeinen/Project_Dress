@@ -67,7 +67,7 @@ export const AcessorieImage = styled.img`
  width: 100%;
   margin: 10px 0px 5px 0px;
 
-  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+  @media only screen and (min-width: 469px) {
     width: ${props => props.width  ? `${props.width}%` : '100%'};
     margin-top: ${props => props.adjustTop ? `-45%` : '0'};
     margin-bottom: 20px;
