@@ -22,9 +22,10 @@ export const DescriptionContent = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+  @media only screen and (min-width: 469px)  {
     margin-top: 80px;
   }
+
 
   h1 {
     font-size: 2.3em;

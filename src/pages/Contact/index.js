@@ -3,16 +3,18 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import Footer from '../../components/Footer';
 import ContactInformations from '../../components/ContactInformations';
-import {ContainerMessage} from './styles';
+import {Container,ContainerMessage} from './styles';
 
 
 export default function Contact() {
   return (
     <>
+    <Container>
       <ContactInformations isHeader />
       <ContainerMessage />
-      <Footer />
-    </>
 
+    </Container>
+    <Footer />
+    </>
   );
 }

@@ -14,6 +14,10 @@ function Footer() {
             <p>(51) 99262-4347</p>
             <p>contato@sandraferraz.com.br</p>
           </div>
+          <div className="descriptions">
+            <h5>PERGUNTAS FREQUENTES</h5>
+
+          </div>
           <div className="icons_container">
             <a
               href="https://www.youtube.com/user/AtelierSandraFerraz"

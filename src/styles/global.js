@@ -17,6 +17,8 @@ export default createGlobalStyle`
    box-sizing: border-box;
  }
 
+
+
  html,body,#root{
    min-height: 100%;
  }

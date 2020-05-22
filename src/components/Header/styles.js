@@ -59,7 +59,7 @@ export const Header = styled.div`
 
     border: 1px solid #373739 !important;
     width: 240px;
-    height: 64px;
+    height: 56px;
     @media only screen and (min-width: 469px) and (max-width: 1024px) {
       display: none;
     }
