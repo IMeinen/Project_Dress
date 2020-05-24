@@ -6,7 +6,7 @@ export const OverlayContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: fixed;
+  position: fixed ;
   top: 0;
   left: 0;
   min-width: 100vw;
@@ -25,4 +25,5 @@ export const Content = styled.div`
   align-items: center;
   padding: 20px;
   overflow: hidden;
+  z-index: 1002;
 `;

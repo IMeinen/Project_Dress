@@ -9,7 +9,7 @@ export const ButtonPrimary = styled(Link)`
   height: 66px!important;
   width: 93%;
   background: #fff;
-  border: 2px solid #373739;
+  border: 1px solid #373739;
   color: #fff;
   text-transform: none;
   margin: 10px 0px;

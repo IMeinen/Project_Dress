@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Collections';
 import { Container, DescriptionContent, DressImage } from './styles';
@@ -6,10 +6,12 @@ import Modal from '../../components/Modal';
 import Overlay from '../../components/Overlay';
 import Footer from '../../components/Footer';
 
+
 export default function Collections() {
   const { collection } = useParams();
   const [currentCollection, setCurrentCollection] = useState([]);
   const [modalOpened, setModalOpened] = useState(false);
+
 
   useEffect(() => {
     setCurrentCollection(
@@ -37,7 +39,7 @@ export default function Collections() {
                 src={image.image}
                 alt="test"
                 width={image.width}
-                onClick={() => setModalOpened(true)}
+                onClick={() => {setModalOpened(true)}}
                 adjustTop={image.adjustTop}
               />
             );

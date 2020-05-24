@@ -11,6 +11,7 @@ import Acessories from './pages/Acessories';
 import Contact from './pages/Contact';
 import HeaderGlobal from "./components/Header"
 
+
 export default function Routes(){
   return(
   <BrowserRouter>

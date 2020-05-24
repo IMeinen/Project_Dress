@@ -1,5 +1,5 @@
 export const filterScroll = (list,current) => {
-  console.log(list.length,current)
+
   if(list.length > 4){
     if((current + 4) <= list.length){
       return list.slice(current,current + 4);

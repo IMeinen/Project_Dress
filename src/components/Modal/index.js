@@ -1,11 +1,8 @@
-import React,{useState} from 'react';
+import React,{useState,useContext,useEffect} from 'react';
 
 
 import { StyledClose,ModalContainer } from './styles';
-import PhotoScroller from '../PhotoScroller';
 import MobilePhotoScroller from '../MobilePhotoScroller';
-import Input from '../Input';
-import TextArea from '../TextArea';
 import ImageChanger from '../ImageChanger';
 import IMG1 from '../../images/teste_mq.jpg';
 import IMG2 from '../../images/img2.jpeg';
@@ -14,21 +11,27 @@ import IMG4 from '../../images/img4.jpeg';
 import IMG5 from '../../images/img5.jpeg';
 import Button from '../Button';
 
+import { ImagesContext } from "../../contexts/imagesContext";
+
 const images = [IMG1,IMG2,IMG3,IMG4,IMG5];
 
 export default function Modal({modalOpened}) {
-  const [currentImage,setCurrentImage] = useState(0)
+  const { currentImage,setCurrentImage } = useContext(ImagesContext);
+  const { currentList,setCurrentList } = useContext(ImagesContext);
+
+  useEffect(() => {
+    setCurrentList(images);
+  },[]);
+
   return (
-
-
       <ModalContainer>
         <StyledClose onClick={() => modalOpened(false)}> </StyledClose>
         <div className="images-container">
           {/* <PhotoScroller listImages={images} setImage={setCurrentImage}/> */}
-          <ImageChanger image={images[currentImage]} />
-          <MobilePhotoScroller listImages={images} setImage={setCurrentImage}/>
+          <ImageChanger image={images[currentImage]}  />
+          <MobilePhotoScroller listImages={currentList} setImage={setCurrentImage}/>
         </div>
-        <div className="data-container">
+        <div className="data-container" >
 
           <h1>Aquário - 1274</h1>
           <h2 >R$10.000,00</h2>

@@ -25,7 +25,7 @@ export const Header = styled.div`
   justify-content: center;
   width: 100%;
   height: 129px;
-  background: #faf;
+  background: #fff;
   position: absolute;
 
   z-index: 99;

@@ -12,7 +12,7 @@ export default function ImageChanger({ image }) {
     //     defaultPositionY={100}>
     //   <TransformComponent>
     <>
-    {viewerOpen  && <ScreenImageView setOpen={setViewerOpen} image={image}/> }
+    {viewerOpen  && <ScreenImageView setOpen={setViewerOpen} /> }
     <CustomImage image={image} onClick={() => setViewerOpen(true)}>
       {/* <img src={image} className="image"/> */}
     </CustomImage>
