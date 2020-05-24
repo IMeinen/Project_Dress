@@ -34,6 +34,7 @@ export const Container = styled.div`
   background: #fff;
   z-index: 1007;
   .image {
+    margin-top: 80px;
     width: 100%;
   }
 
