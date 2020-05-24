@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import FacebookIcon from '../../assets/icons/facebook_icon.png';
 import InstagramIcon from '../../assets/icons/instagram_icon.png';
 import PintrestIcon from '../../assets/icons/pintrest_icon.png';
@@ -15,7 +16,7 @@ function Footer() {
             <p>contato@sandraferraz.com.br</p>
           </div>
           <div className="descriptions">
-            <h5>PERGUNTAS FREQUENTES</h5>
+            <Link className="link" to="/faq"><h5>PERGUNTAS FREQUENTES</h5></Link>
 
           </div>
           <div className="icons_container">

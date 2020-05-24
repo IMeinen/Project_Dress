@@ -6,6 +6,7 @@ import About from './pages/About';
 import Collections from './pages/Collections';
 import CustomMade from './pages/CustomMade';
 import Shoes from './pages/Shoes';
+import Faq from './pages/Faq';
 import Acessories from './pages/Acessories';
 import Contact from './pages/Contact';
 import HeaderGlobal from "./components/Header"
@@ -22,7 +23,7 @@ export default function Routes(){
       <Route path="/shoes/:collection" exact component={Shoes} />
       <Route path="/acessories/:year" exact component={Acessories} />
       <Route path="/contact" exact component={Contact} />
-
+      <Route path="/faq" exact component={Faq} />
     </Switch>
   </BrowserRouter>);
 }
