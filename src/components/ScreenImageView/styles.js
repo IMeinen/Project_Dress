@@ -30,11 +30,11 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: #fff;
   z-index: 1007;
   .image {
-    margin-top: 80px;
+
     width: 100%;
   }
 
