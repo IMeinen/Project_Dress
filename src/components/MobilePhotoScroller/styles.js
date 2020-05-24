@@ -20,7 +20,7 @@ export const Container = styled.div`
 export const ImgItem = styled.div`
   width:50px;
   height: 50px;
-
+  border-bottom: ${props =>  props.active ? '2px solid #373739' : ''};
 
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     width: 80px;

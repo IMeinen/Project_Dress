@@ -1,11 +1,14 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useContext } from 'react';
 
 
 import { Container,ImgItem,StyledRight,StyledLeft } from './styles';
 import {filterScroll} from '../../utils/filterScroller'
+import { ImagesContext } from '../../contexts/imagesContext';
 
 export default function MobilePhotoScroller({listImages,setImage}) {
-  const [currentStart,setCurrentStart] = useState(0);
+  const { currentStart, setCurrentStart } = useContext(ImagesContext);
+  const { currentImage,setCurrentImage } = useContext(ImagesContext);
+
 
   const handleSubtract = () => {
 
@@ -25,7 +28,7 @@ export default function MobilePhotoScroller({listImages,setImage}) {
     <Container>
       <StyledLeft onClick={() => handleSubtract()} />
       {(filterScroll(listImages,currentStart) || []).map((item,index) => {
-        return <ImgItem image={item} onClick={() => setImage(currentStart + index)}/>
+        return <ImgItem image={item} onClick={() => setImage(currentStart + index)} active={currentImage === currentStart + index}/>
       })}
       <StyledRight onClick={() => handleAdd()}/>
     </Container>

@@ -10,17 +10,23 @@ function App() {
   const [showRightButton, setShowRightButton] = useState(true);
   const [currentImage, setCurrentImage] = useState(0);
   const [currentList, setCurrentList] = useState([]);
+  const [currentStart, setCurrentStart] = useState(0);
 
   const buttonContext = useMemo(
     () => ({ showRightButton, setShowRightButton }),
     [showRightButton, setShowRightButton]
   );
-  const imageContext = useMemo(() => ({ currentImage, setCurrentImage,currentList, setCurrentList }), [
-    currentImage,
-    setCurrentImage,
-    currentList,
-    setCurrentList,
-  ]);
+  const imageContext = useMemo(
+    () => ({ currentImage, setCurrentImage, currentList, setCurrentList,currentStart, setCurrentStart }),
+    [
+      currentImage,
+      setCurrentImage,
+      currentList,
+      setCurrentList,
+      currentStart,
+      setCurrentStart,
+    ]
+  );
   return (
     <>
       <ButtonContext.Provider value={buttonContext}>
