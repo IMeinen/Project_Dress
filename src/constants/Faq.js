@@ -1,0 +1,12 @@
+export const FAQ = [
+  {question: "Como funcionam os atendimentos semi virtuais?", answer: "Primeiramente, você precisa agendar um horário para uma videochamada com a Sandra ou uma de nossas consultoras, essa primeira conversa dura 1 hora,nessa primeira conversa você poderá contar sobre você e sua cerimônia. Em cima dessa conversa, serão selecionadas peças que mais combinam contigo e com teu estilo de festa, além de te mostrar ao vivo pela telinha as peças que você selecionou em nosso site, caso tenha restado alguma dúvida ou você queira olhar mais um pouco alguma peça específica, basta nos solicitar. Caso você queira ver algumas das peças pessoalmente, agendamos uma visita diretamente em sua casa, com a Sandra ou uma de nossas consultoras."},
+  {question: "Quanto tempo dura uma conversa virtual?", answer: "Cada conversa com a Sandra tem duração máxima de 1 hora." },
+  {question: "Quanto tempo preciso separar em minha agenda para a prova em minha casa?", answer: "Pedimos 1 hora e 30 minutos, pois podem haver eventuais imprevistos de trânsito e o tempo de organizarmos tudo para a prova."},
+  {question: "Os atendimentos virtuais e provas presenciais são pagos?", answer: "Não, as conversas online são inteiramente gratuitas, assim como uma visita em sua casa."},
+  {question: "Vocês fazem vestidos de FESTA sob medida?", answer: "Não, pois optamos por nos dedicar exclusivamente ao mundo das noivinhas."},
+  {question: "Vocês trabalham com vestidos para daminhas?", answer: "Não."},
+  {question: "Quanto tempo antes do meu casamento eu preciso resolver meu vestido?", answer: "Para um processo tranquilo sempre recomendamos as noivinhas um prazo de 6 meses para os vestidos de nossas coleção, assim não corremos nenhum risco de incompatibilidade de agendas para marcar as provas." },
+  {question: "Quais ajustes podem ser realizados em meu vestido?", answer:"Nós trabalhamos com uma base de quatro ajustes essenciais, que farão com que a peça fique perfeita em você. São eles: Zíper,Bainha,Alça/Manga/Cava, e algum detalhe que não descaracterize o vestido, como ajuste de decote, cobrir alguma transparência específica ou aplicar renda/bordado.Caso algum ajuste extra seja solicitado, avaliam juntas." },
+  {question:"Adorei uma peça, mas achei muito bordado, seria possível retirar?" , answer: "Não, nossos bordados são feitos à mão com pontos firmes que impedem qualquer imprevisto, portanto a retirada dos mesmos poderia causar dano permanente ao acabamento da peça."},
+
+]

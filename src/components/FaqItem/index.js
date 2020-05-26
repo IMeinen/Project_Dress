@@ -3,15 +3,26 @@ import React, { useState } from 'react';
 
 import {
   Container,
-  LinkItem
+  LinkItem,
+  AnswerItem,
+  IconActive
 } from './styles';
 
 
-export default function FaqItem() {
-
+export default function FaqItem({question,answer,isActive}) {
+  const [active,setActive] = useState(isActive,false);
   return (
    <Container>
-     <LinkItem  />
+     <LinkItem >
+      <div className="button-question" onClick={() => setActive(!active)}>
+        <h1>{question}</h1>
+        <IconActive rotate={active}/>
+      </div>
+      <AnswerItem active={active}>
+        <p>{answer}</p>
+      </AnswerItem>
+     </LinkItem>
+
    </Container>
   );
 }
