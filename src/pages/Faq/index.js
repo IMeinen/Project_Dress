@@ -17,7 +17,6 @@ export default function Faq() {
             <FaqItem
               question={item.question}
               answer={item.answer}
-              isActive={index === 0}
             />
           );
         })}
