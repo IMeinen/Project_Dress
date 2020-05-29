@@ -9,7 +9,7 @@ export const ButtonPrimary = styled(Link)`
   height: 66px!important;
   width: 93%;
   background: #fff;
-  border: 1px solid #373739;
+  border: 1px solid #e4e4e4;
   color: #fff;
   text-transform: none;
   margin: 10px 0px;
@@ -34,8 +34,8 @@ export const ButtonSecondary = styled.button`
   width: 200px;
   background: #fff;
   box-sizing: border-box;
-  border: 2px solid #373739;
-  color: #373739;
+  border: 2px solid #e4e4e4;
+  color: #e4e4e4;
   text-transform: none;
   margin-left: 20px;
 
@@ -43,7 +43,7 @@ export const ButtonSecondary = styled.button`
   &:hover {
     transition: background-color 0.3s ease;
     transition: color 0.3s ease;
-    background-color: #373739;
+    background-color: #e4e4e4;
     color: #fff;
 
   }

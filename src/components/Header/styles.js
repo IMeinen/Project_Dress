@@ -25,7 +25,7 @@ export const Header = styled.div`
   justify-content: center;
   width: 100%;
   height: 129px;
-  background: #fff;
+  background: #e4e4e4;
   position: absolute;
 
   z-index: 99;
@@ -57,7 +57,7 @@ export const Header = styled.div`
 
   .appointment {
 
-    border: 1px solid #373739 !important;
+    border: 1px solid #191919 !important;
     width: 240px;
     height: 56px;
     @media only screen and (min-width: 469px) and (max-width: 1024px) {
@@ -77,7 +77,7 @@ export const Header = styled.div`
     a {
       font-size: 15px;
       text-decoration: none;
-      color: #373739;
+      color: #e4e4e4;
     }
   }
   .appointment {
@@ -93,7 +93,7 @@ export const StyledBars = styled(FaBars)`
 
   right: 95px;
   transition: all 0.3s;
-  color: #373739;
+  color: #e4e4e4;
   font-size: 56px;
 
   @media only screen and (min-width: 469px) {

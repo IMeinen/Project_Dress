@@ -39,7 +39,7 @@ export const ListLinks = styled.ul`
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    color: #373739;
+    color: #e4e4e4;
   }
 
   .appointment {
@@ -65,7 +65,7 @@ export const ListLinks = styled.ul`
     font-weight: 500;
     line-height: 27px;
     font-size: 18px;
-    color: #373739;
+    color: #e4e4e4;
     margin: 5px 0px;
   }
 `;
@@ -111,7 +111,7 @@ export const Acordeon = styled.div`
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    color: #373739;
+    color: #e4e4e4;
   }
 
   .internal-items {
@@ -128,7 +128,7 @@ export const IconActive = styled(IoIosArrowDown)`
 
   width: 24px;
   height: 24px;
-  color: #373739;
+  color: #e4e4e4;
   padding-bottom: 6px;
   margin-left: 6px;
   transition: all 0.3s ease-out;

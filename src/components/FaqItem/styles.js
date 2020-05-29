@@ -57,7 +57,7 @@ export const IconActive = styled(IoIosArrowDown)`
 
   width: 24px;
   height: 24px;
-  color: #373739;
+  color: #e4e4e4;
   padding-bottom: 6px;
   margin-left: 6px;
   transition: all 0.3s ease-out;

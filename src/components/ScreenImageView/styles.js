@@ -6,7 +6,7 @@ export const StyledClose = styled(MdClose)`
   position: absolute;
 
   transition: all 0.3s;
-  color: #373739;
+  color: #e4e4e4;
   font-size: 56px;
   z-index: 1002;
 
@@ -21,7 +21,7 @@ export const StyledClose = styled(MdClose)`
 export const CloseButton = styled.div`
   width: 50px;
   height: 50px;
-  border: 1px solid #373739;
+  border: 1px solid #e4e4e4;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -49,7 +49,7 @@ export const StyledRight = styled(FiChevronRight)`
   top: 50%;
   width: 26px;
   height: 26px;
-  color: #373739;
+  color: #e4e4e4;
 `;
 
 export const StyledLeft = styled(FiChevronLeft)`
@@ -58,7 +58,7 @@ export const StyledLeft = styled(FiChevronLeft)`
   left: 1%;
   width: 26px;
   height: 26px;
-  color: #373739;
+  color: #e4e4e4;
 `;
 
 export const LeftButton = styled.div`

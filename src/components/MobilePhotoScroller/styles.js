@@ -20,7 +20,7 @@ export const Container = styled.div`
 export const ImgItem = styled.div`
   width:50px;
   height: 50px;
-  border-bottom: ${props =>  props.active ? '2px solid #373739' : ''};
+  border-bottom: ${props =>  props.active ? '2px solid #e4e4e4' : ''};
 
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     width: 80px;
@@ -33,11 +33,11 @@ export const ImgItem = styled.div`
 export const StyledLeft = styled(FiChevronLeft)`
   width: 26px;
   height: 26px;
-  color: #373739;
+  color: #e4e4e4;
 `;
 
 export const StyledRight = styled(FiChevronRight)`
   width: 26px;
   height: 26px;
-  color: #373739;
+  color: #e4e4e4;
 `;

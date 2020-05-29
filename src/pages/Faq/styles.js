@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
   width: 100%;
   min-height: 50vh;
   display: flex;
@@ -10,22 +9,32 @@ export const Container = styled.div`
   align-items: center;
   padding: 10px 5%;
 
-  .description{
+  .description {
     width: 100%;
-    padding: 0% 10% 10% 10%;
+    padding: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: 468px) {
-    padding-right: 5px;
-    padding-left: 5px;
-    h1 {
-      font-size: 29px;
-      line-height: 31px;
-      font-weight: 400;
+    @media only screen and (min-width: 1025px){
+      padding: 5%;
     }
-  }
+
+    h1 {
+        font-size: 29px;
+        line-height: 31px;
+        font-weight: 400;
+      }
+
+    @media only screen and (max-width: 468px) {
+      padding-right: 5px;
+      padding-left: 5px;
+      h1 {
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+    }
   }
 `;

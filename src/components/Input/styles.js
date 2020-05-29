@@ -21,7 +21,7 @@ export const CustomInput = styled.input`
   width: 60%;
   &:hover {
     border: 2px solid;
-    border-color: #373739;
+    border-color: #e4e4e4;
   }
 
   ::placeholder{

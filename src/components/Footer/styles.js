@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: #373739;
+  background: #e4e4e4;
   margin-top: auto;
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     height: 42vh;

@@ -12,7 +12,7 @@ export const OverlayContainer = styled.div`
   min-width: 100vw;
   min-height: 100vh;
   z-index: 101!important;
-  background-color: #373739aa;
+  background-color: #e4e4e4aa;
 
 `;
 

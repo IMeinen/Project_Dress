@@ -6,12 +6,12 @@ export const Container = styled.a`
   bottom:10%;
   width: 40px;
   height: 150px;
-  background:  #373739;
+  background:  #e4e4e4;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   z-index: 1001;
   border: 1px solid #fff;
-  border-right: #373739;
+  border-right: #e4e4e4;
   h1{
     color: #fff;
     font-size: 14px;
