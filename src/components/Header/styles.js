@@ -93,7 +93,7 @@ export const StyledBars = styled(FaBars)`
 
   right: 95px;
   transition: all 0.3s;
-  color: #e4e4e4;
+  color:  #191919;
   font-size: 56px;
 
   @media only screen and (min-width: 469px) {
