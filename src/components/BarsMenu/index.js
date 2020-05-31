@@ -41,6 +41,9 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/contact" onClick={() => menuOpened(false)}>
           <h1>CONTATO</h1>
         </Link>
+        <Link to="/quizz" onClick={() => menuOpened(false)}>
+          <h1>QUIZZ</h1>
+        </Link>
 
         <div className="appointment">
           <a href="https://sandra-ferraz.reservio.com/">MARQUE SEU HORÁRIO</a>
