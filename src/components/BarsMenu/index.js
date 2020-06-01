@@ -22,8 +22,8 @@ export default function BarsMenu({ menuOpened }) {
             <Link to="/collection/nevoa" onClick={() => menuOpened(false)}>
               <h1>COLEÇÃO // NÉVOA</h1>
             </Link>
-            <Link to="/collection/rose-white" onClick={() => menuOpened(false)}>
-              <h1>COLEÇÃO // ROSE WHITE</h1>
+            <Link to="/collection/zodiaco" onClick={() => menuOpened(false)}>
+              <h1>COLEÇÃO // ZODÍACO</h1>
             </Link>
           </div>
         </Acordeon>

@@ -13,22 +13,19 @@ import Button from '../Button';
 
 import { ImagesContext } from "../../contexts/imagesContext";
 
-const images = [IMG1,IMG2,IMG3,IMG4,IMG5];
+
 
 export default function Modal({modalOpened}) {
   const { currentImage,setCurrentImage } = useContext(ImagesContext);
   const { currentList,setCurrentList } = useContext(ImagesContext);
 
-  useEffect(() => {
-    setCurrentList(images);
-  },[]);
 
   return (
       <ModalContainer>
         <StyledClose onClick={() => modalOpened(false)}> </StyledClose>
         <div className="images-container">
           {/* <PhotoScroller listImages={images} setImage={setCurrentImage}/> */}
-          <ImageChanger image={images[currentImage]}  />
+          <ImageChanger image={currentList[currentImage]}  />
           <MobilePhotoScroller listImages={currentList} setImage={setCurrentImage}/>
         </div>
         <div className="data-container" >

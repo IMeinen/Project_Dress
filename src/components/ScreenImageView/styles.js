@@ -49,7 +49,7 @@ export const StyledRight = styled(FiChevronRight)`
   top: 50%;
   width: 26px;
   height: 26px;
-  color: #e4e4e4;
+  color: #191919;
 `;
 
 export const StyledLeft = styled(FiChevronLeft)`
@@ -58,7 +58,7 @@ export const StyledLeft = styled(FiChevronLeft)`
   left: 1%;
   width: 26px;
   height: 26px;
-  color: #e4e4e4;
+  color: #191919;
 `;
 
 export const LeftButton = styled.div`

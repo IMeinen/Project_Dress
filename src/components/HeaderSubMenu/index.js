@@ -8,8 +8,8 @@ export default function HeadersSubMenu({openSubMenu}) {
       <StyledLink to="/collection/rose-white" onClick={() => openSubMenu(false)}>
         <span>COLEÇÃO // ROSE WHITE</span>
       </StyledLink>
-      <StyledLink to="/collection/nevoa" onClick={() => openSubMenu(false)}>
-        <span>COLEÇÃO // NÉVOA</span>
+      <StyledLink to="/collection/zodiaco" onClick={() => openSubMenu(false)}>
+        <span>COLEÇÃO // ZODÍACO</span>
       </StyledLink>
       <StyledLink to="/shoes/2019" onClick={() => openSubMenu(false)}>
         <span>SAPATOS</span>
