@@ -18,11 +18,11 @@ import { ImagesContext } from "../../contexts/imagesContext";
 export default function Modal({modalOpened}) {
   const { currentImage,setCurrentImage } = useContext(ImagesContext);
   const { currentList,setCurrentList } = useContext(ImagesContext);
-
+  const { currentStart, setCurrentStart } = useContext(ImagesContext);
 
   return (
       <ModalContainer>
-        <StyledClose onClick={() => modalOpened(false)}> </StyledClose>
+        <StyledClose onClick={() => {modalOpened(false);setCurrentImage(0);setCurrentStart(0);}}> </StyledClose>
         <div className="images-container">
           {/* <PhotoScroller listImages={images} setImage={setCurrentImage}/> */}
           <ImageChanger image={currentList[currentImage]}  />
