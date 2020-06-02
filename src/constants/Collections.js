@@ -1,16 +1,3 @@
-import nevoa0 from '../images/vestido_landing2.jpg';
-import nevoa1 from '../images/nevoa1.jpg';
-import nevoa2 from '../images/nevoa2.jpg';
-import nevoa3 from '../images/nevoa3.jpg';
-import nevoa4 from '../images/nevoa4.jpg';
-import nevoa5 from '../images/nevoa5.jpg';
-import nevoa6 from '../images/nevoa6.jpg';
-import nevoa7 from '../images/nevoa7.jpg';
-import nevoa8 from '../images/nevoa8.jpg';
-import nevoa9 from '../images/nevoa9.jpg';
-import nevoa10 from '../images/nevoa10.jpg';
-import nevoa11 from '../images/nevoa11.jpg';
-import nevoa12 from '../images/nevoa12.jpg';
 import AQUA_TUMB from '../images/Zodiaco/Aquario/Principal.jpg';
 import CANC_TUMB from '../images/Zodiaco/Cancer/Principal.jpg';
 import CAPR_TUMB from '../images/Zodiaco/Capricornio/Principal.jpg';
@@ -21,16 +8,34 @@ import LIBR_TUMB from '../images/Zodiaco/Libra/Principal.jpg';
 import SAGI_TUMB from '../images/Zodiaco/Sagitario/Principal.jpg';
 import TOUR_TUMB from '../images/Zodiaco/Touro/Principal.jpg';
 import VIRG_TUMB from '../images/Zodiaco/Virgem/Principal.jpg';
-import {AQUA_LIST} from '../images/Zodiaco/Aquario/constants';
-import {CANC_LIST} from '../images/Zodiaco/Cancer/constants';
-import {CAPR_LIST} from '../images/Zodiaco/Capricornio/constants';
-import {ESCO_LIST} from '../images/Zodiaco/Escorpiao/constants';
-import {GEME_LIST} from '../images/Zodiaco/Gemeos/constants';
-import {LEAO_LIST} from '../images/Zodiaco/Leao/constants';
-import {LIBR_LIST} from '../images/Zodiaco/Libra/constants';
-import {SAGI_LIST} from '../images/Zodiaco/Sagitario/constants';
-import {TOUR_LIST} from '../images/Zodiaco/Touro/constants';
-import {VIRG_LIST} from '../images/Zodiaco/Virgem/constants';
+import { AQUA_LIST } from '../images/Zodiaco/Aquario/constants';
+import { CANC_LIST } from '../images/Zodiaco/Cancer/constants';
+import { CAPR_LIST } from '../images/Zodiaco/Capricornio/constants';
+import { ESCO_LIST } from '../images/Zodiaco/Escorpiao/constants';
+import { GEME_LIST } from '../images/Zodiaco/Gemeos/constants';
+import { LEAO_LIST } from '../images/Zodiaco/Leao/constants';
+import { LIBR_LIST } from '../images/Zodiaco/Libra/constants';
+import { SAGI_LIST } from '../images/Zodiaco/Sagitario/constants';
+import { TOUR_LIST } from '../images/Zodiaco/Touro/constants';
+import { VIRG_LIST } from '../images/Zodiaco/Virgem/constants';
+import { V04_LIST } from '../images/Nevoa/O04/constants';
+import { V05_LIST }  from '../images/Nevoa/O05/constants';
+import { V07_LIST }  from '../images/Nevoa/O07/constants';
+import { V08_LIST }  from '../images/Nevoa/O08/constants';
+import { V09_LIST }  from '../images/Nevoa/O09/constants';
+import { V10_LIST }  from '../images/Nevoa/O10/constants';
+import { V11_LIST }  from '../images/Nevoa/O11/constants';
+import { V12_LIST }  from '../images/Nevoa/O12/constants';
+import { V13_LIST }  from '../images/Nevoa/O13/constants';
+import { V14_LIST }  from '../images/Nevoa/O14/constants';
+import { PE06_LIST } from '../images/Nevoa/PE06/constants';
+import { PE07_LIST } from '../images/Nevoa/PE07/constants';
+import { PE08_LIST } from '../images/Nevoa/PE08/constants';
+import { PE09_LIST } from '../images/Nevoa/PE09/constants';
+import { PE11_LIST } from '../images/Nevoa/PE11/constants';
+import { PE12_LIST } from '../images/Nevoa/PE12/constants';
+import { PR12_LIST } from '../images/Nevoa/PR12/constants';
+import { PR13_LIST } from '../images/Nevoa/PR13/constants';
 
 const Collections = [
   {
@@ -39,37 +44,41 @@ const Collections = [
     description:
       'Leve, delicada e atemporal. Inspirada na névoa que se forma Leve, delicada e atemporal. Inspirada na névoa que se forma cultuando a beleza única de cada mulher.',
     images: [
-      {image: nevoa0, listOfImages: [], width: ''},
-      {image:nevoa1, listOfImages:  [],width: '32' } ,
-      {image:nevoa2, listOfImages:  [],width: '32'} ,
-      {image:nevoa3, listOfImages:  [],width: '32'},
-      {image:nevoa4, listOfImages:  [],width: '32'},
-      {image:nevoa5, listOfImages:  [],width: '65.2'},
-      {image:nevoa6, listOfImages:  [],width: '65.2'},
-      {image:nevoa7, listOfImages:  [],width: '32'},
-      {image:nevoa8, listOfImages:  [],width: '32'},
-      {image:nevoa9, listOfImages:  [],width: '32'},
-      {image:nevoa10, listOfImages: [],width: '32'},
-      {image:nevoa11, listOfImages: [],width: '32'},
-      {image:nevoa12, listOfImages: [],width: '65.2'},
+      { image: V04_LIST[0], listOfImages: V04_LIST, width: '' },
+      { image: V05_LIST[0], listOfImages: V05_LIST  , width: '' },
+      { image: V07_LIST[0], listOfImages: V07_LIST  , width: '' },
+      { image: V08_LIST[0], listOfImages: V08_LIST  , width: '' },
+      { image: V09_LIST[0], listOfImages: V09_LIST  , width: '' },
+      { image: V10_LIST[0], listOfImages: V10_LIST  , width: '' },
+      { image: V11_LIST[0], listOfImages: V11_LIST  , width: '' },
+      { image: V12_LIST[0], listOfImages: V12_LIST  , width: '' },
+      { image: V13_LIST[0], listOfImages: V13_LIST  , width: '' },
+      { image: V14_LIST[0], listOfImages: V14_LIST  , width: '' },
+      { image: PE06_LIST[0], listOfImages: PE06_LIST , width: '' },
+      { image: PE07_LIST[0], listOfImages: PE07_LIST , width: '' },
+      { image: PE08_LIST[0], listOfImages: PE08_LIST , width: '' },
+      { image: PE09_LIST[0], listOfImages: PE09_LIST , width: '' },
+      { image: PE11_LIST[0], listOfImages: PE11_LIST , width: '' },
+      { image: PE12_LIST[0], listOfImages: PE12_LIST , width: '' },
+      { image: PR12_LIST[0], listOfImages: PR12_LIST , width: '' },
+      { image: PR13_LIST[0], listOfImages: PR13_LIST , width: '' },
     ],
   },
   {
     link: 'zodiaco',
     title: '// ZODÍACO',
-    description:
-      'lOREM IP',
-      images: [
-      {image:AQUA_TUMB, listOfImages: AQUA_LIST,width: '49.725'},
-      {image:CANC_TUMB, listOfImages: CANC_LIST,width: '49.725'},
-      {image:CAPR_TUMB, listOfImages: CAPR_LIST,width: '49.725'},
-      {image:ESCO_TUMB, listOfImages: ESCO_LIST,width: '49.725'},
-      {image:GEME_TUMB, listOfImages: GEME_LIST,width: '49.725'},
-      {image:LEAO_TUMB, listOfImages: LEAO_LIST,width: '49.725'},
-      {image:LIBR_TUMB, listOfImages: LIBR_LIST,width: '49.725'},
-      {image:SAGI_TUMB, listOfImages: SAGI_LIST,width: '49.725'},
-      {image:TOUR_TUMB, listOfImages: TOUR_LIST,width: '49.725'},
-      {image:VIRG_TUMB, listOfImages: VIRG_LIST,width: '49.725'}
+    description: 'lOREM IP',
+    images: [
+      { image: AQUA_TUMB, listOfImages: AQUA_LIST, width: '49.725' },
+      { image: CANC_TUMB, listOfImages: CANC_LIST, width: '49.725' },
+      { image: CAPR_TUMB, listOfImages: CAPR_LIST, width: '49.725' },
+      { image: ESCO_TUMB, listOfImages: ESCO_LIST, width: '49.725' },
+      { image: GEME_TUMB, listOfImages: GEME_LIST, width: '49.725' },
+      { image: LEAO_TUMB, listOfImages: LEAO_LIST, width: '49.725' },
+      { image: LIBR_TUMB, listOfImages: LIBR_LIST, width: '49.725' },
+      { image: SAGI_TUMB, listOfImages: SAGI_LIST, width: '49.725' },
+      { image: TOUR_TUMB, listOfImages: TOUR_LIST, width: '49.725' },
+      { image: VIRG_TUMB, listOfImages: VIRG_LIST, width: '49.725' },
     ],
   },
 ];
