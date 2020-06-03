@@ -26,7 +26,7 @@ export const ModalContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: column;
+
   background: #fff;
   height: 90vh;
   width: 95%;
@@ -38,6 +38,7 @@ export const ModalContainer = styled.div`
   overflow-y: scroll;
   @media only screen and (max-width: 1025px) {
     padding: 5px;
+    flex-direction: column;
   }
   .images-container {
     display: flex;
@@ -59,11 +60,15 @@ export const ModalContainer = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     background: #fff;
-    width: 100%;
-    height: 85%;
-    margin-left: 1%;
-    padding: 20px;
+    width: 45%;
 
+
+    @media only screen and (max-width: 1025px) {
+      width: 100%;
+      height: 85%;
+      margin-left: 1%;
+      padding: 20px;
+    }
     h1 {
       font-size: 18px;
       line-height: 18px;

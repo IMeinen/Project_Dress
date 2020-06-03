@@ -36,6 +36,11 @@ import { PE11_LIST } from '../images/Nevoa/PE11/constants';
 import { PE12_LIST } from '../images/Nevoa/PE12/constants';
 import { PR12_LIST } from '../images/Nevoa/PR12/constants';
 import { PR13_LIST } from '../images/Nevoa/PR13/constants';
+import { PR05_LIST } from '../images/Noivado/PR05/constants';
+import { PR06_LIST } from '../images/Noivado/PR06/constants';
+import { PR07_LIST } from '../images/Noivado/PR07/constants';
+import { PR08_LIST } from '../images/Noivado/PR08/constants';
+import { PR09_LIST } from '../images/Noivado/PR09/constants';
 
 const Collections = [
   {
@@ -79,6 +84,19 @@ const Collections = [
       { image: SAGI_TUMB, listOfImages: SAGI_LIST, width: '49.725' },
       { image: TOUR_TUMB, listOfImages: TOUR_LIST, width: '49.725' },
       { image: VIRG_TUMB, listOfImages: VIRG_LIST, width: '49.725' },
+    ],
+  },
+  {
+    link: 'noivado',
+    title: '// NOIVADO',
+    description: 'lOREM IPSUM',
+    images: [
+      { image: PR05_LIST[0] , listOfImages: PR05_LIST, width: '49.725' },
+      { image: PR06_LIST[0] , listOfImages: PR06_LIST, width: '49.725' },
+      { image: PR07_LIST[0] , listOfImages: PR07_LIST, width: '49.725' },
+      { image: PR08_LIST[0] , listOfImages: PR08_LIST, width: '49.725' },
+      { image: PR09_LIST[0] , listOfImages: PR09_LIST, width: '49.725' },
+
     ],
   },
 ];

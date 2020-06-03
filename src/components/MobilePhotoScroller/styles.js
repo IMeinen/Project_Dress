@@ -15,6 +15,9 @@ export const Container = styled.div`
     margin-top: 30px;
     width: 500px;
   }
+  @media only screen and (min-width: 1025px){
+    display: none;
+  }
 `;
 
 export const ImgItem = styled.div`

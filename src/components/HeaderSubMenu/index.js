@@ -5,11 +5,14 @@ import { ContainerLinks, SubMenu,StyledLink } from './styles';
 export default function HeadersSubMenu({openSubMenu}) {
   return <SubMenu>
     <ContainerLinks>
-      <StyledLink to="/collection/rose-white" onClick={() => openSubMenu(false)}>
-        <span>COLEÇÃO // ROSE WHITE</span>
+      <StyledLink to="/collection/nevoa" onClick={() => openSubMenu(false)}>
+        <span>COLEÇÃO // NÉVOA</span>
       </StyledLink>
       <StyledLink to="/collection/zodiaco" onClick={() => openSubMenu(false)}>
         <span>COLEÇÃO // ZODÍACO</span>
+      </StyledLink>
+      <StyledLink to="/collection/noivado" onClick={() => openSubMenu(false)}>
+        <span>COLEÇÃO // NOIVADO</span>
       </StyledLink>
       <StyledLink to="/shoes/2019" onClick={() => openSubMenu(false)}>
         <span>SAPATOS</span>

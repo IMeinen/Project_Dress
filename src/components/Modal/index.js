@@ -3,6 +3,7 @@ import React,{useState,useContext,useEffect} from 'react';
 
 import { StyledClose,ModalContainer } from './styles';
 import MobilePhotoScroller from '../MobilePhotoScroller';
+import PhotoScroller from'../PhotoScroller';
 import ImageChanger from '../ImageChanger';
 import IMG1 from '../../images/teste_mq.jpg';
 import IMG2 from '../../images/img2.jpeg';
@@ -24,7 +25,7 @@ export default function Modal({modalOpened}) {
       <ModalContainer>
         <StyledClose onClick={() => {modalOpened(false);setCurrentImage(0);setCurrentStart(0);}}> </StyledClose>
         <div className="images-container">
-          {/* <PhotoScroller listImages={images} setImage={setCurrentImage}/> */}
+          <PhotoScroller listImages={currentList} setImage={setCurrentImage}/>
           <ImageChanger image={currentList[currentImage]}  />
           <MobilePhotoScroller listImages={currentList} setImage={setCurrentImage}/>
         </div>
