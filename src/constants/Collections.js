@@ -78,6 +78,12 @@ import { SF1940_LIST } from '../images/LastChance/Festa/SF1940/constants';
 import { SF1941_LIST } from '../images/LastChance/Festa/SF1941/constants';
 import { SF1943_LIST } from '../images/LastChance/Festa/SF1943/constants';
 import { SF1944_LIST } from '../images/LastChance/Festa/SF1944/constants';
+import {PR01_LIST } from '../images/LastChance/Noiva/PR01/constants';
+import {PR02_LIST } from '../images/LastChance/Noiva/PR02/constants';
+import {PR03_LIST } from '../images/LastChance/Noiva/PR03/constants';
+import {PR04_LIST } from '../images/LastChance/Noiva/PR04/constants';
+import {PR10_LIST } from '../images/LastChance/Noiva/PR10/constants';
+
 
 const Collections = [
   {
@@ -179,6 +185,18 @@ const Collections = [
       { image: SF1944_LIST[0], listOfImages: SF1944_LIST, width: '' },
     ],
   },
+  {
+    link: 'last-chance-noiva',
+    title: '// NOIVA',
+    description: 'lOREM IPSUM',
+    images: [
+      { image: PR01_LIST[0], listOfImages: PR01_LIST , width: '' },
+      { image: PR02_LIST[0], listOfImages: PR02_LIST , width: '' },
+      { image: PR03_LIST[0], listOfImages: PR03_LIST , width: '' },
+      { image: PR04_LIST[0], listOfImages: PR04_LIST , width: '' },
+      { image: PR10_LIST[0], listOfImages: PR10_LIST , width: '' },
+    ],
+  }
 ];
 
 export default Collections;

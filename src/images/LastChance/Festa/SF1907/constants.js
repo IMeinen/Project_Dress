@@ -6,9 +6,8 @@ import IMG5 from './SF1907_5.jpg';
 import IMG6 from './SF1907_6.jpg';
 
 export const SF1907_LIST = [
-
-  IMG1,
   IMG2,
+  IMG1,
   IMG3,
   IMG4,
   IMG5,
