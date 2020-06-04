@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import {FiChevronRight,FiChevronLeft} from 'react-icons/fi'
+import {FiChevronRight,FiChevronLeft} from 'react-icons/fi';
 
 export const Container = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const ImgItem = styled.div`
   width:50px;
   height: 50px;
-  border-bottom: ${props =>  props.active ? '2px solid #e4e4e4' : ''};
+  border-bottom: ${props =>  props.active ? '2px solid #191919' : ''};
 
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     width: 80px;

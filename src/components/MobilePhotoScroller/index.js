@@ -12,6 +12,9 @@ export default function MobilePhotoScroller({listImages,setImage}) {
 
   const handleSubtract = () => {
 
+    if(currentImage - 1 >= 0){
+      setCurrentImage(currentImage - 1)
+    }
     if(currentStart - 1 >= 0){
       setCurrentStart(currentStart - 1)
     }
@@ -19,6 +22,9 @@ export default function MobilePhotoScroller({listImages,setImage}) {
 
   const handleAdd = () => {
 
+    if(currentImage + 1 <= listImages.length - 1){
+      setCurrentImage(currentImage + 1)
+    }
     if(currentStart + 1 <= listImages.length - 4){
       setCurrentStart(currentStart + 1)
     }

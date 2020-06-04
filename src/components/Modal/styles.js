@@ -7,7 +7,7 @@ export const StyledClose = styled(MdClose)`
   right: 1%;
   transition: all 0.3s;
   color: #222;
-  font-size: 56px;
+  font-size: 48px;
   z-index: 1000;
 
   @media only screen and (max-width: 1025px) {
@@ -28,8 +28,8 @@ export const ModalContainer = styled.div`
   justify-content: flex-start;
 
   background: #fff;
-  height: 90vh;
-  width: 95%;
+  height: 800px;
+  width: 1200px;
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -39,14 +39,17 @@ export const ModalContainer = styled.div`
   @media only screen and (max-width: 1025px) {
     padding: 5px;
     flex-direction: column;
+    width: 95%;
+    height: 90vh;
   }
   .images-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     background: #fff;
     width: 55%;
     height: 85%;
+    padding: 0 1%;
     @media only screen and (max-width: 1025px) {
       width: 100%;
       justify-content: flex-start;
@@ -60,9 +63,9 @@ export const ModalContainer = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     background: #fff;
-    width: 45%;
-
-
+    width: 40%;
+    padding-left: 3%;
+    padding-top: 5%;
     @media only screen and (max-width: 1025px) {
       width: 100%;
       height: 85%;

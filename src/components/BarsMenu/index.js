@@ -5,7 +5,7 @@ import { CustomMenu, ListLinks, StyledClose, Acordeon,IconActive } from './style
 
 export default function BarsMenu({ menuOpened }) {
   const [activeNoivas, setActiveNoivas] = useState(false);
-
+  const [activeLastChance, setActiveLastChance] = useState(false);
   return (
     <CustomMenu>
       <StyledClose onClick={() => menuOpened(false)} />
@@ -47,6 +47,20 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/quizz" onClick={() => menuOpened(false)}>
           <h1>QUIZZ</h1>
         </Link>
+        <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
+          <div className="title">
+          <h1>LAST CHANCE</h1>
+          <IconActive rotate={activeLastChance} />
+          </div>
+          <div className="internal-items">
+            <Link to="/collection/last-chance-festa" onClick={() => menuOpened(false)}>
+              <h1>FESTA</h1>
+            </Link>
+            <Link to="/collection/last-chance-noiva" onClick={() => menuOpened(false)}>
+              <h1>NOIVA</h1>
+            </Link>
+          </div>
+        </Acordeon>
 
         <div className="appointment">
           <a href="https://sandra-ferraz.reservio.com/">MARQUE SEU HORÁRIO</a>

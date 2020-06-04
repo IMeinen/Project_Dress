@@ -64,17 +64,17 @@ export const ContainerIcon = styled.div`
 export const StyledMail = styled(GoMail)`
   width: 25px;
   height: 25px;
-  color: #e4e4e4;
+  color: #191919;
 `;
 
 export const StyledInstagram = styled(FaInstagram)`
   width: 25px;
   height: 25px;
-  color: #e4e4e4;
+  color: #191919;
 `;
 
 export const StyledPhone = styled(FiPhone)`
   width: 25px;
   height: 25px;
-  color: #e4e4e4;
+  color: #191919;
 `;

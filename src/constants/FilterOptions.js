@@ -85,7 +85,7 @@ export const FilterOptions = [
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão','outono'],
     color: 'branco',
-    structure: 'meio',
+    structure: 'estruturado',
     toppings: ['renda aplicada','bordado'],
     body: ['ampulheta','retangular','ovalar','pera']
   },
@@ -95,7 +95,7 @@ export const FilterOptions = [
     schedule: ['final da tarde', 'noite'],
     season: ['inverno','outono'],
     color: 'branco',
-    structure: 'meio',
+    structure: 'estruturado',
     toppings: ['renda aplicada','bordado'],
     body: ['ampulheta','retangular']
   },
@@ -115,7 +115,7 @@ export const FilterOptions = [
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão','inverno'],
     color: 'branco',
-    structure: 'meio',
+    structure: 'estruturado',
     toppings: ['renda aplicada','bordado'],
     body: ['ampulheta','triângulo invertido','retangular','pera']
   },
@@ -155,7 +155,7 @@ export const FilterOptions = [
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['verão'],
     color: 'off',
-    structure: 'meio',
+    structure: 'estruturado',
     toppings: ['renda aplicada','bordado'],
     body: ['ampulheta','retangular','triângulo invertido']
   },
@@ -185,7 +185,7 @@ export const FilterOptions = [
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','outono'],
     color: 'off',
-    structure: 'meio',
+    structure: 'estruturado',
     toppings: ['renda','bordado'],
     body: ['ampulheta','retangular','triângulo invertido']
   },

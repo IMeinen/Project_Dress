@@ -93,9 +93,9 @@ const Collections = [
     images: [
       { image: PR05_LIST[0] , listOfImages: PR05_LIST, width: '49.725' },
       { image: PR06_LIST[0] , listOfImages: PR06_LIST, width: '49.725' },
-      { image: PR07_LIST[0] , listOfImages: PR07_LIST, width: '49.725' },
-      { image: PR08_LIST[0] , listOfImages: PR08_LIST, width: '49.725' },
-      { image: PR09_LIST[0] , listOfImages: PR09_LIST, width: '49.725' },
+      { image: PR07_LIST[0] , listOfImages: PR07_LIST, width: '32.3' },
+      { image: PR08_LIST[0] , listOfImages: PR08_LIST, width: '32.3' },
+      { image: PR09_LIST[0] , listOfImages: PR09_LIST, width: '32.3' },
 
     ],
   },
