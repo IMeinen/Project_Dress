@@ -32,7 +32,7 @@ export const Discovery = styled.div`
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
-    color: ${props => `${props.color}`};
+    color: ${props => `${props.textColor}!important`};
   }
 `;
 
@@ -42,7 +42,7 @@ export const LinkButton = styled(Link)`
   height:46px;
   padding: 12px 35px;
   border: 1px solid;
-  border-color: ${props => `${props.color}`};
+  border-color: ${props => `${props.color}!important`};
   margin-top: 5px;
   margin-left: 5px;
 
@@ -55,7 +55,7 @@ export const LinkButton = styled(Link)`
     font-weight: 400;
     font-size: 17px;
     line-height: 17px;
-    color: ${props => `${props.color}`};
+    color: ${props => `${props.textColor}!important`};
   }
 `;
 
@@ -63,7 +63,7 @@ export const RightIndicator = styled(FiChevronRight)`
   position: absolute;
   width: 17px;
   height: 17px;
-  color: ${props => `${props.color}`};
+  color: ${props => `${props.textColor}!important`};
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
