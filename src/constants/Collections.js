@@ -78,12 +78,11 @@ import { SF1940_LIST } from '../images/LastChance/Festa/SF1940/constants';
 import { SF1941_LIST } from '../images/LastChance/Festa/SF1941/constants';
 import { SF1943_LIST } from '../images/LastChance/Festa/SF1943/constants';
 import { SF1944_LIST } from '../images/LastChance/Festa/SF1944/constants';
-import {PR01_LIST } from '../images/LastChance/Noiva/PR01/constants';
-import {PR02_LIST } from '../images/LastChance/Noiva/PR02/constants';
-import {PR03_LIST } from '../images/LastChance/Noiva/PR03/constants';
-import {PR04_LIST } from '../images/LastChance/Noiva/PR04/constants';
-import {PR10_LIST } from '../images/LastChance/Noiva/PR10/constants';
-
+import { PR01_LIST } from '../images/LastChance/Noiva/PR01/constants';
+import { PR02_LIST } from '../images/LastChance/Noiva/PR02/constants';
+import { PR03_LIST } from '../images/LastChance/Noiva/PR03/constants';
+import { PR04_LIST } from '../images/LastChance/Noiva/PR04/constants';
+import { PR10_LIST } from '../images/LastChance/Noiva/PR10/constants';
 
 const Collections = [
   {
@@ -92,24 +91,222 @@ const Collections = [
     description:
       'Leve, delicada e atemporal. Inspirada na névoa que se forma Leve, delicada e atemporal. Inspirada na névoa que se forma cultuando a beleza única de cada mulher.',
     images: [
-      { image: V04_LIST[0], listOfImages: V04_LIST, width: '' },
-      { image: V05_LIST[0], listOfImages: V05_LIST, width: '' },
-      { image: V07_LIST[0], listOfImages: V07_LIST, width: '' },
-      { image: V08_LIST[0], listOfImages: V08_LIST, width: '' },
-      { image: V09_LIST[0], listOfImages: V09_LIST, width: '' },
-      { image: V10_LIST[0], listOfImages: V10_LIST, width: '' },
-      { image: V11_LIST[0], listOfImages: V11_LIST, width: '' },
-      { image: V12_LIST[0], listOfImages: V12_LIST, width: '' },
-      { image: V13_LIST[0], listOfImages: V13_LIST, width: '' },
-      { image: V14_LIST[0], listOfImages: V14_LIST, width: '' },
-      { image: PE06_LIST[0], listOfImages: PE06_LIST, width: '' },
-      { image: PE07_LIST[0], listOfImages: PE07_LIST, width: '' },
-      { image: PE08_LIST[0], listOfImages: PE08_LIST, width: '' },
-      { image: PE09_LIST[0], listOfImages: PE09_LIST, width: '' },
-      { image: PE11_LIST[0], listOfImages: PE11_LIST, width: '' },
-      { image: PE12_LIST[0], listOfImages: PE12_LIST, width: '' },
-      { image: PR12_LIST[0], listOfImages: PR12_LIST, width: '' },
-      { image: PR13_LIST[0], listOfImages: PR13_LIST, width: '' },
+      {
+        name: '004',
+        description:
+          'Um conjunto de detalhes inconfundíveis que levam o olhar a um passeio por sua riqueza de detalhes. Construído em diversas camadas do característico tule névoa, sua renda foi recortada, aplicada e rebordada totalmente a mão, criando traçados  únicos que guiam o olhar até o charmoso ombro só do qual parte uma capa véu. Seu branco translúcido ressalta a beleza natural da mulher contemporânea.',
+        value: 'R$ 9.100,00',
+        parcelCard: 'R$ 11.375,00',
+        parcelCheck: 'R$ 9.646,00',
+        sizes: '38,36 e 40',
+        image: V04_LIST[0],
+        listOfImages: V04_LIST,
+        width: '',
+      },
+      {
+        name: '005',
+        description:
+          'A simplicidade que encanta. Limpa, aplicações de rendas ou complexos bordados dão espaço a uma modelagem muito bem trabalhada, recortes que abraça o corpo de forma confortável, mas mantém a elegância e sofisticação que toda noiva merece, suas costuras, muito bem marcadas pelo bordado em torsati delineiam o corpo em uma delicada suavidade. Uma jóia em forma de vestido.',
+        value: 'R$ 9.200,00',
+        parcelCheck: 'R$ 9.752,00',
+        parcelCard: 'R$ 11.500,00',
+        sizes: '38,36 e 40',
+        image: V05_LIST[0],
+        listOfImages: V05_LIST,
+        width: '',
+      },
+      {
+        name: '007',
+        description:
+          'Leve, confortável e coberto de detalhes. Totalmente construído em várias camadas do tule névoa, característico da coleção, possui uma grande mística associado a seu rebordado totalmente manual, trabalhado por dias para chegar a um aspecto final tão orgânico que encanta das mais simples a sofisticadas cerimônias. Sua renda recortada em traços únicos, foi aplicada de forma pensada para aspirar suavidade, com o rebordado em peças transparentes que mantém a delicadeza sem perder o brilho. Todos esses toques são completados pelo amplo decote vitoriano, que expõe o colo sem se aprofundar demais.',
+        value: 'R$ 10.000,00',
+        parcelCheck: 'R$ 10.600,00',
+        parcelCard: 'R$ 12.500,00',
+        sizes: '38,36 e 40',
+        image: V07_LIST[0],
+        listOfImages: V07_LIST,
+        width: '',
+      },
+      {
+        name: '008',
+        description:
+          'O requinte de uma silhueta mais tradicional, alia-se a versatilidade de diferentes tecidos e bordados. Uma modelagem bem estruturada, com suas costuras marcadas pelo característico bordado torsati, suas rendas recortadas, aplicadas e rebordadas a mão recebem detalhes em peças transparentes, que ressaltam o brilho sútil que encanta sem exageros.',
+        value: 'R$ 8.500,00',
+        parcelCheck: 'R$ 9.010,00',
+        parcelCard: 'R$ 10.625,00',
+        sizes: '38,36 e 40',
+        image: V08_LIST[0],
+        listOfImages: V08_LIST,
+        width: '',
+      },
+      {
+        name: '009',
+        description:
+          'Um conjunto de diversos elementos únicos tornam o leve, sem perder o encanto de um modelo princesa acinturado, uma composição do delicado tule pétit pari, que já é originalmente bordado com uma renda de algodão e nessa peça recebe uma segunda camada de aplicações específicas de renda chantilly. Seu decote em V, destaca uma sensualidade velada pela renda que passa pelo processo de rebordado totalmente a mão, com peças de porcelana e cristais. O toque final, que destaca com originalidade é a capa véu, que integra a peça com a mesma facilidade que pode ser removida.',
+        value: 'R$ 8.900,00',
+        parcelCheck: 'R$ 9.434,00',
+        parcelCard: 'R$ 12.125,00',
+        sizes: '38,36 e 40',
+        image: V09_LIST[0],
+        listOfImages: V09_LIST,
+        width: '',
+      },
+      {
+        name: '010',
+        description:
+          'Um acontecimento em forma de vestido. Uma peça decididamente luxuosa, que destaca a silhueta mais justa ao corpo sem de forma alguma perder o conforto e mobilidade. Em um branco translúcido, toda a sua extensão, assim como as mangas são ornamentadas por rendas recortadas e posicionadas manualmente, para então passarem pelo delicado processo de rebordado com peças transparentes. Uma proposta que eleva a riqueza de detalhes a outro cenário, único encantador.',
+        value: 'R$ 10.000,00',
+        parcelCheck: 'R$ 10.600,00',
+        parcelCard: 'R$ 12.500,00',
+        sizes: '38,36 e 40',
+        image: V10_LIST[0],
+        listOfImages: V10_LIST,
+        width: '',
+      },
+      {
+        name: '011',
+        description:
+          'A complexidade de uma peça que consegue encantar em suas mais diversas características sem correr o risco do exagero. A sobreposição de um vestido de renda chantilly, por uma peça tão delicada e modelada quanto se pode imaginar, suas costuras marcadas pelo delicado bordado em torsati, realçam a beleza de uma forma velada, sensual sem perder a delicadeza matrimonial.',
+        value: 'R$ 10.000,00',
+        parcelCheck: 'R$ 10.600,00',
+        parcelCard: 'R$ 12.500,00',
+        sizes: '38,36 e 40',
+        image: V11_LIST[0],
+        listOfImages: V11_LIST,
+        width: '',
+      },
+      {
+        name: '012',
+        description:
+          'O encontro de um tradicional vestido de silhueta princesa, aliado a suavidade e delicadeza da névoa, uma composição do delicado tule pétit pari, que já é originalmente bordado com uma renda de algodão e nessa peça recebe uma segunda camada de aplicações de renda chantilly em seu corpete, a transparência velada revela um leve toque de sensualidade. Sua modelagem bem trabalhada entrega um tronco mais firme, seguido de uma saia super leve e tem suas costuras ornamentadas pelo delicado bordado em torsati, que une peças em branco e prata, fazendo todos os contornos superiores, inclusive, de sua manguinha suavemente transparente.',
+        value: 'R$ 8.900,00',
+        parcelCheck: 'R$ 9.434,00',
+        parcelCard: 'R$ 12.125,00',
+        sizes: '38,36 e 40',
+        image: V12_LIST[0],
+        listOfImages: V12_LIST,
+        width: '',
+      },
+      {
+        name: '013',
+        description:
+          'Poeticamente trabalhado para ser um diamante dos vestidos. Sua modelagem repleta de uma complexidade sem igual, une conforto e sofisticação em uma peça única, como cada noiva tem que ser. Suas costuras são marcadas por delicados bordados em torsati com peças transparentes, que emitem o brilho na medida para uma cerimônia que começa durante o dia e se estenda noite a dentro. Suas costas abertas em U, mostram uma sensualidade sútil, sem perder o ar matrimonial.',
+        value: 'R$ 10.000,00',
+        parcelCheck: 'R$ 10.600,00',
+        parcelCard: 'R$ 12.500,00',
+        sizes: '38,36 e 40',
+        image: V13_LIST[0],
+        listOfImages: V13_LIST,
+        width: '',
+      },
+      {
+        name: '014',
+        description:
+          'Noivas modernas e versáteis que não abrem mão da delicadeza. Um modelo mais justo ao corpo, que mistura o tule pétit pari, que já é originalmente rendado em algodão e nessa peça recebeu uma nova aplicação em pontos específicos, com a malha plume, que adere de forma suave e delicada ao corpo, delineando os contornos do tronco feminino e mantendo uma transparência cheia de sutileza. Suas rendas possuem um rebordado manual, que também se mostra presente na gola do vestido. Além de toda essa riqueza em detalhes, seu fechamento final se dá por uma sobreposição de saia no tradicional tule névoa, peça chave da coleção, por fim, agregando um poucos tradição a uma peça tão moderna, um abotoamento de pérolas que ornamentam toda a extensão das costas.',
+        value: 'R$ 8.500,00',
+        parcelCheck: 'R$ 9.010,00',
+        parcelCard: 'R$ 10.625,00',
+        sizes: '38,36 e 40',
+        image: V14_LIST[0],
+        listOfImages: V14_LIST,
+        width: '',
+      },
+      {
+        name: 'PE06',
+        description:
+          'Um conjunto de diferentes tules, saias e modelagens. Seu decote mais quadrado, possui um recorte com uma leve transparência, sensual sem perder ar velado da noiva. A saia mais justa, no tule point spirit, é sobreposta por mais duas camadas do tecido, um tule francês para agregar estrutura, e outro tule com uma sútil renda floral, que foi rebordada em pontos específicos, acrescentando ainda mais detalhes a essa peça. Sua sutileza e conforto é marcada por traços como a modelagem muito bem trabalhada, com acabamentos em bordados transparentes que acompanham dos seus recortes até às alça.',
+        value: 'R$ 7.000,00',
+        parcelCheck: 'R$ 7.420,00',
+        parcelCard: 'R$ 8.750,00',
+        sizes: '38,36 e 40',
+        image: PE06_LIST[0],
+        listOfImages: PE06_LIST,
+        width: '',
+      },
+      {
+        name: 'PE07',
+        description:
+          'Uma peça que destaca-se na simplicidade. Limpa, sem aplicações de rendas ou complexos bordados, uma modelagem muito bem trabalhada, recortes exclusivamente na vertical proporcionando um alongamento que abraça o corpo de forma confortável, mas mantém a elegância e sofisticação que toda noiva merece, suas costuras, muito bem marcadas pelo bordado em torsati delineiam o corpo em uma delicada suavidade.',
+        value: 'R$ 7.000,00',
+        parcelCheck: 'R$ 7.420,00',
+        parcelCard: 'R$ 8.750,00',
+        sizes: '38,36 e 40',
+        image: PE07_LIST[0],
+        listOfImages: PE07_LIST,
+        width: '',
+      },
+      {
+        name: 'PE08',
+        description:
+          'Uma presença ousada e sensual, que de forma alguma abre mão do conforto. Uma peça que exemplifica de forma perfeita a complexidade de uma modelagem que mistura o conforto com a sensualidade, uma riqueza de detalhes sem igual. Seus contornos são todos marcados pelos bordado em torsati e mesmo sendo uma peça mais justa ao corpo, seus tecidos ricos em elasticidade, proporcionam o conforto ideal para uma noiva que busca aproveitar cada momento de sua festa.',
+        value: 'R$ 7.000,00',
+        parcelCheck: 'R$ 7.420,00',
+        parcelCard: 'R$ 8.750,00',
+        sizes: '38,36 e 40',
+        image: PE08_LIST[0],
+        listOfImages: PE08_LIST,
+        width: '',
+      },
+      {
+        name: 'PE09',
+        description:
+          'Uma alquimia de diferentes tecidos que geram a personalidade única dessa peça, a sobreposição entre o point spirit, que simula a textura de pétit poas com a singularidade do tule com flores rebordadas em áreas estratégicas para ressaltar a suavidade e delicadeza, mangas compridas e uma gola mais alta, dão espaço a um decote mais aberto velado pelo tule.',
+        value: 'R$ 7.000,00',
+        parcelCheck: 'R$ 7.420,00',
+        parcelCard: 'R$ 8.750,00',
+        sizes: '38,36 e 40',
+        image: PE09_LIST[0],
+        listOfImages: PE09_LIST,
+        width: '',
+      },
+      {
+        name: 'PE11',
+        description:
+          'Os clássicos também tem sua vez. Uma silhueta sereia, marcada pela elegância sem perder o conforto. Uma peça inteiramente coberta de rendas aplicadas manualmente com bordados em regiões muito bem pensadas, dando destaque a peças brancas, todos os seus acabamentos foram trabalhados para encantar, como as rendas de deliciadamente delineiam o decote e suas alças mais grossas, privilegiando o conforto da noiva, sem perder em sofisticação.',
+        value: 'R$ 7.000,00',
+        parcelCheck: 'R$ 7.420,00',
+        parcelCard: 'R$ 8.750,00',
+        sizes: '38,36 e 40',
+        image: PE11_LIST[0],
+        listOfImages: PE11_LIST,
+        width: '',
+      },
+      {
+        name: 'PE12',
+        description:
+          'Suave, feminino e etéreo, uma peça marcada pelo tule névoa, característica chave da coleção, mesmo sem bordados e brilho, de forma alguma perde em sofisticação, ela se encontra nos detalhes. Um vestido curto, totalmente de renda chantilly, com forro em crepe de seda é sobreposto por várias camadas de tule que elevam a suavidade da noiva a um novo patamar, seu decote levemente transparente segue velado pelos franzidos do tule e para finalizar de forma graciosa, sua capa véu que sai dos ombros e se estende longa fazendo a vez que uma grandiosa cauda para esse vestido que transborda delicadeza.',
+        value: 'R$ 7.000,00',
+        parcelCheck: 'R$ 7.420,00',
+        parcelCard: 'R$ 8.750,00',
+        sizes: '38,36 e 40',
+        image: PE12_LIST[0],
+        listOfImages: PE12_LIST,
+        width: '',
+      },
+      {
+        name: 'PR12',
+        description:
+          'Os clássicos também tem sua vez. Uma silhueta sereia, marcada pela elegância sem perder o conforto. Uma peça inteiramente coberta de rendas aplicadas manualmente com bordados em regiões muito bem pensadas, dando destaque a peças brancas, todos os seus acabamentos foram trabalhados para encantar, como as rendas de deliciadamente delineiam o decote e suas alças mais grossas, privilegiando o conforto da noiva, sem perder em sofisticação.',
+        value: 'R$ 5.000,00',
+        parcelCheck: 'R$ 5.300,00',
+        parcelCard: 'R$ 6.250,00',
+        sizes: '38,40 e 42',
+        image: PR12_LIST[0],
+        listOfImages: PR12_LIST,
+        width: '',
+      },
+      {
+        name: 'PR13',
+        description:
+          'Totalmente baseado na força e sutileza do tule. Uma peça sem nenhuma renda ou bordado, uma proposta mais descontraída e fashionista, que não perde de forma alguma em sua delicadeza ímpar. Suas diversas camadas de tule encontram o equilíbrio perfeito entre o demais e o de menos, sua suavidade indescritível com toques de modernidade, como seu corte em diagonal e aplicação de franzidos de tule que ainda são compostos por sua silhueta princesa.',
+        value: 'R$ 4.500,00',
+        parcelCheck: 'R$ 4.770,00',
+        parcelCard: 'R$ 5.625,00',
+        sizes: '38,36 e 40',
+        image: PR13_LIST[0],
+        listOfImages: PR13_LIST,
+        width: '',
+      },
     ],
   },
   {
@@ -117,16 +314,126 @@ const Collections = [
     title: '// ZODÍACO',
     description: 'lOREM IP',
     images: [
-      { image: AQUA_TUMB, listOfImages: AQUA_LIST, width: '49.725' },
-      { image: CANC_TUMB, listOfImages: CANC_LIST, width: '49.725' },
-      { image: CAPR_TUMB, listOfImages: CAPR_LIST, width: '49.725' },
-      { image: ESCO_TUMB, listOfImages: ESCO_LIST, width: '49.725' },
-      { image: GEME_TUMB, listOfImages: GEME_LIST, width: '49.725' },
-      { image: LEAO_TUMB, listOfImages: LEAO_LIST, width: '49.725' },
-      { image: LIBR_TUMB, listOfImages: LIBR_LIST, width: '49.725' },
-      { image: SAGI_TUMB, listOfImages: SAGI_LIST, width: '49.725' },
-      { image: TOUR_TUMB, listOfImages: TOUR_LIST, width: '49.725' },
-      { image: VIRG_TUMB, listOfImages: VIRG_LIST, width: '49.725' },
+      {
+        name: 'Aquário',
+        description:
+          'Tipicamente aquariano, um vestido super descontraído, divertido e jovial. A sobreposição toda de tule com o vestido curtinho. Confortável sem perder a sofisticação de uma peça toda trabalhada em aplicações de rendas e rebordada em uma mistura de peças brancas e pratas. Uma série de detalhes que encantam, tão únicos quanto as aquarianas.',
+        value: 'R$ 6.100,00',
+        parcelCard: 'R$ 7.625,00',
+        parcelCheck: 'R$ 6.466,00',
+        sizes: '36,38 e 40',
+        image: AQUA_TUMB,
+        listOfImages: AQUA_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Câncer',
+        description:
+          'Suavemente off white, Câncer é uma peça definitivamente romântica, porém se destaca pela fluidez, seu quadril é levemente marcado, sem abrir mão do conforto. Seu corpo é totalmente no tule névoa, suave e opaco, com rendas que foram recortadas, aplicadas e rebordadas com um mix de peças em pérola e prata, em um processo totalmente manual. Seu decote amplo para as laterais valoriza o colo sem mostrar demais. Uma sútil homenagem às cancerianas, mulheres acolhedoras, leais e seguras.',
+        value: 'R$ 9.100,00',
+        parcelCard: 'R$ 11.375,00',
+        parcelCheck: 'R$ 9.646,00',
+        sizes: '38,40 e 42',
+        image: CANC_TUMB,
+        listOfImages: CANC_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Capricórnio',
+        description:
+          'Buscando abraçar a todas as mulheres em seus diversos estilos e festas, Capricórnio traz uma proposta inovadora, descolada e jovial, redescobrindo o vestido de noiva em suas diversas facetas. O macacão confortável e luxuoso, é totalmente coberto por uma aplicação manual de rendas, rebordadas com delicadas pérolas que trazem um toque de romantismo e tradição a um vestido tão  contemporânea, confiante e objetivo, como as próprias capricornianas.',
+        value: 'R$ 6.300,00',
+        parcelCard: 'R$ 7.875,00',
+        parcelCheck: 'R$ 6.678,00',
+        sizes: '36,38 e 40',
+        image: CAPR_TUMB,
+        listOfImages: CAPR_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Escorpião',
+        description:
+          'Assim como o próprio signo, é um vestido forte, de personalidade e contornos bem marcados. A tradicional silhueta sereia, alia-se a uma complexa modelagem e tecidos que fogem do convencional. Suas costuras são marcadas pelo icônico bordado em torsati, diversificado por peças brancas e pratas, trazendo um brilho sútil para um vestido tão contemporânea. Para finalizar com a sutileza característica, a capa véu, que saindo dos ombros desliza fazendo a vez de uma calda mais longa.',
+        value: 'R$ 9.900,00',
+        parcelCard: 'R$ 12.375,00',
+        parcelCheck: 'R$ 10.494,00',
+        sizes: '35,38 e 40',
+        image: ESCO_TUMB,
+        listOfImages: ESCO_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Gêmeos',
+        description:
+          'Buscando incluir vários tipos de noivas, em seus vários tipos de casamentos, gêmeos contempla um macaquinho, todo trabalhado na base de um tule com rendados geométricos, um recorte vazado em suas laterais e sua modelagem cuidadosamente marcada pelo bordado em torsati, com peças brancas e pratas. Em sobreposição, sua saia no mesmo tule, com aplicação manual de rendas delicadamente rebordadadas, assim como toda a sua borda segue o mesmo padrão de bordados torsati. Para finalizar todo o charme dessa peça super versátil, os bolsos laterais que suavemente se disfarçam no tule sem perder a praticidade e delicadeza.',
+        value: 'R$ 6.200,00',
+        parcelCard: 'R$ 7.750,00',
+        parcelCheck: 'R$ 6.572,00',
+        sizes: '34,36 e 38',
+        image: GEME_TUMB,
+        listOfImages: GEME_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Leão',
+        description:
+          'Para uma noiva descolada e contemporânea. Alia a silhueta mais justa ao corpo, com modelagens e recortes únicos, mas com o conforto que é indispensável para se aproveitar uma boa festa. A perfeita junção entre a sensualidade e à contemporaneidade, seus recortes bem marcados com o rebordado em torsati destacam as formas sem perder a delicadeza.',
+        value: 'R$ 9.900,00',
+        parcelCard: 'R$ 12.200,00',
+        parcelCheck: 'R$ 10.494,00',
+        sizes: '36,38 e 42',
+        image: LEAO_TUMB,
+        listOfImages: LEAO_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Libra',
+        description:
+          'Equilibrado, com a mesma graça das librianas. Seu tronco totalmente rebordado com pérolas, contrasta com a saia lisa, elegante e confortável, adornado com detalhes do mais fino gazar de seda, que embelezam a sua fenda lateral, dando um toque de mágica ao ombro único do qual liberta-se a capa de seda, a simplicidade que contrasta-se pelo equilíbrio dos detalhes, assim como as mulheres de libra.',
+        value: 'R$ 7.400,00',
+        parcelCard: 'R$ 9.250,00',
+        parcelCheck: 'R$ 7.844,00',
+        sizes: '36,38 e 40',
+        image: LIBR_TUMB,
+        listOfImages: LIBR_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Sagitário',
+        description:
+          'A interseção perfeita entre a noiva contemporânea e romântica, com sua dose de sensualidade agregada à seu decote das costas, que exibe de forma confortável e segura a sensualidade da mulher. Totalmente em tule, possui uma aplicação de renda manual, rebordada e trabalhada para revelar formas únicas que preenchem suas mangas longas, o tronco com detalhes de transparência e organicamente deslizam pelo vestido, levando esse delicado toque de romance e jovialidade a noiva contemporânea.',
+        value: 'R$ 6.900,00',
+        parcelCard: 'R$ 8.625,00',
+        parcelCheck: 'R$ 7.314,00',
+        sizes: '36,38 e 40',
+        image: SAGI_TUMB,
+        listOfImages: SAGI_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Touro',
+        description:
+          'Seguindo as características taurinas tão marcantes quanto a segurança, confiabilidade e classe, Touro se revela em uma noiva contemporânea com que ainda mantém um viés pelas tradições, como em seu colo, com rendas aplicadas e rebordado com pérolas e cristais Swarovski engrampados. Sútil e harmonioso, suas costas se abrem em um decote ornamentado pelas rendas de arabescos e como se não fossem detalhes o suficiente, a parte da frente de sua barra possui um trabalho impecável de aplicação de rendas e bordados. Centrado e equilibrado, assim como as mulheres de touro.',
+        value: 'R$ 7.000,00',
+        parcelCard: 'R$ 8.750,00',
+        parcelCheck: 'R$ 7.420,00',
+        sizes: '36,38 e 40',
+        image: TOUR_TUMB,
+        listOfImages: TOUR_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'Virgem',
+        description:
+          'Traduzindo a essência virginiana em forma de vestido. Suas linhas geométricas, modelagem objetiva sem perder harmonia e graciosidade. Aplicações de rendas e rebordados que acompanham de forma orgânica os movimentos e traços da peça, rodeando seu entorno, suas mangas longas, com delicados acabamentos de torsati nos pulsos, torsati esse que se repete por suas costuras, mascando com brilho sútil seus detalhes de modelagem.',
+        value: 'R$ 6.500,00',
+        parcelCard: 'R$ 8.125,00',
+        parcelCheck: 'R$ 6.890,00',
+        sizes: '36,38 e 40',
+        image: VIRG_TUMB,
+        listOfImages: VIRG_LIST,
+        width: '49.725',
+      },
     ],
   },
   {
@@ -134,11 +441,61 @@ const Collections = [
     title: '// NOIVADO',
     description: 'lOREM IPSUM',
     images: [
-      { image: PR05_LIST[0], listOfImages: PR05_LIST, width: '49.725' },
-      { image: PR06_LIST[0], listOfImages: PR06_LIST, width: '49.725' },
-      { image: PR07_LIST[0], listOfImages: PR07_LIST, width: '32.3' },
-      { image: PR08_LIST[0], listOfImages: PR08_LIST, width: '32.3' },
-      { image: PR09_LIST[0], listOfImages: PR09_LIST, width: '32.3' },
+      {
+        name: 'PR05',
+        description:
+          'Jovial, descomplicado e gracioso, em um tom de nude, com contrastes em rendas off white, sua cava americana valoriza os ombros de forma encantadora, deixando as costas livres. Sua saia midi, levemente mullet, leva movimento para uma peça versátil e igualmente delicada.',
+        value: 'R$ 950,00',
+        parcelCard: 'R$ 1.187,00',
+        sizes: '38,36 e 40',
+        image: PR05_LIST[0],
+        listOfImages: PR05_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'PR06',
+        description:
+          'Cuidadosamente pensado para encantar. Suas mangas três quartos são de uma delicadeza aparte, o decote fechado, revela um charme velado que constra em seu cumprimento e suaves transparências. Bordado com pérolas sutilmente pensadas para criar uma textura a mais a em um tecido que traz uma jovialidade por suas formas mais geométricas.',
+        value: 'R$ 850,00',
+        parcelCard: 'R$ 1.062,00',
+        sizes: '38,36 e 40',
+        image: PR06_LIST[0],
+        listOfImages: PR06_LIST,
+        width: '49.725',
+      },
+      {
+        name: 'PR07',
+        description:
+          'A união perfeita entre o descolado e o delicado, sua estrutura totalmente coberta por rendas reaplicadas de forma manual, recebe um toque final pelos rebordados em peças brancas, agregando uma textura discreta que contra determinadas luzes, revela-se o brilho sútil e encantar, para arrematar com chave de ouro suas mangas no característico tule névoa completam com charme essa peça inesquecível.',
+        value: 'R$ 1200,00',
+        parcelCard: 'R$ 1.500,00',
+        sizes: '38,36 e 40',
+        image: PR07_LIST[0],
+        listOfImages: PR07_LIST,
+        width: '32.3',
+      },
+      {
+        name: 'PR08',
+        description:
+          'Versátil sem perder seu ar de romantismo. Uma peça limpa quando se fala em bordados, mas que de forma alguma perde para seus detalhes encantadores. Totalmente coberta por rendas recordadas e aplicadas de forma manual, sua bainha de um comprimento midi, foi cuidadosamente ornamentada. Sua saia em corte poncho, recebe o arremate final de bolsos que trazem praticidade a uma peça tão matrimonial. Sem falar na opção de remover suas alças, tornando-o um belíssimo tomara que caia.',
+        value: 'R$ 1500,00',
+        parcelCard: 'R$ 1.875,00',
+        sizes: '38,36 e 40',
+        image: PR08_LIST[0],
+        listOfImages: PR08_LIST,
+        width: '32.3',
+      },
+      {
+        name: 'PR09',
+        description:
+          'Moderno e delicado, em um branco translúcido e inteiramente criado com diferentes texturas, mescla a leveza do característico tule névoa, com os encantadores detalhes do point spirit, que embelezam o colo velado pelo tecido. Sua lateral distribui de forma orgânica as rendas recortadas, aplicadas e rebordadas com peças transparentes, iluminando o vestido de forma tão sutil.',
+        value: 'R$ 1700,00',
+        parcelCard: 'R$ 2.125,00',
+        sizes: '38,36 e 40',
+        image: PR09_LIST[0],
+        listOfImages: PR09_LIST,
+        width: '32.3',
+      },
     ],
   },
   {
@@ -190,13 +547,13 @@ const Collections = [
     title: '// NOIVA',
     description: 'lOREM IPSUM',
     images: [
-      { image: PR01_LIST[0], listOfImages: PR01_LIST , width: '' },
-      { image: PR02_LIST[0], listOfImages: PR02_LIST , width: '' },
-      { image: PR03_LIST[0], listOfImages: PR03_LIST , width: '' },
-      { image: PR04_LIST[0], listOfImages: PR04_LIST , width: '' },
-      { image: PR10_LIST[0], listOfImages: PR10_LIST , width: '' },
+      { image: PR01_LIST[0], listOfImages: PR01_LIST, width: '' },
+      { image: PR02_LIST[0], listOfImages: PR02_LIST, width: '' },
+      { image: PR03_LIST[0], listOfImages: PR03_LIST, width: '' },
+      { image: PR04_LIST[0], listOfImages: PR04_LIST, width: '' },
+      { image: PR10_LIST[0], listOfImages: PR10_LIST, width: '' },
     ],
-  }
+  },
 ];
 
 export default Collections;

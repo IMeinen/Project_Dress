@@ -11,13 +11,28 @@ function App() {
   const [currentImage, setCurrentImage] = useState(0);
   const [currentList, setCurrentList] = useState([]);
   const [currentStart, setCurrentStart] = useState(0);
-
+  const [currentName, setCurrentName] = useState('');
+  const [currentDesc, setCurrentDesc] = useState('');
+  const [currentValue, setCurrentValue] = useState('');
   const buttonContext = useMemo(
     () => ({ showRightButton, setShowRightButton }),
     [showRightButton, setShowRightButton]
   );
   const imageContext = useMemo(
-    () => ({ currentImage, setCurrentImage, currentList, setCurrentList,currentStart, setCurrentStart }),
+    () => ({
+      currentImage,
+      setCurrentImage,
+      currentList,
+      setCurrentList,
+      currentStart,
+      setCurrentStart,
+      currentName,
+      setCurrentName,
+      currentDesc,
+      setCurrentDesc,
+      currentValue,
+      setCurrentValue,
+    }),
     [
       currentImage,
       setCurrentImage,
@@ -25,6 +40,12 @@ function App() {
       setCurrentList,
       currentStart,
       setCurrentStart,
+      currentDesc,
+      setCurrentDesc,
+      currentName,
+      setCurrentName,
+      currentValue,
+      setCurrentValue,
     ]
   );
   return (
