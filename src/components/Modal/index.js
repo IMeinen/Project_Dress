@@ -4,11 +4,7 @@ import { StyledClose, ModalContainer } from './styles';
 import MobilePhotoScroller from '../MobilePhotoScroller';
 import PhotoScroller from '../PhotoScroller';
 import ImageChanger from '../ImageChanger';
-import IMG1 from '../../images/teste_mq.jpg';
-import IMG2 from '../../images/img2.jpeg';
-import IMG3 from '../../images/img3.jpeg';
-import IMG4 from '../../images/img4.jpeg';
-import IMG5 from '../../images/img5.jpeg';
+
 import Button from '../Button';
 
 import { ImagesContext } from '../../contexts/imagesContext';

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
-  ExampleIcon,
+  CheckIcon,
   Container,
   Item,
   Options,
@@ -62,9 +62,15 @@ export default function CustomMade() {
                           })
                         }
                       >
-                        <ExampleIcon
+                        <CheckIcon
                           active={currentAnswers[item.key] === res.value}
                         />
+                        <img
+                          src={res.icon}
+                          alt="icon"
+                          style={{ width: '40px', height: '40px' }}
+                        />
+
                         <span>{res.description}</span>
                       </ContainerIcon>
                     );
@@ -76,12 +82,14 @@ export default function CustomMade() {
 
         {filteredAns && (
           <>
-          <h2 style={{marginTop: '20px', marginBottom: '12px'}}>Sugerimos estes vestidos: </h2>
-          <ul>
-            {filteredAns.map((ans) => {
-              return <li>{ans.name}</li>;
-            })}
-          </ul>
+            <h2 style={{ marginTop: '20px', marginBottom: '12px' }}>
+              Sugerimos estes vestidos:{' '}
+            </h2>
+            <ul>
+              {filteredAns.map((ans) => {
+                return <li>{ans.name}</li>;
+              })}
+            </ul>
           </>
         )}
         <Button

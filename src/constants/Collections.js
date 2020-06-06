@@ -439,7 +439,7 @@ const Collections = [
   {
     link: 'noivado',
     title: '// NOIVADO',
-    description: 'lOREM IPSUM',
+    description: 'Levando a aura velada e matrimonial a momentos e cerimônias mais descontraídos.',
     images: [
       {
         name: 'PR05',

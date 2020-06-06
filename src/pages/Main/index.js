@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-import Vestido1 from '../../images/vestido1.jpg';
+
 import { Content, DescriptionContent } from './styles';
 import Modal from '../../components/Modal';
 import Overlay from '../../components/Overlay';

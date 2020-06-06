@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {FaEllo} from 'react-icons/fa';
+import {AiOutlineCheck} from 'react-icons/ai';
 
 export const Container = styled.div`
   width: 100%;
@@ -53,14 +53,18 @@ export const Options = styled.div`
   justify-content: space-evenly;
 `;
 
-export const ExampleIcon = styled(FaEllo)`
-  width: 40px;
-  height: 40px;
-  color: ${props => props.active ? '#191919' : '#aaaaaa'};
+export const CheckIcon = styled(AiOutlineCheck)`
+  width: 20px;
+  height: 20px;
+  color: #188500;
+  display: ${props => props.active ? 'inline' : 'none'};
+  position: absolute;
+  top: 2%;
+  right: 5%;
 `;
 
 export const ContainerIcon = styled.div`
-
+  position: relative;
   width : 64px;
 
   display: flex;
