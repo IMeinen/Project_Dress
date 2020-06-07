@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from "react-player"
 
 import Footer from '../../components/Footer';
 import FaqItem from '../../components/FaqItem';
@@ -22,7 +23,7 @@ export default function Faq() {
             intimista.
           </p>
           </div>
-          <StyledVideo
+          {/* <StyledVideo
             key="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
             autoPlay
             controls
@@ -32,7 +33,13 @@ export default function Faq() {
               type="video/mp4"
             />
             Your browser does not support the video tag.
-          </StyledVideo>
+          </StyledVideo> */}
+          <ReactPlayer
+        url="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
+        width="320px"
+        height="240px"
+        playing
+      />
         </div>
         {FAQ.map((item, index) => {
           return <FaqItem question={item.question} answer={item.answer} />;
