@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-import { Container, Discovery, LinkButton, RightIndicator } from './styles';
+import { Container, Discovery, LinkButton, RightIndicator,OnlifeContainer } from './styles';
 
+import Onlife from '../../images/Carrossel/Onlife.jpg';
+import Onlife_logo from '../../images/Carrossel/Onlife_logo.png';
 import Dress1 from '../../images/Carrossel/NEVOA.jpg';
 import Dress2 from '../../images/Carrossel/NOIVADO.jpg';
 import Dress3 from '../../images/Carrossel/SAGITARIO.jpg';
@@ -9,6 +11,15 @@ import Dress4 from '../../images/Carrossel/LAST_CHANCE_FESTA.jpg';
 import Dress5 from '../../images/Carrossel/LAST_CHANCE_NOIVA.jpg';
 
 const dresses = [
+  {
+    photo: Onlife,
+    align: '70%',
+    color: '#191919',
+    textColor: '#191919',
+    collection: '',
+    link: '/about',
+    Onlife: true
+  },
   {
     photo: Dress1,
     align: 'center',
@@ -59,7 +70,7 @@ export default function SlideShow() {
       } else {
         setCounter(counter + 1);
       }
-    }, 10000);
+    }, 8000);
   }, [currentImage]);
 
   useEffect(() => {
@@ -68,6 +79,11 @@ export default function SlideShow() {
 
   return (
     <Container BGImage={currentImage} align={dresses[counter].align}>
+      {dresses[counter].Onlife && <OnlifeContainer>
+
+        <img src={Onlife_logo} alt="onLife" />
+        <p>// Com a praticidade do pronta entrega e a exclusividade do sob-medida.</p>
+        </OnlifeContainer>}
       <Discovery
         color={dresses[counter].color}
         textColor={dresses[counter].textColor}
@@ -78,7 +94,7 @@ export default function SlideShow() {
           color={dresses[counter].color}
           textColor={dresses[counter].textColor}
         >
-          <p>DESCUBRA </p>
+          <p>{dresses[counter].Onlife ? 'SAIBA MAIS'  : 'DESCUBRA' }</p>
           <RightIndicator color={dresses[counter].color} />
         </LinkButton>
       </Discovery>

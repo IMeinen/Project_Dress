@@ -68,3 +68,30 @@ export const RightIndicator = styled(FiChevronRight)`
   top: 50%;
   transform: translateY(-50%);
 `;
+
+export const OnlifeContainer = styled.div`
+  width: 200px;
+  height: 200px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate( -50%,-50% );
+  text-align: center;
+  img{
+    max-width: 100%;
+  }
+
+  p {
+    position: absolute;
+    width: 100%;
+  top: 90%;
+  left: 50%;
+  transform: translate( -50%,-50% );
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+  }
+`;
