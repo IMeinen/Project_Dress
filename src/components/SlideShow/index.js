@@ -88,7 +88,7 @@ export default function SlideShow() {
       } else {
         setCounter(counter + 1);
       }
-    }, 2000);
+    }, 8000);
   }, [currentImage]);
 
   useEffect(() => {
