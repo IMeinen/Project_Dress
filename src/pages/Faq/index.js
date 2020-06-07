@@ -23,13 +23,12 @@ export default function Faq() {
           </p>
           </div>
           <StyledVideo
-            width="300px"
-            key={Video}
+            key="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
             autoPlay
             controls
           >
             <source
-              src={Video}
+              src="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
               type="video/mp4"
             />
             Your browser does not support the video tag.
