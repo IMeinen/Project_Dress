@@ -8,18 +8,19 @@ export default function Button({
   secondary,
   clickEvent,
   className,
-  style
+  style,
+  ...props
 }) {
   if (primary) {
     return (
-      <ButtonPrimary className={className} onClick={clickEvent} style={style}>
+      <ButtonPrimary className={className} onClick={clickEvent} style={style} {...props} >
         <span>{text}</span>
       </ButtonPrimary>
     );
   }
   if (secondary) {
     return (
-      <ButtonSecondary className={className} onClick={clickEvent} style={style}>
+      <ButtonSecondary className={className} onClick={clickEvent} style={style} {...props}>
         {text}
       </ButtonSecondary>
     );

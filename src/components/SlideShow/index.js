@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import {
   Container,
@@ -7,7 +7,7 @@ import {
   RightIndicator,
   OnlifeContainer,
 } from './styles';
-
+import {ButtonContext} from '../../contexts/buttonContext';
 import Onlife from '../../images/Carrossel/Onlife.jpg';
 import OnlifeLogo from '../../images/Carrossel/Onlife_logo.png';
 import BlurNevoa from '../../images/Carrossel/NEVOA_BLUR.jpg';
@@ -17,7 +17,7 @@ import Dress3 from '../../images/Carrossel/SAGITARIO.jpg';
 import Dress4 from '../../images/Carrossel/LAST_CHANCE_FESTA.jpg';
 import Dress5 from '../../images/Carrossel/LAST_CHANCE_NOIVA.jpg';
 
-const dresses = [
+const infos = [
   {
     photo: Onlife,
     align: '70%',
@@ -37,7 +37,10 @@ const dresses = [
     link: '/quizz',
     isBlur: true,
 
-  },
+  }
+]
+const collections = [
+
   {
     photo: Dress1,
     align: '70%',
@@ -78,9 +81,18 @@ const dresses = [
   },
 ];
 export default function SlideShow() {
-  const [currentImage, setCurrentImage] = useState(dresses[0].photo);
-  const [counter, setCounter] = useState(0);
 
+  const [counter, setCounter] = useState(0);
+  const {currentSlide,setCurrentSlide} = useContext(ButtonContext);
+  const [dresses,setDresses] = useState([...infos]);
+  const [currentImage, setCurrentImage] = useState(dresses[0].photo);
+  useEffect(() => {
+    if(currentSlide === 'infos'){
+      setDresses([...infos]);
+    }else{
+      setDresses([...collections]);
+    }
+  },[currentSlide]);
   useEffect(() => {
     setTimeout(() => {
       if (counter === dresses.length - 1) {

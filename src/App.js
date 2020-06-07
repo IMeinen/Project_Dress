@@ -8,6 +8,7 @@ import { ImagesContext } from './contexts/imagesContext';
 
 function App() {
   const [showRightButton, setShowRightButton] = useState(true);
+  const [currentSlide,setCurrentSlide] = useState('infos');
   const [currentImage, setCurrentImage] = useState(0);
   const [currentList, setCurrentList] = useState([]);
   const [currentStart, setCurrentStart] = useState(0);
@@ -15,8 +16,8 @@ function App() {
   const [currentDesc, setCurrentDesc] = useState('');
   const [currentValue, setCurrentValue] = useState('');
   const buttonContext = useMemo(
-    () => ({ showRightButton, setShowRightButton }),
-    [showRightButton, setShowRightButton]
+    () => ({ showRightButton, setShowRightButton,currentSlide,setCurrentSlide }),
+    [showRightButton, setShowRightButton,currentSlide,setCurrentSlide]
   );
   const imageContext = useMemo(
     () => ({

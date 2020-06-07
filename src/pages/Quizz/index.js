@@ -19,6 +19,7 @@ import { filterData, checkData } from '../../utils/filterData';
 import { FindDressesByName } from '../../utils/FindItemInCollection';
 import { OPTIONS } from './constants';
 import { ImagesContext } from '../../contexts/imagesContext';
+import { ButtonContext } from '../../contexts/buttonContext';
 
 export default function CustomMade() {
   const [currentAnswers, setCurrentAnswers] = useState({
@@ -34,6 +35,8 @@ export default function CustomMade() {
   const { currentName, setCurrentName } = useContext(ImagesContext);
   const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
+  const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
+
   const [filteredAns, setFilteredAns] = useState();
   const [dressesSugestion, setDressesSugestion] = useState();
   const [modalOpened, setModalOpened] = useState(false);
@@ -42,17 +45,22 @@ export default function CustomMade() {
 
     if (filteredAns) {
       setDressesSugestion(FindDressesByName(filteredAns));
-      console.log(dressesSugestion)
+
     }
   }, [filteredAns]);
-  console.log(filteredAns)
+
   const HandleSend = () => {
     if (checkData(currentAnswers)) {
       setFilteredAns(filterData(currentAnswers));
     } else {
-      toast.error('É necessário preencher todos os campos.');
+      toast.error('É necessário preencher todas as opções.');
     }
   };
+
+  const HandleCollections = () => {
+    setCurrentSlide('collections');
+  }
+
   return (
     <>
       <Container>
@@ -112,7 +120,7 @@ export default function CustomMade() {
             <SuggestionContainer>
               {dressesSugestion &&
                 dressesSugestion.map((ans) => {
-                  console.log(ans);
+
                   return (
                     <DressImage
                       src={ans.image}
@@ -138,6 +146,14 @@ export default function CustomMade() {
         >
           {' '}
         </Button>
+        {filteredAns && <Button
+          primary
+          text="CONHECER NOSSAS COLEÇÕES"
+          clickEvent={() => HandleCollections()}
+          to="/"
+        >
+          {' '}
+        </Button>}
       </Container>
 
       <Footer />
