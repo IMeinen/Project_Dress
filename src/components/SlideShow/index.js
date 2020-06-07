@@ -64,7 +64,7 @@ const collections = [
     link: '/collection/zodiaco',
   },
   {
-    photo: Dress4,
+    photo: Dress5,
     align: 'center',
     color: '#191919',
     textColor: '#191919',
@@ -72,7 +72,7 @@ const collections = [
     link: '/collection/last-chance-noiva',
   },
   {
-    photo: Dress5,
+    photo: Dress4,
     align: 'center',
     color: '#191919',
     textColor: '#191919',
@@ -81,10 +81,10 @@ const collections = [
   },
 ];
 export default function SlideShow() {
-
-  const [counter, setCounter] = useState(0);
   const {currentSlide,setCurrentSlide} = useContext(ButtonContext);
-  const [dresses,setDresses] = useState([...infos]);
+  const [counter, setCounter] = useState(0);
+
+  const [dresses,setDresses] = useState(currentSlide === 'infos' ? [...infos] : [...collections]);
   const [currentImage, setCurrentImage] = useState(dresses[0].photo);
   useEffect(() => {
     if(currentSlide === 'infos'){
