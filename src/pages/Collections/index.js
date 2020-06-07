@@ -16,6 +16,8 @@ export default function Collections() {
   const { currentName, setCurrentName } = useContext(ImagesContext);
   const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
+  const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
+  const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
 
   useEffect(() => {
     setCurrentCollection(
@@ -38,7 +40,6 @@ export default function Collections() {
             </div>
           </DescriptionContent>
           {(currentCollection.images || []).map((image) => {
-
             return (
               <DressImage
                 src={image.image}
@@ -50,6 +51,8 @@ export default function Collections() {
                   setCurrentName(image.name);
                   setCurrentDesc(image.description);
                   setCurrentValue(image.value);
+                  setCurrent6xCard(image.parcelCard);
+                  setCurrent6xCheck(image.parcelCheck);
                 }}
                 adjustTop={image.adjustTop}
               />

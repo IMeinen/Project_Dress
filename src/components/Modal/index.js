@@ -16,7 +16,8 @@ export default function Modal({ modalOpened }) {
   const { currentName, setCurrentName } = useContext(ImagesContext);
   const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
-
+  const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
+  const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
   return (
     <ModalContainer>
       <StyledClose
@@ -38,12 +39,14 @@ export default function Modal({ modalOpened }) {
       </div>
       <div className="data-container">
         <h1>{currentName}</h1>
-      <h2>{currentValue}</h2>
+        <h2>{ `${currentValue} ( à vista )` }</h2>
+        {current6xCheck !== '' && <h4>{`${current6xCheck} em 6x no cheque`}</h4>}
+        {current6xCard !== '' && <h4>{`${current6xCard} em 6x no cartão`}</h4>}
         <p style={{ marginTop: '20px' }}>{currentDesc}</p>
-        <Button primary text="CONTATO" style={{ marginTop: '30px' }}>
+        <Button primary text="CONVERSE CONOSCO" style={{ marginTop: '30px' }} to='/contact'>
           {' '}
         </Button>
-        <Button primary text="PERGUNTAS FREQUENTES">
+        <Button primary text="PERGUNTAS FREQUENTES" to="/faq">
           {' '}
         </Button>
       </div>

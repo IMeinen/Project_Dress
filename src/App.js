@@ -8,16 +8,24 @@ import { ImagesContext } from './contexts/imagesContext';
 
 function App() {
   const [showRightButton, setShowRightButton] = useState(true);
-  const [currentSlide,setCurrentSlide] = useState('infos');
+  const [currentSlide, setCurrentSlide] = useState('infos');
   const [currentImage, setCurrentImage] = useState(0);
   const [currentList, setCurrentList] = useState([]);
   const [currentStart, setCurrentStart] = useState(0);
   const [currentName, setCurrentName] = useState('');
   const [currentDesc, setCurrentDesc] = useState('');
   const [currentValue, setCurrentValue] = useState('');
+  const [current6xCard, setCurrent6xCard] = useState('');
+  const [current6xCheck, setCurrent6xCheck] = useState('');
+
   const buttonContext = useMemo(
-    () => ({ showRightButton, setShowRightButton,currentSlide,setCurrentSlide }),
-    [showRightButton, setShowRightButton,currentSlide,setCurrentSlide]
+    () => ({
+      showRightButton,
+      setShowRightButton,
+      currentSlide,
+      setCurrentSlide,
+    }),
+    [showRightButton, setShowRightButton, currentSlide, setCurrentSlide]
   );
   const imageContext = useMemo(
     () => ({
@@ -33,6 +41,10 @@ function App() {
       setCurrentDesc,
       currentValue,
       setCurrentValue,
+      current6xCard,
+      setCurrent6xCard,
+      current6xCheck,
+      setCurrent6xCheck,
     }),
     [
       currentImage,
@@ -47,6 +59,10 @@ function App() {
       setCurrentName,
       currentValue,
       setCurrentValue,
+      current6xCard,
+      setCurrent6xCard,
+      current6xCheck,
+      setCurrent6xCheck,
     ]
   );
   return (
