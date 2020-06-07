@@ -9,7 +9,6 @@ export const Container = styled.div`
   background-size: cover;
   background-position: ${props => `${props.align} top`};
   position: relative;
-
   @media only screen and (min-width: 1025px) {
     height: 600px;
   }
@@ -82,7 +81,7 @@ export const OnlifeContainer = styled.div`
     max-width: 100%;
   }
 
-  p {
+  /* p {
     position: absolute;
     width: 100%;
   top: 90%;
@@ -93,5 +92,39 @@ export const OnlifeContainer = styled.div`
     font-size: 13px;
     line-height: 20px;
 
+  } */
+
+  .description-onlife{
+
+    position: absolute;
+    width: 100%;
+    top:90%;
+    left: 50%;
+    transform: translate( -50%,-50% );
+  }
+  .description-blur{
+
+position: absolute;
+width: 100%;
+top:60%;
+left: 50%;
+transform: translate( -50%,-50% );
+}
+
+.description-onlife,.description-blur{
+  h1 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    p {
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+  }
   }
 `;
+
