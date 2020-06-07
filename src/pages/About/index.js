@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 import Author from '../../images/sandra.jpg';
-import { ContainerAbout,ContainerInfos } from './styles';
+import { ContainerAbout, ContainerInfos } from './styles';
 import ContactContainer from '../../components/ContactInformations';
+import VideoPlayer from '../../components/VideoPlayer';
 import Footer from '../../components/Footer';
 
 import Overlay from '../../components/Overlay';
@@ -11,6 +12,24 @@ import HeaderGlobal from '../../components/Header';
 export default function About() {
   return (
     <ContainerAbout>
+      <VideoPlayer
+        url="https://www.youtube.com/watch?v=Ng6v9c-n3TE"
+        playing
+        controls
+      />
+      <ContainerInfos>
+        <div className="description-container">
+          <h1>// SANDRA FERRAZ ONLIFE</h1>
+          <p>
+            Com a objetividade e praticidade de um vestido de noiva a pronta
+            entrega e toda a exclusividade do sob medida, Sandra Ferraz OnLife
+            busca elevar a experiência da noiva moderna a uma nova categoria,
+            onde sem sair do aconchego de sua casa, você poderá escolher, provar
+            e comprar o vestido dos seus sonhos, vivendo uma experiência única e
+            intimista.
+          </p>
+        </div>
+      </ContainerInfos>
       <ContainerInfos>
         <img alt="author" src={Author} />
         <div className="description-container">

@@ -3,7 +3,7 @@ import ReactPlayer from "react-player"
 
 import Footer from '../../components/Footer';
 import FaqItem from '../../components/FaqItem';
-import { Container,StyledVideo } from './styles';
+import { Container} from './styles';
 import { FAQ } from '../../constants/Faq';
 import Video from '../../videos/Sandra_01.mp4';
 
@@ -34,13 +34,7 @@ export default function Faq() {
             />
             Your browser does not support the video tag.
           </StyledVideo> */}
-          <ReactPlayer
-        url="https://www.youtube.com/watch?v=mwZ_TH0wKPI"
-        width="320px"
-        height="240px"
-        playing
-        controls
-      />
+
         </div>
         {FAQ.map((item, index) => {
           return <FaqItem question={item.question} answer={item.answer} />;
