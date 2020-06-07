@@ -35,10 +35,11 @@ export default function Faq() {
             Your browser does not support the video tag.
           </StyledVideo> */}
           <ReactPlayer
-        url="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
+        url="https://www.youtube.com/watch?v=mwZ_TH0wKPI"
         width="320px"
         height="240px"
         playing
+        controls
       />
         </div>
         {FAQ.map((item, index) => {
