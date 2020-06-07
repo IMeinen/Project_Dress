@@ -100,7 +100,7 @@ export default function SlideShow() {
       } else {
         setCounter(counter + 1);
       }
-    }, 8000);
+    }, currentSlide === 'infos' ? 8500 : 4000);
   }, [currentImage]);
 
   useEffect(() => {
