@@ -38,7 +38,7 @@ export default function Collections() {
             </div>
           </DescriptionContent>
           {(currentCollection.images || []).map((image) => {
-            console.log(image)
+
             return (
               <DressImage
                 src={image.image}

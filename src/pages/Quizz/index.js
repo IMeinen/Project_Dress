@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
@@ -8,12 +8,17 @@ import {
   Options,
   DescriptionContent,
   ContainerIcon,
+  DressImage,
+  SuggestionContainer,
 } from './styles';
-
+import Modal from '../../components/Modal';
+import Overlay from '../../components/Overlay';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import { filterData, checkData } from '../../utils/filterData';
+import { FindDressesByName } from '../../utils/FindItemInCollection';
 import { OPTIONS } from './constants';
+import { ImagesContext } from '../../contexts/imagesContext';
 
 export default function CustomMade() {
   const [currentAnswers, setCurrentAnswers] = useState({
@@ -25,8 +30,22 @@ export default function CustomMade() {
     toppings: '',
     body: '',
   });
+  const { currentList, setCurrentList } = useContext(ImagesContext);
+  const { currentName, setCurrentName } = useContext(ImagesContext);
+  const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
+  const { currentValue, setCurrentValue } = useContext(ImagesContext);
   const [filteredAns, setFilteredAns] = useState();
+  const [dressesSugestion, setDressesSugestion] = useState();
+  const [modalOpened, setModalOpened] = useState(false);
 
+  useEffect(() => {
+
+    if (filteredAns) {
+      setDressesSugestion(FindDressesByName(filteredAns));
+      console.log(dressesSugestion)
+    }
+  }, [filteredAns]);
+  console.log(filteredAns)
   const HandleSend = () => {
     if (checkData(currentAnswers)) {
       setFilteredAns(filterData(currentAnswers));
@@ -37,6 +56,11 @@ export default function CustomMade() {
   return (
     <>
       <Container>
+        {modalOpened && (
+          <Overlay>
+            <Modal modalOpened={setModalOpened} />
+          </Overlay>
+        )}
         <DescriptionContent>
           <h1>// QUIZZ</h1>
           <div className="subdescription">
@@ -85,11 +109,25 @@ export default function CustomMade() {
             <h2 style={{ marginTop: '20px', marginBottom: '12px' }}>
               Sugerimos estes vestidos:{' '}
             </h2>
-            <ul>
-              {filteredAns.map((ans) => {
-                return <li>{ans.name}</li>;
-              })}
-            </ul>
+            <SuggestionContainer>
+              {dressesSugestion &&
+                dressesSugestion.map((ans) => {
+                  console.log(ans);
+                  return (
+                    <DressImage
+                      src={ans.image}
+                      alt="test"
+                      onClick={() => {
+                        setCurrentList(ans.listOfImages);
+                        setModalOpened(true);
+                        setCurrentName(ans.name);
+                        setCurrentDesc(ans.description);
+                        setCurrentValue(ans.value);
+                      }}
+                    />
+                  );
+                })}
+            </SuggestionContainer>
           </>
         )}
         <Button

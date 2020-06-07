@@ -150,3 +150,29 @@ export const DescriptionContent = styled.div`
     }
   }
 `;
+
+export const DressImage = styled.img`
+
+  width: 49.5%;
+
+  margin: 6px 0;
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 1025px) {
+
+    margin-bottom: 20px;
+  }
+`;
+
+export const SuggestionContainer = styled.div`
+ width: 100%;
+  padding: 0 3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;

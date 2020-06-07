@@ -1,6 +1,6 @@
 export const FilterOptions = [
   {
-    name: '001 LIBRA',
+    name: 'Libra',
     location: ['cidade', 'praia'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão'],
@@ -10,7 +10,7 @@ export const FilterOptions = [
     body: ['ampulheta','pera','retangular']
   },
   {
-    name: '002 CANCER',
+    name: 'Câncer',
     location: ['cidade', 'serra'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão'],
@@ -20,7 +20,7 @@ export const FilterOptions = [
     body: ['ampulheta','pera','retangular']
   },
   {
-    name: '003 LEÃO',
+    name: 'Leão',
     location: ['cidade', 'praia'],
     schedule: ['final da tarde', 'noite'],
     season: ['primavera','verão'],
@@ -50,7 +50,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular']
   },
   {
-    name: '006 ESCORPIÃO',
+    name: 'Escorpião',
     location: ['cidade', 'serra'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão'],
@@ -140,7 +140,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular','triângulo invertido']
   },
   {
-    name: 'PE01 AQUÁRIO',
+    name: 'Aquário',
     location: ['praia'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão'],
@@ -150,7 +150,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular']
   },
   {
-    name: 'PE02 GÊMEOS',
+    name: 'Gêmeos',
     location: ['praia'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['verão'],
@@ -160,7 +160,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular','triângulo invertido']
   },
   {
-    name: 'PE05 VIRGEM',
+    name: 'Virgem',
     location: ['campo','serra'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['outono','inverno'],
@@ -170,7 +170,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular','triângulo invertido','ovalar']
   },
   {
-    name: 'PE04 SAGITÁRIO',
+    name: 'Sagitário',
     location: ['campo','serra'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['outono','inverno'],
@@ -180,7 +180,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular','triângulo invertido','ovalar','pera']
   },
   {
-    name: 'PE03 CAPRICÓRNIO',
+    name: 'Capricórnio',
     location: ['praia'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','outono'],
@@ -230,7 +230,7 @@ export const FilterOptions = [
     body: ['ampulheta','retangular','triângulo invertido']
   },
   {
-    name: 'PE10 TOURO',
+    name: 'Touro',
     location: ['cidade'],
     schedule: ['final da tarde', 'noite', 'tarde', 'manhã'],
     season: ['primavera','verão','outono'],
