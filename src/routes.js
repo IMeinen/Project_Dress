@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Main from './pages/Main';
@@ -12,10 +12,16 @@ import Contact from './pages/Contact';
 import HeaderGlobal from './components/Header';
 import Quizz from './pages/Quizz';
 
+
 export default function Routes() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <BrowserRouter>
       <HeaderGlobal />
+
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/about" exact component={About} />
@@ -27,6 +33,7 @@ export default function Routes() {
         <Route path="/faq" exact component={Faq} />
         <Route path="/quizz" exact component={Quizz} />
       </Switch>
+
     </BrowserRouter>
   );
 }

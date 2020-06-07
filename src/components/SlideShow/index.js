@@ -73,7 +73,8 @@ const collections = [
   },
   {
     photo: Dress4,
-    align: 'center',
+    align: '70%',
+
     color: '#191919',
     textColor: '#191919',
     collection: '// LAST CHANCE FESTA',

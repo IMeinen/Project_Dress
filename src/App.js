@@ -6,6 +6,7 @@ import RightButton from './components/RightButton';
 import { ButtonContext } from './contexts/buttonContext';
 import { ImagesContext } from './contexts/imagesContext';
 
+
 function App() {
   const [showRightButton, setShowRightButton] = useState(true);
   const [currentSlide, setCurrentSlide] = useState('infos');
@@ -17,6 +18,7 @@ function App() {
   const [currentValue, setCurrentValue] = useState('');
   const [current6xCard, setCurrent6xCard] = useState('');
   const [current6xCheck, setCurrent6xCheck] = useState('');
+
 
   const buttonContext = useMemo(
     () => ({
