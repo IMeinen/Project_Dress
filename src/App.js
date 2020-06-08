@@ -6,7 +6,6 @@ import RightButton from './components/RightButton';
 import { ButtonContext } from './contexts/buttonContext';
 import { ImagesContext } from './contexts/imagesContext';
 
-
 function App() {
   const [showRightButton, setShowRightButton] = useState(true);
   const [currentSlide, setCurrentSlide] = useState('infos');
@@ -18,7 +17,8 @@ function App() {
   const [currentValue, setCurrentValue] = useState('');
   const [current6xCard, setCurrent6xCard] = useState('');
   const [current6xCheck, setCurrent6xCheck] = useState('');
-
+  const [sizes, setSizes] = useState('');
+  const [loading, setLoading] = useState(true);
 
   const buttonContext = useMemo(
     () => ({
@@ -26,8 +26,17 @@ function App() {
       setShowRightButton,
       currentSlide,
       setCurrentSlide,
+      loading,
+      setLoading,
     }),
-    [showRightButton, setShowRightButton, currentSlide, setCurrentSlide]
+    [
+      showRightButton,
+      setShowRightButton,
+      currentSlide,
+      setCurrentSlide,
+      loading,
+      setLoading,
+    ]
   );
   const imageContext = useMemo(
     () => ({
@@ -47,6 +56,8 @@ function App() {
       setCurrent6xCard,
       current6xCheck,
       setCurrent6xCheck,
+      sizes,
+      setSizes,
     }),
     [
       currentImage,
@@ -65,6 +76,8 @@ function App() {
       setCurrent6xCard,
       current6xCheck,
       setCurrent6xCheck,
+      sizes,
+      setSizes,
     ]
   );
   return (

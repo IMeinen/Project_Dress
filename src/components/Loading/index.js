@@ -1,9 +1,12 @@
 import React from 'react';
 
-import { CustomLoader } from './styles';
+import { CustomLoader,OverlayContainer } from './styles';
 
 export default function Loading() {
   return (
-    <CustomLoader type="bars"  />
+    <OverlayContainer>
+      <CustomLoader type="bubbles" color="#191919" />
+      <p>Carregando</p>
+    </OverlayContainer>
   );
 }
