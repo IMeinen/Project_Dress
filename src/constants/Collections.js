@@ -89,7 +89,7 @@ const Collections = [
     link: 'nevoa',
     title: '// NÉVOA',
     description:
-      'Leve, delicada e atemporal. Inspirada na névoa que se forma Leve, delicada e atemporal. Inspirada na névoa que se forma cultuando a beleza única de cada mulher.',
+      'Leve, delicada e atemporal. Inspirada na névoa que se forma na base das cachoeiras, a coleção é sútil e bordada em formas orgânicas, cultuando a beleza única de cada mulher.',
     images: [
       {
         name: '004',
@@ -312,7 +312,7 @@ const Collections = [
   {
     link: 'zodiaco',
     title: '// ZODÍACO',
-    description: 'lOREM IP',
+    description: 'Inspirada nos doze signos do zodíaco, com uma mistura única de tecidos e bordados lineares, embelezando ainda mais as facetas formas e femininas da mulher contemporânea.',
     images: [
       {
         name: 'Aquário',
