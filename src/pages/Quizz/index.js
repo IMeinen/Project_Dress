@@ -44,7 +44,7 @@ export default function CustomMade() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
   useEffect(() => {
 
     if (filteredAns) {

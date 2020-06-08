@@ -26,6 +26,7 @@ export default function Modal({ modalOpened }) {
   const {originalValue,setOriginalValue} = useContext(ImagesContext);
   const { sizes, setSizes } = useContext(ImagesContext);
   const [activeMeasure, setActiveMeasure] = useState(false);
+
   return (
     <ModalContainer>
       <StyledClose

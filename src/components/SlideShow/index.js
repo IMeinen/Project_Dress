@@ -128,7 +128,7 @@ export default function SlideShow() {
           {dresses[counter].isBlur && (
             <div className="description-blur">
               <h1>Qual estilo de vestido é ideal pra mim?</h1>
-              <p>
+              <p className="secondary">
                 // Responda algumas perguntas rápidas e receba uma seleção
                 esclusiva dos vestidos que mais combinam com você e com a sua
                 cerimônia.

@@ -18,7 +18,7 @@ export default function Main() {
       setLoading(false);
     },750)
 
-  });
+  },[]);
   return (
     <>
       {!loading &&
