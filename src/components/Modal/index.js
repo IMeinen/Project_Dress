@@ -70,15 +70,15 @@ export default function Modal({ modalOpened }) {
             <IconActive rotate={activeMeasure} />
           </div>
           <ContentMeasure active={activeMeasure}>
-            <p>{`Esse vestido é tamanho ${sizes} e pode ser ajustado para ${
+            <p>{`O vestido pode ser ajustado para os seguintes tamanhos ${sizes}, ${
               sizes + 2
             } e ${
               sizes - 2
-            }, abaixo segue uma tabela das medidas padrão da marca para cada tamanho:`}</p>
+            }:`}</p>
 
             <img src={findTable(sizes)} alt="tabela_medidas" />
             <p className='low_text'>
-              <strong>* A modelo usa (perguntar pra Julia o que é pra botar aqui)</strong>
+              <strong>* Modelo veste: Busto 85cm | Cintura 62cm | Quadril 91cm | Altura 177cm </strong>
             </p>
           </ContentMeasure>
         </Measure>
