@@ -40,8 +40,8 @@ export default function Modal({ modalOpened }) {
       <div className="data-container">
         <h1>{currentName}</h1>
         <h2>{ `${currentValue} ( à vista )` }</h2>
-        {current6xCheck !== '' && <h4>{`${current6xCheck} em 6x no cheque`}</h4>}
-        {current6xCard !== '' && <h4>{`${current6xCard} em 6x no cartão`}</h4>}
+        {current6xCheck  && <h4>{`${current6xCheck} em 6x no cheque`}</h4>}
+        {current6xCard  && <h4>{`${current6xCard} em 6x no cartão`}</h4>}
         <p style={{ marginTop: '20px' }}>{currentDesc}</p>
         <Button primary text="CONVERSE CONOSCO" style={{ marginTop: '30px' }} to='/contact'>
           {' '}
