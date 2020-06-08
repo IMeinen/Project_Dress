@@ -1,11 +1,17 @@
 import React, { useState, useContext, useEffect } from 'react';
 
-import { StyledClose, ModalContainer,Measure,IconActive,ContentMeasure } from './styles';
+import {
+  StyledClose,
+  ModalContainer,
+  Measure,
+  IconActive,
+  ContentMeasure,
+} from './styles';
 import MobilePhotoScroller from '../MobilePhotoScroller';
 import PhotoScroller from '../PhotoScroller';
 import ImageChanger from '../ImageChanger';
 import Button from '../Button';
-
+import { findTable } from '../../utils/findTable';
 import { ImagesContext } from '../../contexts/imagesContext';
 
 export default function Modal({ modalOpened }) {
@@ -18,7 +24,7 @@ export default function Modal({ modalOpened }) {
   const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
   const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
   const { sizes, setSizes } = useContext(ImagesContext);
-  const [activeMeasure,setActiveMeasure] = useState(false);
+  const [activeMeasure, setActiveMeasure] = useState(false);
   return (
     <ModalContainer>
       <StyledClose
@@ -40,26 +46,41 @@ export default function Modal({ modalOpened }) {
       </div>
       <div className="data-container">
         <h1>{currentName}</h1>
-        <h2>{ `${currentValue} ( à vista )` }</h2>
-        {current6xCheck  && <h4>{`${current6xCheck} em 6x no cheque`}</h4>}
-        {current6xCard  && <h4>{`${current6xCard} em 6x no cartão`}</h4>}
+        <h2>{`${currentValue} ( à vista )`}</h2>
+        {current6xCheck && <h4>{`${current6xCheck} em 6x no cheque`}</h4>}
+        {current6xCard && <h4>{`${current6xCard} em 6x no cartão`}</h4>}
         <p style={{ marginTop: '20px' }}>{currentDesc}</p>
-        <Button primary text="CONVERSE CONOSCO" style={{ marginTop: '30px' }} to='/contact'>
+        <Button
+          primary
+          text="CONVERSE CONOSCO"
+          style={{ marginTop: '30px' }}
+          to="/contact"
+        >
           {' '}
         </Button>
         <Button primary text="PERGUNTAS FREQUENTES" to="/faq">
           {' '}
         </Button>
-        <Measure onClick={() => setActiveMeasure(!activeMeasure)} active={activeMeasure}>
+        <Measure
+          onClick={() => setActiveMeasure(!activeMeasure)}
+          active={activeMeasure}
+        >
           <div className="line">
-          <span>MEDIDAS</span>
-          <IconActive rotate={activeMeasure}/>
+            <span>MEDIDAS</span>
+            <IconActive rotate={activeMeasure} />
           </div>
           <ContentMeasure active={activeMeasure}>
-              <p>{`Esse vestido pode ser ajustado para as seguintes medidas: ${sizes}`}</p>
-              <p><strong>* A modelo usa</strong></p>
-            </ContentMeasure>
+            <p>{`Esse vestido é tamanho ${sizes} e pode ser ajustado para ${
+              sizes + 2
+            } e ${
+              sizes - 2
+            }, abaixo segue uma tabela das medidas padrão da marca para cada tamanho:`}</p>
 
+            <img src={findTable(sizes)} alt="tabela_medidas" />
+            <p className='low_text'>
+              <strong>* A modelo usa (perguntar pra Julia o que é pra botar aqui)</strong>
+            </p>
+          </ContentMeasure>
         </Measure>
       </div>
     </ModalContainer>
