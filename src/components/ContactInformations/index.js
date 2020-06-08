@@ -31,7 +31,7 @@ export default function ContactInformations({noHeader,isHeader}) {
 
           <span>Nos contate via telefone</span>
         </div>
-        <a href="tel:+55%2051%209261-4347%20" className="anchor" />
+        <a href="tel:+55%2051%2099261-4347%20" className="anchor" />
       </ContainerIcon>
       <ContainerIcon>
         <StyledMail />
