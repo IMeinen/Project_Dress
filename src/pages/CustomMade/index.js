@@ -4,7 +4,7 @@ import BackGroundImage from '../../images/custom_made.jpg';
 import { ContainerAbout,ContainerInfos} from './styles';
 import ContactContainer from '../../components/ContactInformations';
 import Footer from '../../components/Footer';
-
+import VideoPlayer from '../../components/VideoPlayer';
 
 export default function CustomMade() {
   useEffect(() => {
@@ -13,7 +13,11 @@ export default function CustomMade() {
   return (
     <ContainerAbout>
       <ContainerInfos>
-      <img alt="author" src={BackGroundImage} />
+      <VideoPlayer
+        url="https://www.youtube.com/watch?v=jgPbcRh-eoU"
+        playing
+        controls
+      />
       <div className="description-container">
         <h1>// SOB MEDIDA</h1>
         <p>
