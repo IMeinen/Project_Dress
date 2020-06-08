@@ -70,11 +70,7 @@ export default function Modal({ modalOpened }) {
             <IconActive rotate={activeMeasure} />
           </div>
           <ContentMeasure active={activeMeasure}>
-            <p>{`O vestido pode ser ajustado para os seguintes tamanhos ${sizes}, ${
-              sizes + 2
-            } e ${
-              sizes - 2
-            }:`}</p>
+            <p>O vestido pode ser ajustado para os seguintes tamanhos:</p>
 
             <img src={findTable(sizes)} alt="tabela_medidas" />
             <p className='low_text'>
