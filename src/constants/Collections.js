@@ -98,7 +98,7 @@ const Collections = [
         value: 'R$ 9.100,00',
         parcelCard: 'R$ 11.375,00',
         parcelCheck: 'R$ 9.646,00',
-        sizes: '38,36 e 40',
+        sizes: 38,
         image: V04_LIST[0],
         listOfImages: V04_LIST,
         width: '',
