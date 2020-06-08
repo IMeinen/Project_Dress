@@ -1,15 +1,20 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useContext, useCallback } from 'react';
 
 import Author from '../../images/sandra.jpg';
 import { ContainerAbout, ContainerInfos } from './styles';
 import ContactContainer from '../../components/ContactInformations';
 import VideoPlayer from '../../components/VideoPlayer';
 import Footer from '../../components/Footer';
-
+import Button from '../../components/Button';
 import Overlay from '../../components/Overlay';
 import HeaderGlobal from '../../components/Header';
+import { ButtonContext } from '../../contexts/buttonContext';
 
 export default function About() {
+  const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
+  const HandleCollections = () => {
+    setCurrentSlide('collections');
+  }
   return (
     <ContainerAbout>
       <VideoPlayer
@@ -28,6 +33,16 @@ export default function About() {
             e comprar o vestido dos seus sonhos, vivendo uma experiência única e
             intimista.
           </p>
+
+          <Button
+          primary
+          text="CONHECER NOSSAS COLEÇÕES"
+          clickEvent={() => HandleCollections()}
+          style={{marginTop: '20px'}}
+          to="/"
+        >
+          {' '}
+        </Button>
         </div>
       </ContainerInfos>
       <ContainerInfos>

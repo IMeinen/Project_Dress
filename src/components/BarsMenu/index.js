@@ -44,9 +44,6 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/contact" onClick={() => menuOpened(false)}>
           <h1>CONTATO</h1>
         </Link>
-        <Link to="/quizz" onClick={() => menuOpened(false)}>
-          <h1>QUIZZ</h1>
-        </Link>
         <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
           <div className="title">
           <h1>LAST CHANCE</h1>
