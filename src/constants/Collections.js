@@ -501,7 +501,7 @@ const Collections = [
   {
     link: 'last-chance-festa',
     title: '// FESTA',
-    description: 'lOREM IPSUM',
+    description: '',
     images: [
       {
         name: 'F1901',
@@ -989,7 +989,7 @@ const Collections = [
   {
     link: 'last-chance-noiva',
     title: '// NOIVA',
-    description: 'lOREM IPSUM',
+    description: '',
     images: [
       {
         name: 'PR01',

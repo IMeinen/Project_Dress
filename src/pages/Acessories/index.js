@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Acessories';
-import {Container, AcessorieImage } from './styles';
+import {Container, AcessorieImage,DescriptionContent } from './styles';
+import  Logo from '../../images/Acessories/logo_duas_noivas.png';
 
 import Footer from '../../components/Footer';
 
@@ -17,12 +18,12 @@ export default function Acessories() {
     <>
       {currentCollection && (
         <Container>
-          {/* <DescriptionContent>
+           <DescriptionContent>
             <h1>{currentCollection.title}</h1>
             <div className="subdescription">
-              <p>{currentCollection.description}</p>
+              <img src={Logo} alt="logo" width="40%"/>
             </div>
-          </DescriptionContent> */}
+          </DescriptionContent>
           {(currentCollection.images || []).map((acessorie) => {
             return <AcessorieImage src={acessorie.image} alt="test" width={acessorie.width}/>;
           })}

@@ -1,24 +1,26 @@
-import acessorie1 from '../images/acessories1.jpg';
-import acessorie2 from '../images/acessories2.jpg';
-import acessorie3 from '../images/acessories3.jpg';
-import acessorie4 from '../images/acessories4.jpg';
-import acessorie5 from '../images/acessories5.jpg';
-import acessorie6 from '../images/acessories6.jpg';
-import acessorie7 from '../images/acessories7.jpg';
+import acessorie1 from '../images/Acessories/1.jpg';
+import acessorie2 from '../images/Acessories/2.jpg';
+import acessorie3 from '../images/Acessories/3.jpg';
+import acessorie4 from '../images/Acessories/4.jpg';
+import acessorie5 from '../images/Acessories/5.jpg';
+import acessorie6 from '../images/Acessories/6.jpg';
+import acessorie7 from '../images/Acessories/7.jpg';
+
 
 const AcessoriesCollections = [
   {
     link: '2019',
-    title: '',
+    title: '// ACESSÓRIOS',
     description: '',
     images: [
       { image: acessorie1 },
-      { image: acessorie2, width: '49' },
-      { image: acessorie3, width: '49' },
+      { image: acessorie2 },
+      { image: acessorie3 },
       { image: acessorie4 },
-      { image: acessorie5, width: '49' },
-      { image: acessorie6, width: '49' },
+      { image: acessorie5},
+      { image: acessorie6},
       { image: acessorie7 },
+
     ],
   },
 ];

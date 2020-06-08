@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from './pages/Main';
 import About from './pages/About';
 import Collections from './pages/Collections';
+import Measurements from './pages/Measurements';
 import CustomMade from './pages/CustomMade';
 import Shoes from './pages/Shoes';
 import Faq from './pages/Faq';
@@ -32,6 +33,7 @@ export default function Routes() {
         <Route path="/contact" exact component={Contact} />
         <Route path="/faq" exact component={Faq} />
         <Route path="/quizz" exact component={Quizz} />
+        <Route path="/measurements" exact component={Measurements} />
       </Switch>
 
     </BrowserRouter>

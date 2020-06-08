@@ -19,7 +19,7 @@ function Footer() {
             <h5>INFORMAÇÕES</h5>
             <Link to="/about"><p>Como funciona?</p></Link>
             <Link to="/faq"><p>Dúvidas frequentes</p></Link>
-            <Link to="/quizz"><p>Como tirar minhas próprias medidas?</p></Link>
+            <Link to="/measurements"><p>Como tirar minhas próprias medidas?</p></Link>
             <Link to="/quizz"><p>O meu vestido ideal</p></Link>
 
           </div>
