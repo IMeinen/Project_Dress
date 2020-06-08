@@ -71,7 +71,7 @@ export default function CustomMade() {
           </Overlay>
         )}
         <DescriptionContent>
-          <h1>// QUIZZ</h1>
+          <h1>// MEU VESTIDO IDEAL</h1>
           <div className="subdescription">
             <p>
               Responda as perguntas abaixo para que possamos indicar o melhor
@@ -151,7 +151,7 @@ export default function CustomMade() {
         </Button>
         {filteredAns && <Button
           primary
-          text="CONHECER NOSSAS COLEÇÕES"
+          text="CONHEÇA NOSSAS COLEÇÕES"
           clickEvent={() => HandleCollections()}
           to="/"
         >

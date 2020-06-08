@@ -13,16 +13,7 @@ export default function Faq() {
       <Container>
         <div className="description">
           <h1>// COMO FUNCIONA</h1>
-          <div className="subdescription">
-          <p>
-            Com a objetividade e praticidade de um vestido de noiva a pronta
-            entrega e toda a exclusividade do sob medida, Sandra Ferraz OnLife
-            busca elevar a experiência da noiva moderna a uma nova categoria,
-            onde sem sair do aconchego de sua casa, você poderá escolher, provar
-            e comprar o vestido dos seus sonhos, vivendo uma experiência única e
-            intimista.
-          </p>
-          </div>
+          <div className="subdescription" />
           {/* <StyledVideo
             key="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
             autoPlay

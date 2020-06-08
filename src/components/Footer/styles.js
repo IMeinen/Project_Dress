@@ -67,7 +67,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    margin-top: 60px;
+    margin-top: 30px;
 
     @media only screen and (min-width: 469px) and (max-width: 1024px) {
       margin-top: 5%;

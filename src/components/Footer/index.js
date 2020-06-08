@@ -16,7 +16,11 @@ function Footer() {
             <p>contato@sandraferraz.com.br</p>
           </div>
           <div className="descriptions">
-            <Link className="link" to="/faq"><h5>PERGUNTAS FREQUENTES</h5></Link>
+            <h5>INFORMAÇÕES</h5>
+            <Link to="/about"><p>Como funciona?</p></Link>
+            <Link to="/faq"><p>Dúvidas frequentes</p></Link>
+            <Link to="/quizz"><p>Como tirar minhas próprias medidas?</p></Link>
+            <Link to="/quizz"><p>O meu vestido ideal</p></Link>
 
           </div>
           <div className="icons_container">

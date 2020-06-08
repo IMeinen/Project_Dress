@@ -36,7 +36,7 @@ export default function About() {
 
           <Button
           primary
-          text="CONHECER NOSSAS COLEÇÕES"
+          text="CONHEÇA NOSSAS COLEÇÕES"
           clickEvent={() => HandleCollections()}
           style={{marginTop: '20px'}}
           to="/"
