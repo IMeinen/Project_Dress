@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Shoes';
 import { Container, DescriptionContent, DressImage, ShoesImage } from './styles';
-import Modal from '../../components/Modal';
+import ModalShoes from '../../components/ModalShoes';
 import Overlay from '../../components/Overlay';
 import Footer from '../../components/Footer';
 
@@ -33,7 +33,7 @@ export default function Shoes() {
         <Container>
           {modalOpened && (
             <Overlay>
-              <Modal modalOpened={setModalOpened} />
+              <ModalShoes modalOpened={setModalOpened} />
             </Overlay>
           )}
           <DescriptionContent>
