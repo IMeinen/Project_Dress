@@ -19,7 +19,7 @@ function App() {
   const [current6xCheck, setCurrent6xCheck] = useState('');
   const [sizes, setSizes] = useState('');
   const [loading, setLoading] = useState(true);
-
+  const [originalValue, setOriginalValue] = useState('');
   const buttonContext = useMemo(
     () => ({
       showRightButton,
@@ -58,6 +58,8 @@ function App() {
       setCurrent6xCheck,
       sizes,
       setSizes,
+      originalValue,
+      setOriginalValue,
     }),
     [
       currentImage,
@@ -78,6 +80,8 @@ function App() {
       setCurrent6xCheck,
       sizes,
       setSizes,
+      originalValue,
+      setOriginalValue,
     ]
   );
   return (

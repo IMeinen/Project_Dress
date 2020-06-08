@@ -23,6 +23,7 @@ export default function Modal({ modalOpened }) {
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
   const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
   const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
+  const {originalValue,setOriginalValue} = useContext(ImagesContext);
   const { sizes, setSizes } = useContext(ImagesContext);
   const [activeMeasure, setActiveMeasure] = useState(false);
   return (
@@ -46,7 +47,10 @@ export default function Modal({ modalOpened }) {
       </div>
       <div className="data-container">
         <h1>{currentName}</h1>
-        <h2>{`${currentValue} ( à vista )`}</h2>
+        {originalValue &&  <h3>{`De : ${originalValue}`}</h3>}
+        {originalValue &&  <h2>{`Por : ${currentValue}`}</h2>}
+        {!originalValue &&  <h2>{`${currentValue} ( à vista )`}</h2>}
+
         {current6xCheck && <h4>{`${current6xCheck} em 6x no cheque`}</h4>}
         {current6xCard && <h4>{`${current6xCard} em 6x no cartão`}</h4>}
         <p style={{ marginTop: '20px' }}>{currentDesc}</p>

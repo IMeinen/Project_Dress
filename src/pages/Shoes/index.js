@@ -18,6 +18,7 @@ export default function Shoes() {
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
   const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
   const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
+  const { originalValue,setOriginalValue } = useContext(ImagesContext);
   const { sizes,setSizes } = useContext(ImagesContext);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,6 +57,7 @@ export default function Shoes() {
                   setCurrentValue(image.value);
                   setCurrent6xCard(image.parcelCard);
                   setCurrent6xCheck(image.parcelCheck);
+                  setOriginalValue(image.originalValue);
                   setSizes(image.sizes)
                 }}
                 adjustTop={image.adjustTop}

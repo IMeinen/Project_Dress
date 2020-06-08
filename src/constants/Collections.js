@@ -322,7 +322,7 @@ const Collections = [
         value: 'R$ 6.100,00',
         parcelCard: 'R$ 7.625,00',
         parcelCheck: 'R$ 6.466,00',
-        sizes: '36,38 e 40',
+        sizes: 38,
         image: AQUA_TUMB,
         listOfImages: AQUA_LIST,
         width: '49.725',

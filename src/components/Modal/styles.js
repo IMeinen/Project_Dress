@@ -3,18 +3,18 @@ import { MdClose } from 'react-icons/md';
 import {IoIosArrowDown} from 'react-icons/io';
 
 export const StyledClose = styled(MdClose)`
-  position: absolute;
-  top: 1%;
-  right: 1%;
+  position: fixed;
+  top: 5%;
+  right: 5%;
   transition: all 0.3s;
   color: #222;
   font-size: 48px;
   z-index: 1000;
 
   @media only screen and (max-width: 1025px) {
-    top: 10px;
-    right: 10px;
-    font-size: 28px;
+    top: 6%;
+    right: 5%;
+    font-size: 30px;
   }
   &:hover {
     transform: scale(1.2);
@@ -83,6 +83,15 @@ export const ModalContainer = styled.div`
       font-size: 16px;
       line-height: 16px;
     }
+    h3 {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration: line-through;
+      opacity: 0.8;
+    }
+
+
     h4 {
       margin-top: 10px;
 

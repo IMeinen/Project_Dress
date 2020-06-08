@@ -6,6 +6,7 @@ export const CustomImage = styled.div`
   /* object-fit: cover; */
   background: ${props => `url(${props.image}) no-repeat`};
   background-size: cover;
+  background-position: center center;
 
   @media only screen and (max-width: 1025px) {
     height: 60vh;
