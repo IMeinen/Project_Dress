@@ -7,19 +7,24 @@ import VideoPlayer from '../../components/VideoPlayer';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import Overlay from '../../components/Overlay';
-import HeaderGlobal from '../../components/Header';
+import Loading from '../../components/Loading';
 import { ButtonContext } from '../../contexts/buttonContext';
 
 export default function About() {
   const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
 
+
+
   useEffect(() => {
+
     window.scrollTo(0, 0);
+
   });
   const HandleCollections = () => {
     setCurrentSlide('collections');
   }
   return (
+
     <ContainerAbout>
       <VideoPlayer
         url="https://www.youtube.com/watch?v=Ng6v9c-n3TE"
@@ -64,5 +69,6 @@ export default function About() {
       <ContactContainer noHeader isHeader={false} />
       <Footer />
     </ContainerAbout>
+
   );
 }

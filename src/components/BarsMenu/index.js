@@ -6,6 +6,7 @@ import { CustomMenu, ListLinks, StyledClose, Acordeon,IconActive } from './style
 export default function BarsMenu({ menuOpened }) {
   const [activeNoivas, setActiveNoivas] = useState(false);
   const [activeLastChance, setActiveLastChance] = useState(false);
+  const [activeShoes,setActiveShoes] = useState(false);
   return (
     <CustomMenu>
       <StyledClose onClick={() => menuOpened(false)} />
@@ -31,9 +32,20 @@ export default function BarsMenu({ menuOpened }) {
           </div>
         </Acordeon>
 
-        <Link to="/shoes/2019" onClick={() => menuOpened(false)}>
+        <Acordeon active={activeShoes} onClick={() => setActiveShoes(!activeShoes)}>
+          <div className="title">
           <h1>SAPATOS</h1>
-        </Link>
+          <IconActive rotate={activeShoes} />
+          </div>
+          <div className="internal-items">
+            <Link to="/shoes/2019" onClick={() => menuOpened(false)}>
+              <h1>COLEÇÃO // 2019</h1>
+            </Link>
+            <Link to="/shoes/2020" onClick={() => menuOpened(false)}>
+              <h1>COLEÇÃO // 2020</h1>
+            </Link>
+          </div>
+        </Acordeon>
         <Link to="/acessories/2019" onClick={() => menuOpened(false)}>
           <h1>ACESSÓRIOS DE CABELO</h1>
         </Link>

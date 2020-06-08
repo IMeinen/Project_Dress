@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
+import {IoIosArrowDown} from 'react-icons/io';
 
 export const StyledClose = styled(MdClose)`
   position: absolute;
@@ -89,4 +90,56 @@ export const ModalContainer = styled.div`
       line-height: 11px;
     }
   }
+`;
+export const Measure = styled.div`
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: ${props => props.active ? '200px' : '66px'};
+
+  width: 93%;
+  background: #fff;
+  border: 1px solid #191919;;
+  color: #fff;
+  text-transform: none;
+  margin: 10px 0px;
+
+  .line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  span{
+    font-size: 14px;
+    line-height: 66px;
+  }
+
+`;
+
+export const IconActive = styled(IoIosArrowDown)`
+
+
+  width: 24px;
+  height: 24px;
+  color: #191919;
+  padding-bottom: 6px;
+  margin-left: 6px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  transform: ${props => (props.rotate ? `rotate(-90deg)` : "rotate(0)")};
+`;
+
+export const ContentMeasure = styled.div`
+  display: ${props => props.active ? 'flex' : 'none'};
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
 `;

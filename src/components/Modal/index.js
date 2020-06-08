@@ -1,10 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
 
-import { StyledClose, ModalContainer } from './styles';
+import { StyledClose, ModalContainer,Measure,IconActive,ContentMeasure } from './styles';
 import MobilePhotoScroller from '../MobilePhotoScroller';
 import PhotoScroller from '../PhotoScroller';
 import ImageChanger from '../ImageChanger';
-
 import Button from '../Button';
 
 import { ImagesContext } from '../../contexts/imagesContext';
@@ -18,6 +17,8 @@ export default function Modal({ modalOpened }) {
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
   const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
   const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
+  const { sizes, setSizes } = useContext(ImagesContext);
+  const [activeMeasure,setActiveMeasure] = useState(false);
   return (
     <ModalContainer>
       <StyledClose
@@ -49,6 +50,17 @@ export default function Modal({ modalOpened }) {
         <Button primary text="PERGUNTAS FREQUENTES" to="/faq">
           {' '}
         </Button>
+        <Measure onClick={() => setActiveMeasure(!activeMeasure)} active={activeMeasure}>
+          <div className="line">
+          <span>MEDIDAS</span>
+          <IconActive rotate={activeMeasure}/>
+          </div>
+          <ContentMeasure active={activeMeasure}>
+              <p>{`Esse vestido pode ser ajustado para as seguintes medidas: ${sizes}`}</p>
+              <p><strong>* A modelo usa</strong></p>
+            </ContentMeasure>
+
+        </Measure>
       </div>
     </ModalContainer>
   );

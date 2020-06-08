@@ -65,7 +65,19 @@ export const DescriptionContent = styled.div`
 
 export const ShoesImage = styled.img`
 
-  max-width: 100%;
-  margin: 10px 0px 5px 0px;
-  margin-left: ${props => props.align === 'left' ? 'auto' : '0'};
+
+width: 100%;
+  margin: 6px 0;
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+    margin-bottom: 20px;
+  }
 `;
