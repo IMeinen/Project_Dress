@@ -12,6 +12,9 @@ export default function Acessories() {
   const [currentCollection, setCurrentCollection] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  useEffect(() => {
     setCurrentCollection(CollectionData.filter((obj) => obj.link === year)[0]);
   },[year])
   return (

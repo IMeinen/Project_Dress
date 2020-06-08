@@ -1,4 +1,4 @@
-import React, { useState, useContext, useCallback } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 
 import Author from '../../images/sandra.jpg';
 import { ContainerAbout, ContainerInfos } from './styles';
@@ -12,6 +12,10 @@ import { ButtonContext } from '../../contexts/buttonContext';
 
 export default function About() {
   const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const HandleCollections = () => {
     setCurrentSlide('collections');
   }

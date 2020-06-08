@@ -43,6 +43,9 @@ export default function CustomMade() {
   const [modalOpened, setModalOpened] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  useEffect(() => {
 
     if (filteredAns) {
       setDressesSugestion(FindDressesByName(filteredAns));

@@ -7,6 +7,9 @@ import {Container,ContainerMessage} from './styles';
 
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
     <Container>

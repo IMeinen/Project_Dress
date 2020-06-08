@@ -18,7 +18,9 @@ export default function Collections() {
   const { currentValue, setCurrentValue } = useContext(ImagesContext);
   const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
   const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   useEffect(() => {
     setCurrentCollection(
       CollectionData.filter((obj) => obj.link === collection)[0]

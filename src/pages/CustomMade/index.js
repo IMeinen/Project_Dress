@@ -7,6 +7,9 @@ import Footer from '../../components/Footer';
 
 
 export default function CustomMade() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <ContainerAbout>
       <ContainerInfos>

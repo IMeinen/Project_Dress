@@ -8,7 +8,9 @@ import Footer from '../../components/Footer';
 export default function Collections() {
   const { collection } = useParams();
   const [currentCollection, setCurrentCollection] = useState([]);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   useEffect(() => {
     setCurrentCollection(CollectionData.filter((obj) => obj.link === collection)[0]);
   },[collection])

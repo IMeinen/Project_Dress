@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import ReactPlayer from "react-player"
 
 import Footer from '../../components/Footer';
@@ -8,6 +8,9 @@ import { FAQ } from '../../constants/Faq';
 import Video from '../../videos/Sandra_01.mp4';
 
 export default function Faq() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <Container>

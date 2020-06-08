@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Footer from '../../components/Footer';
 import { Container} from './styles';
 import VideoPlayer from '../../components/VideoPlayer';
 
 
 export default function Measurements() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <Container>
