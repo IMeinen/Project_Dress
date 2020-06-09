@@ -1,4 +1,4 @@
-import React, { useContext, useEffect,useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import {
   Container,
@@ -14,32 +14,28 @@ import { ImagesContext } from '../../contexts/imagesContext';
 
 function ScreenImageView({ setOpen }) {
   const { showRightButton, setShowRightButton } = useContext(ButtonContext);
-  const { currentImage,setCurrentImage } = useContext(ImagesContext);
-  const { currentList,setCurrentList } = useContext(ImagesContext);
-  const [currentStart,setCurrentStart] = useState(currentImage);
+  const { currentImage, setCurrentImage } = useContext(ImagesContext);
+  const { currentList, setCurrentList } = useContext(ImagesContext);
+  const [currentStart, setCurrentStart] = useState(currentImage);
 
   const handleSubtract = () => {
-
-    if(currentStart - 1 >= 0){
-      setCurrentStart(currentStart - 1)
+    if (currentStart - 1 >= 0) {
+      setCurrentStart(currentStart - 1);
     }
-    if(currentImage - 1 >= 0){
-      setCurrentImage(currentImage - 1)
+    if (currentImage - 1 >= 0) {
+      setCurrentImage(currentImage - 1);
     }
-
-  }
+  };
 
   const handleAdd = () => {
-
-    if(currentStart + 1 <= currentList.length - 4){
-      setCurrentStart(currentStart + 1)
+    if (currentStart + 1 <= currentList.length - 4) {
+      setCurrentStart(currentStart + 1);
     }
 
-
-    if(currentImage + 1 < currentList.length ){
-      setCurrentImage(currentImage + 1)
+    if (currentImage + 1 < currentList.length) {
+      setCurrentImage(currentImage + 1);
     }
-  }
+  };
 
   useEffect(() => {
     setShowRightButton(false);
@@ -56,24 +52,19 @@ function ScreenImageView({ setOpen }) {
         <StyledClose />
       </CloseButton>
       <TransformWrapper
-        defaultScale={0.5}
+        defaultScale={1}
         defaultPositionX={0}
         defaultPositionY={0}
-
       >
         <LeftButton onClick={() => handleSubtract()}>
-            <StyledLeft />
-          </LeftButton>
-        <TransformComponent >
-
+          <StyledLeft />
+        </LeftButton>
+        <TransformComponent>
           <img src={currentList[currentImage]} alt="dress" className="image" />
-          <h1>{Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)}</h1>
-          <h1>|||||||||||</h1>
-          <h1>{Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)}</h1>
         </TransformComponent>
         <RightButton onClick={() => handleAdd()}>
-            <StyledRight />
-          </RightButton>
+          <StyledRight />
+        </RightButton>
       </TransformWrapper>
     </Container>
   );

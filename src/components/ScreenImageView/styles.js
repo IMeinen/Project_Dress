@@ -11,8 +11,9 @@ export const StyledClose = styled(MdClose)`
   z-index: 1002;
 
   @media only screen and (max-width: 1025px) {
-    top: 5%;
-    right: 5%;
+    top: 50%;
+    right: 50%;
+    transform : translate(50%, -50%);
     font-size: 28px;
   }
 
@@ -24,7 +25,7 @@ export const CloseButton = styled.div`
   border: 1px solid #191919;
   position: absolute;
   right: 5%;
-  top: 5%;
+  top: 7%;
   z-index: 1007;
 `;
 export const Container = styled.div`
