@@ -13,7 +13,7 @@ export const SubMenu = styled.div`
   -ms-animation: fadein 0.5s; /* Internet Explorer */
   -o-animation: fadein 0.5s; /* Opera < 0.50.5.0.5 */
   animation: fadein 0.5s;
-
+  cursor: pointer;
   h1 {
     font-size: 14px;
     line-height: 21px;

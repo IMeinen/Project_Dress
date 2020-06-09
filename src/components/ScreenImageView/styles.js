@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
-import {FiChevronRight,FiChevronLeft} from 'react-icons/fi';
+import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 
 export const StyledClose = styled(MdClose)`
   position: absolute;
@@ -10,12 +10,11 @@ export const StyledClose = styled(MdClose)`
   font-size: 56px;
   z-index: 1002;
 
-  @media only screen and (max-width: 1025px) {
+
     top: 50%;
     right: 50%;
-    transform : translate(50%, -50%);
+    transform: translate(50%, -50%);
     font-size: 28px;
-  }
 
 `;
 
@@ -27,6 +26,10 @@ export const CloseButton = styled.div`
   right: 5%;
   top: 7%;
   z-index: 1007;
+
+  @media only screen and (min-width: 1025px) {
+    top: 10%;
+  }
 `;
 export const Container = styled.div`
   position: absolute;
@@ -39,8 +42,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-
-  .image{
+  @media only screen and (min-width: 1025px) {
+    width: 1100px;
+    height: 800px;
+  }
+  .image {
 
     width: 80%;
     height: 80vh;
@@ -48,6 +54,12 @@ export const Container = styled.div`
     margin-left: 10%;
     margin-bottom: 10vh;
 
+    @media only screen and (min-width: 1025px) {
+      width:  600px;
+      height: 700px;
+      margin: 0;
+      margin-top: 100px;
+    }
   }
 `;
 
@@ -56,7 +68,6 @@ export const StyledRight = styled(FiChevronRight)`
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
-
 
   width: 26px;
   height: 26px;
