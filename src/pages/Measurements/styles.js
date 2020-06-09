@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 10px 5%;
   @media only screen and (max-width: 468px) {
-  margin-top: -30px;
+    margin-top: -30px;
   }
   .description {
     width: 100%;
@@ -19,15 +19,15 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media only screen and (min-width: 1025px){
-      padding: 5%;
+    @media only screen and (min-width: 1025px) {
+      padding: 1%;
     }
 
     h1 {
-        font-size: 29px;
-        line-height: 31px;
-        font-weight: 400;
-      }
+      font-size: 29px;
+      line-height: 31px;
+      font-weight: 400;
+    }
 
     @media only screen and (max-width: 468px) {
       padding-right: 5px;
@@ -45,16 +45,15 @@ export const Container = styled.div`
     width: 80%;
     text-align: center;
     position: relative;
-    p{
+    p {
       margin-top: 20px;
       font-weight: 590;
       font-size: 17px;
       line-height: 20px;
-      @media only screen and (min-width: 469px){
+      @media only screen and (min-width: 469px) {
         font-size: 13px;
       }
     }
-
   }
 `;
 
@@ -64,6 +63,15 @@ export const StyledVideo = styled.video`
 
   @media only screen and (min-width: 1025px) {
     width: 75%;
-   margin: 30px 0;
+    margin: 30px 0;
+  }
+`;
+
+export const VideoContainer = styled.div`
+  width: 100%;
+  @media only screen and (min-width: 469px) {
+    width: 600px;
+    align-self: center;
+    margin: 60px 0;
   }
 `;

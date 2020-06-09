@@ -382,7 +382,7 @@ const Collections = [
         value: 'R$ 9.900,00',
         parcelCard: 'R$ 12.200,00',
         parcelCheck: 'R$ 10.494,00',
-        sizes: '36,38 e 42',
+        sizes: 38,
         image: LEAO_TUMB,
         listOfImages: LEAO_LIST,
         width: '49.725',

@@ -6,7 +6,8 @@ export const ContainerAbout = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  .description-container, .description-onlife{
+  .description-container,
+  .description-onlife {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,21 +39,21 @@ export const ContainerAbout = styled.div`
     }
   }
 
-  .description-onlife{
+  .description-onlife {
     @media only screen and (min-width: 469px) and (max-width: 1024px) {
-        justify-content: center;
+      justify-content: center;
+      text-align: center;
+
+      h1 {
         text-align: center;
-
-        h1{
-          text-align: center;
-          align-self: center;
-        }
-
-        p{
-          width: 80%;
-          align-self: center;
-        }
+        align-self: center;
       }
+
+      p {
+        width: 80%;
+        align-self: center;
+      }
+    }
   }
 `;
 
@@ -71,6 +72,10 @@ export const ContainerInfos = styled.div`
     margin-top: 20px;
     @media only screen and (min-width: 469px) and (max-width: 1024px) {
       margin-top: 50px;
+    }
+
+    @media only screen and (min-width: 1025px)  {
+      margin-top: 60px;
     }
   }
   @media only screen and (min-width: 469px) {
@@ -91,5 +96,41 @@ export const ContainerInfos = styled.div`
   @media only screen and (min-width: 1025px) {
     width: 96%;
     margin: 4%;
+  }
+`;
+
+export const VideoContainer = styled.div`
+  width: 100%;
+
+  @media only screen and (min-width: 1025px) {
+    width: 40%;
+    padding: 30px;
+    padding-right: 60px;
+  }
+`;
+
+export const DescContainer = styled.div`
+  width: 100%;
+
+  @media only screen and (min-width: 1025px) {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10% 0 6%;
+
+
+  }
+`;
+
+
+export const BigContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
   }
 `;

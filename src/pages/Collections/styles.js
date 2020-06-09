@@ -100,8 +100,9 @@ export const DressImage = styled.div`
   }
 
   @media only screen and (min-width: 1025px) {
-    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    width: ${props => props.width  ? `${props.width}%` : '33.1%'};
     margin-top: ${props => props.adjustTop ? `-45%` : '0'};
     margin-bottom: 20px;
+    height: 676px;
   }
 `;

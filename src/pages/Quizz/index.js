@@ -38,18 +38,18 @@ export default function CustomMade() {
   const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
   const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
   const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
+  const { originalValue,setOriginalValue } = useContext(ImagesContext);
   const [filteredAns, setFilteredAns] = useState();
   const [dressesSugestion, setDressesSugestion] = useState();
+  const { sizes, setSizes } = useContext(ImagesContext);
   const [modalOpened, setModalOpened] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
   useEffect(() => {
-
     if (filteredAns) {
       setDressesSugestion(FindDressesByName(filteredAns));
-
     }
   }, [filteredAns]);
 
@@ -63,7 +63,7 @@ export default function CustomMade() {
 
   const HandleCollections = () => {
     setCurrentSlide('collections');
-  }
+  };
 
   return (
     <>
@@ -124,7 +124,6 @@ export default function CustomMade() {
             <SuggestionContainer>
               {dressesSugestion &&
                 dressesSugestion.map((ans) => {
-
                   return (
                     <DressImage
                       src={ans.image}
@@ -136,7 +135,9 @@ export default function CustomMade() {
                         setCurrentDesc(ans.description);
                         setCurrentValue(ans.value);
                         setCurrent6xCard(ans.parcelCard);
-                  setCurrent6xCheck(ans.parcelCheck);
+                        setCurrent6xCheck(ans.parcelCheck);
+                        setOriginalValue(ans.originalValue);
+                        setSizes(ans.sizes);
                       }}
                     />
                   );
@@ -152,19 +153,20 @@ export default function CustomMade() {
         >
           {' '}
         </Button>
-        {filteredAns && <Button
-          primary
-          text="CONHEÇA NOSSAS COLEÇÕES"
-          clickEvent={() => HandleCollections()}
-          to="/"
-        >
-          {' '}
-        </Button>}
+        {filteredAns && (
+          <Button
+            primary
+            text="CONHEÇA NOSSAS COLEÇÕES"
+            clickEvent={() => HandleCollections()}
+            to="/"
+          >
+            {' '}
+          </Button>
+        )}
       </Container>
 
       <Footer />
       <ToastContainer />
-
     </>
   );
 }

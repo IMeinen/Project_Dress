@@ -1,7 +1,13 @@
 import React, { useState, useContext, useEffect } from 'react';
 
 import Author from '../../images/sandra.jpg';
-import { ContainerAbout, ContainerInfos } from './styles';
+import {
+  ContainerAbout,
+  ContainerInfos,
+  VideoContainer,
+  DescContainer,
+  BigContainer,
+} from './styles';
 import ContactContainer from '../../components/ContactInformations';
 import VideoPlayer from '../../components/VideoPlayer';
 import Footer from '../../components/Footer';
@@ -13,47 +19,46 @@ import { ButtonContext } from '../../contexts/buttonContext';
 export default function About() {
   const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
 
-
-
   useEffect(() => {
-
     window.scrollTo(0, 0);
-
-  });
+  }, []);
   const HandleCollections = () => {
     setCurrentSlide('collections');
-  }
+  };
   return (
-
     <ContainerAbout>
-      <VideoPlayer
-        url="https://www.youtube.com/watch?v=Ng6v9c-n3TE"
-        playing
-        controls
-      />
-      <ContainerInfos>
-        <div className="description-onlife">
-          <h1>// SANDRA FERRAZ ONLIFE</h1>
-          <p>
-            Com a objetividade e praticidade de um vestido de noiva a pronta
-            entrega e toda a exclusividade do sob medida, Sandra Ferraz OnLife
-            busca elevar a experiência da noiva moderna a uma nova categoria,
-            onde sem sair do aconchego de sua casa, você poderá escolher, provar
-            e comprar o vestido dos seus sonhos, vivendo uma experiência única e
-            intimista.
-          </p>
+      <BigContainer>
+        <DescContainer>
+          <ContainerInfos>
+            <div className="description-onlife">
+              <h1>// SANDRA FERRAZ ONLIFE</h1>
+              <p>
+                Com a objetividade e praticidade de um vestido de noiva a pronta
+                entrega e toda a exclusividade do sob medida, Sandra Ferraz
+                OnLife busca elevar a experiência da noiva moderna a uma nova
+                categoria, onde sem sair do aconchego de sua casa, você poderá
+                escolher, provar e comprar o vestido dos seus sonhos, vivendo
+                uma experiência única e intimista.
+              </p>
 
-          <Button
-          primary
-          text="CONHEÇA NOSSAS COLEÇÕES"
-          clickEvent={() => HandleCollections()}
-          className="button-action"
-          to="/"
-        >
-          {' '}
-        </Button>
-        </div>
-      </ContainerInfos>
+              <Button
+                primary
+                text="CONHEÇA NOSSAS COLEÇÕES"
+                clickEvent={() => HandleCollections()}
+                className="button-action"
+                to="/"
+               />
+            </div>
+          </ContainerInfos>
+        </DescContainer>
+        <VideoContainer>
+          <VideoPlayer
+            url="https://www.youtube.com/watch?v=Ng6v9c-n3TE"
+            playing
+            controls
+          />
+        </VideoContainer>
+      </BigContainer>
       <ContainerInfos>
         <img alt="author" src={Author} />
         <div className="description-container">
@@ -69,6 +74,5 @@ export default function About() {
       <ContactContainer noHeader isHeader={false} />
       <Footer />
     </ContainerAbout>
-
   );
 }

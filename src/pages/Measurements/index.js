@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import Footer from '../../components/Footer';
-import { Container} from './styles';
+import { Container , VideoContainer} from './styles';
 import VideoPlayer from '../../components/VideoPlayer';
 
 
@@ -17,11 +17,13 @@ export default function Measurements() {
 
 
         </div>
+        <VideoContainer>
         <VideoPlayer
         url="https://www.youtube.com/watch?v=0wN_SznJnns"
         playing
         controls
       />
+      </VideoContainer>
       </Container>
       <Footer />
     </>

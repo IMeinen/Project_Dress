@@ -81,7 +81,7 @@ export const DescriptionContent = styled.div`
 export const ShoesImage = styled.img`
 
 
-width: 100%;
+  width: 100%;
   margin: 6px 0;
 
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
@@ -91,8 +91,9 @@ width: 100%;
   }
 
   @media only screen and (min-width: 1025px) {
-    width: ${props => props.width  ? `${props.width}%` : '100%'};
+    width: ${props => props.width  ? `${props.width}%` : '49.5%'};
     margin-top: ${props => props.adjustTop ? `-45%` : '0'};
     margin-bottom: 20px;
+    height: 600px;
   }
 `;

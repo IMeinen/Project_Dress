@@ -18,9 +18,14 @@ export const DescriptionContent = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+  @media only screen and (min-width: 469px)  {
     margin-top: 5%;
   }
+
+  @media only screen and (min-width: 1025px)  {
+    padding-bottom: 0;
+  }
+
 
   h1 {
     font-size: 2.3em;
@@ -82,9 +87,10 @@ background-size: cover;
 }
 
 @media only screen and (min-width: 1025px) {
-  width: ${props => props.width  ? `${props.width}%` : '100%'};
+  width: ${props => props.width  ? `${props.width}%` : '49.5%'};
   margin-top: ${props => props.adjustTop ? `-45%` : '0'};
   margin-bottom: 20px;
+  height: 700px
 }
 `;
 

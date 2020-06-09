@@ -5,7 +5,7 @@ import { IoIosArrowDown} from 'react-icons/io';
 export const SubMenu = styled.div`
   width: 100%;
   position: absolute;
-  margin-top: 4px;
+  margin-top: 1px;
   background: #fff;
   z-index: 1222;
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 0.50.5.0.5 */
@@ -51,7 +51,7 @@ export const SubMenu = styled.div`
   @media only screen and (max-width: 468px) {
     display: none;
   }
-  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+  @media only screen and (min-width: 469px) {
     min-height: 256px;
     padding-bottom: 10px;
   }
@@ -84,7 +84,7 @@ export const Acordeon = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
 
-  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+  @media only screen and (min-width: 469px) {
     margin-top: 30px;
 
   }

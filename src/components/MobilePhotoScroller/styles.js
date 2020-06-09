@@ -29,7 +29,7 @@ export const ImgItem = styled.div`
     width: 80px;
     height: 80px;
   }
-  background: ${props => `url(${props.image}) no-repeat`};
+  background: ${props => `url(${props.image}) no-repeat top center`};
   background-size: cover;
 `;
 
