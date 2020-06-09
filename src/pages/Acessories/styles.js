@@ -18,10 +18,9 @@ export const DescriptionContent = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width: 469px)  {
-    margin-top: 40px;
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    margin-top: 5%;
   }
-
 
   h1 {
     font-size: 2.3em;
@@ -32,28 +31,22 @@ export const DescriptionContent = styled.div`
     text-transform: none;
     letter-spacing: -1.5px;
 
-    @media only screen and (min-width: 469px) and (max-width: 1024px) {
-      font-size: 26px;
-      font-weight: 400;
-      font-style: normal;
-      line-height: 29px;
-    }
-  }
 
+  }
   @media only screen and (max-width: 468px) {
-    padding-right: 5px;
-    padding-left: 5px;
-    h1 {
+      padding-right: 5px;
+      padding-left: 5px;
+      h1{
       font-size: 29px;
       line-height: 31px;
+      }
     }
-  }
 
   .subdescription {
     margin-top: 10px;
-    width: 80%;
+    width: 50%;
     text-align: center;
-    position: relative;
+
     p {
       font-size: 1.5em;
       font-weight: 200;
@@ -63,12 +56,6 @@ export const DescriptionContent = styled.div`
       text-transform: none;
       letter-spacing: -1.5px;
       color: #e4e4e4;
-      @media only screen and (min-width: 469px) and (max-width: 1024px) {
-        font-size: 18px;
-        font-weight: 500;
-        font-style: normal;
-        line-height: 20px;
-      }
     }
     @media only screen and (max-width: 468px) {
       width: 100%;
@@ -80,13 +67,24 @@ export const DescriptionContent = styled.div`
   }
 `;
 
-export const AcessorieImage = styled.img`
- width: 100%;
-  margin: 10px 0px 5px 0px;
+export const AcessorieImage = styled.div`
 
-  @media only screen and (min-width: 469px) {
-    width: ${props => props.width  ? `${props.width}%` : '100%'};
-    margin-top: ${props => props.adjustTop ? `-45%` : '0'};
-    margin-bottom: 20px;
-  }
+width: 100%;
+margin: 6px 0;
+display: block;
+background: ${props => `url(${props.image}) no-repeat center center`};
+background-size: cover;
+@media only screen and (min-width: 469px) and (max-width: 1024px) {
+  height: 436px;
+  width: ${props => props.width  ? `${props.width}%` : '49.5%'};
+  margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1025px) {
+  width: ${props => props.width  ? `${props.width}%` : '100%'};
+  margin-top: ${props => props.adjustTop ? `-45%` : '0'};
+  margin-bottom: 20px;
+}
 `;
+

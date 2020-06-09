@@ -28,7 +28,7 @@ export default function Acessories() {
             </div>
           </DescriptionContent>
           {(currentCollection.images || []).map((acessorie) => {
-            return <AcessorieImage src={acessorie.image} alt="test" width={acessorie.width}/>;
+            return <AcessorieImage image={acessorie.image} alt="test" width={acessorie.width}/>;
           })}
 
         </Container>

@@ -46,8 +46,8 @@ export default function Collections() {
           {(currentCollection.images || []).map((image) => {
             return (
               <DressImage
-                src={image.image}
-                alt="test"
+                image={image.image}
+
                 width={image.width}
                 onClick={() => {
                   setCurrentList(image.listOfImages);
