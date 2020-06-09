@@ -56,7 +56,7 @@ function ScreenImageView({ setOpen }) {
         <StyledClose />
       </CloseButton>
       <TransformWrapper
-        defaultScale={1}
+        defaultScale={0.5}
         defaultPositionX={0}
         defaultPositionY={0}
 
@@ -65,7 +65,9 @@ function ScreenImageView({ setOpen }) {
             <StyledLeft />
           </LeftButton>
         <TransformComponent >
-
+        <h1>{Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)}</h1>
+          <h1>|||||||||||</h1>
+          <h1>{Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)}</h1>
           <img src={currentList[currentImage]} alt="dress" className="image" />
 
         </TransformComponent>
