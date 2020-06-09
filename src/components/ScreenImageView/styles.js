@@ -29,23 +29,24 @@ export const CloseButton = styled.div`
   z-index: 1007;
 `;
 export const Container = styled.div`
-  position: fixed;
-  top: 0;
+  position: absolute;
+
   width: 100%;
-  max-width: 100vw;
   height: 100vh;
   background: #fff;
   z-index: 1007;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5%;
 
 
   .image{
 
-    width: 100%;
+    width: 80%;
+    height: 80vh;
     object-fit: cover;
+    margin-left: 10%;
+    margin-bottom: 10vh;
 
   }
 `;

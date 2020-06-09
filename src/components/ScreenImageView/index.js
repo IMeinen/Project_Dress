@@ -53,13 +53,11 @@ function ScreenImageView({ setOpen }) {
       </CloseButton>
       <TransformWrapper
         defaultScale={1}
-        defaultPositionX={0}
-        defaultPositionY={0}
       >
         <LeftButton onClick={() => handleSubtract()}>
           <StyledLeft />
         </LeftButton>
-        <TransformComponent>
+        <TransformComponent >
           <img src={currentList[currentImage]} alt="dress" className="image" />
         </TransformComponent>
         <RightButton onClick={() => handleAdd()}>
