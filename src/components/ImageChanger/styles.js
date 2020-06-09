@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const CustomImage = styled.div`
   width: 100%;
-  background: ${props => `url(${props.image}) no-repeat`};
+  background: ${props => `url(${props.image}) no-repeat top center`};
   background-size: cover;
-  background-position: center center;
+
 
   @media only screen and (max-width: 1025px) {
     height: 60vh;
