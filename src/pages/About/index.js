@@ -32,7 +32,7 @@ export default function About() {
         controls
       />
       <ContainerInfos>
-        <div className="description-container">
+        <div className="description-onlife">
           <h1>// SANDRA FERRAZ ONLIFE</h1>
           <p>
             Com a objetividade e praticidade de um vestido de noiva a pronta
@@ -47,7 +47,7 @@ export default function About() {
           primary
           text="CONHEÇA NOSSAS COLEÇÕES"
           clickEvent={() => HandleCollections()}
-          style={{marginTop: '20px'}}
+          className="button-action"
           to="/"
         >
           {' '}

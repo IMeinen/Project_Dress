@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 
-import BackGroundImage from '../../images/custom_made.jpg';
 import { ContainerAbout, ContainerInfos } from './styles';
 import ContactContainer from '../../components/ContactInformations';
 import Footer from '../../components/Footer';
@@ -9,7 +8,7 @@ import VideoPlayer from '../../components/VideoPlayer';
 export default function CustomMade() {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
 
   return (
     <ContainerAbout>
@@ -18,6 +17,7 @@ export default function CustomMade() {
           url="https://www.youtube.com/watch?v=jgPbcRh-eoU"
           playing
           controls
+
         />
         <div className="description-container">
           <h1>// SOB MEDIDA</h1>

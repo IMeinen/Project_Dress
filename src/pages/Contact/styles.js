@@ -6,15 +6,14 @@ export const Container = styled.div`
   @media only screen and (min-width: 1025px) {
     min-height: 620px;
   }
+
+  @media only screen and (min-width: 469px) and (max-width: 768px) {
+    min-height: 491.52px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    min-height: 656px;
+  }
 `;
 
-export const ContainerMessage = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 30px;
 
-
-`;

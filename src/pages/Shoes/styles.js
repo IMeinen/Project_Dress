@@ -9,7 +9,6 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
 `;
-
 export const DescriptionContent = styled.div`
   width: 100%;
   padding: 0% 10% 5% 10%;
@@ -17,6 +16,11 @@ export const DescriptionContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (min-width: 469px)  {
+    margin-top: 40px;
+  }
+
 
   h1 {
     font-size: 2.3em;
@@ -27,22 +31,28 @@ export const DescriptionContent = styled.div`
     text-transform: none;
     letter-spacing: -1.5px;
 
-
+    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+      font-size: 26px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 29px;
+    }
   }
+
   @media only screen and (max-width: 468px) {
-      padding-right: 5px;
-      padding-left: 5px;
-      h1{
+    padding-right: 5px;
+    padding-left: 5px;
+    h1 {
       font-size: 29px;
       line-height: 31px;
-      }
     }
+  }
 
   .subdescription {
     margin-top: 10px;
-    width: 50%;
+    width: 80%;
     text-align: center;
-
+    position: relative;
     p {
       font-size: 1.5em;
       font-weight: 200;
@@ -52,6 +62,12 @@ export const DescriptionContent = styled.div`
       text-transform: none;
       letter-spacing: -1.5px;
       color: #e4e4e4;
+      @media only screen and (min-width: 469px) and (max-width: 1024px) {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 20px;
+      }
     }
     @media only screen and (max-width: 468px) {
       width: 100%;
@@ -62,7 +78,6 @@ export const DescriptionContent = styled.div`
     }
   }
 `;
-
 export const ShoesImage = styled.img`
 
 

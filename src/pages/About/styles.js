@@ -5,11 +5,8 @@ export const ContainerAbout = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: -30px;
-
-
-
-  .description-container{
+  width: 100%;
+  .description-container, .description-onlife{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,26 +16,43 @@ export const ContainerAbout = styled.div`
     padding: 0px 10%;
     text-align: center;
     margin-bottom: 40px;
-    @media only screen and (min-width: 469px)  {
-      padding: 0 30px ;
+    @media only screen and (min-width: 469px) {
+      padding: 0 30px;
       text-align: left;
       align-items: flex-start;
     }
-    h1{
+    h1 {
       font-weight: 700;
       font-size: 21px;
       line-height: 31px;
     }
 
-    p{
+    p {
       margin-top: 20px;
       font-weight: 590;
       font-size: 17px;
       line-height: 20px;
-      @media only screen and (min-width: 469px){
+      @media only screen and (min-width: 469px) {
         font-size: 13px;
       }
     }
+  }
+
+  .description-onlife{
+    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+        justify-content: center;
+        text-align: center;
+
+        h1{
+          text-align: center;
+          align-self: center;
+        }
+
+        p{
+          width: 80%;
+          align-self: center;
+        }
+      }
   }
 `;
 
@@ -49,21 +63,29 @@ export const ContainerInfos = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-
-  >img{
+  > img {
     max-width: 100%;
   }
 
-
+  .button-action {
+    margin-top: 20px;
+    @media only screen and (min-width: 469px) and (max-width: 1024px) {
+      margin-top: 50px;
+    }
+  }
   @media only screen and (min-width: 469px) {
     flex-direction: row;
 
     width: 98%;
     margin: 2%;
-    margin-top: 50px;
-    >img{
+
+    > img {
       max-width: 60%;
     }
+  }
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    margin-top: 24px;
   }
 
   @media only screen and (min-width: 1025px) {

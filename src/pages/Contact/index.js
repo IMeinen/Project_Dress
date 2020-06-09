@@ -14,9 +14,10 @@ export default function Contact() {
     <>
     <Container>
       <ContactInformations isHeader />
-      <ContainerMessage />
+
 
     </Container>
+
     <Footer />
     </>
   );

@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { IoIosArrowDown} from 'react-icons/io';
 
 export const SubMenu = styled.div`
   width: 100%;
   position: absolute;
   margin-top: 4px;
   background: #fff;
-  z-index: 1003;
+  z-index: 1222;
   -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 0.50.5.0.5 */
   -moz-animation: fadein 0.5s; /* Firefox < 0.56 */
   -ms-animation: fadein 0.5s; /* Internet Explorer */
   -o-animation: fadein 0.5s; /* Opera < 0.50.5.0.5 */
   animation: fadein 0.5s;
+
+  h1 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+  }
 
   @keyframes fadein {
     from {
@@ -45,25 +52,82 @@ export const SubMenu = styled.div`
     display: none;
   }
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
-    height: 256px;
+    min-height: 256px;
+    padding-bottom: 10px;
   }
 `;
 
 export const ContainerLinks = styled.div`
   width: 50%;
-`;
-
-export const StyledLink = styled(Link)`
-  margin-left: 25%;
-  width: 75%;
-  height: 51.2px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  span {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10%;
+  .link-text {
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
   }
+
+  .only-link{
+    margin-top: 20px;
+  }
+`;
+
+
+export const Acordeon = styled.div`
+  width: 100%;
+  height: ${(props) => (props.active ? 'auto' : '42px')};
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    margin-top: 30px;
+
+  }
+
+  .title{
+
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+
+  }
+
+  .internal-items {
+    display: ${(props) => (props.active ? 'flex' : 'none')};
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    h1 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  }
+`;
+
+export const IconActive = styled(IoIosArrowDown)`
+
+
+  width: 24px;
+  height: 24px;
+  color: #191919;
+  padding-bottom: 6px;
+  margin-left: 6px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  transform: ${props => (props.rotate ? `rotate(-90deg)` : "rotate(0)")};
 `;

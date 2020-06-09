@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Acessories';
 import {Container, AcessorieImage,DescriptionContent } from './styles';
@@ -13,7 +13,7 @@ export default function Acessories() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
   useEffect(() => {
     setCurrentCollection(CollectionData.filter((obj) => obj.link === year)[0]);
   },[year])

@@ -23,7 +23,7 @@ export const DescriptionContent = styled.div`
   justify-content: center;
 
   @media only screen and (min-width: 469px)  {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
 

@@ -48,7 +48,9 @@ export const ContainerInfos = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
+  @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    height: 300.52px;
+  }
 
   >img{
     max-width: 100%;

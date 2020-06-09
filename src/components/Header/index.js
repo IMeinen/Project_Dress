@@ -31,7 +31,7 @@ export default function HeaderGlobal() {
           <BrideLink onClick={() => setSubMenuOpened(!subMenuOpened)}>
             <span>NOIVAS</span>
           </BrideLink>
-          <PathLink to="/contact"  onClick={() => setSubMenuOpened(false)}>
+          <PathLink to="/contact" onClick={() => setSubMenuOpened(false)}>
             <span>CONTATO</span>
           </PathLink>
           <div className="appointment" onClick={() => setSubMenuOpened(false)}>
@@ -41,7 +41,12 @@ export default function HeaderGlobal() {
         <StyledBars onClick={() => setMenuOpened(!menuOpened)} />
       </Header>
       <Gambia />
-      {subMenuOpened && <HeaderSubMenu openSubMenu={setSubMenuOpened} />}
+      {subMenuOpened && (
+        <HeaderSubMenu
+          openSubMenu={setSubMenuOpened}
+
+        />
+      )}
     </>
   );
 }

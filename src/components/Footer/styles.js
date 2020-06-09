@@ -14,6 +14,7 @@ export const FooterContainer = styled.div`
   margin-top: auto;
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
     height: 42vh;
+    justify-content: center;
   }
 
   @media only screen and (min-width: 1025px) {
