@@ -11,8 +11,8 @@ export const StyledClose = styled(MdClose)`
   z-index: 1002;
 
   @media only screen and (max-width: 1025px) {
-    top: 10px;
-    right: 10px;
+    top: 5%;
+    right: 5%;
     font-size: 28px;
   }
 
@@ -23,8 +23,8 @@ export const CloseButton = styled.div`
   height: 50px;
   border: 1px solid #191919;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 5%;
+  top: 5%;
   z-index: 1007;
 `;
 export const Container = styled.div`
@@ -38,6 +38,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5%;
 
 
   .image{
@@ -50,7 +51,7 @@ export const Container = styled.div`
 
 export const StyledRight = styled(FiChevronRight)`
   position: absolute;
-  right: 1%;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
 
@@ -64,7 +65,7 @@ export const StyledLeft = styled(FiChevronLeft)`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 1%;
+  left: 5%;
   width: 26px;
   height: 26px;
   color: #191919;
@@ -75,7 +76,7 @@ export const LeftButton = styled.div`
   height: 40px;
   position: absolute;
   top: 50%;
-  left: 1%;
+  left: 5%;
   transform: translateY(-50%);
   z-index: 1007;
   opacity: 0.6;
@@ -85,7 +86,7 @@ export const RightButton = styled.div`
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 1%;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1007;
