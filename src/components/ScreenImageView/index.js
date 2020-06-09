@@ -64,7 +64,7 @@ function ScreenImageView({ setOpen }) {
         <LeftButton onClick={() => handleSubtract()}>
             <StyledLeft />
           </LeftButton>
-        <TransformComponent Limi>
+        <TransformComponent >
 
           <img src={currentList[currentImage]} alt="dress" className="image" />
 
