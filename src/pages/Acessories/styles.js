@@ -79,8 +79,9 @@ margin: 6px 0;
 display: block;
 background: ${props => `url(${props.image}) no-repeat center center`};
 background-size: cover;
+height: 436px;
 @media only screen and (min-width: 469px) and (max-width: 1024px) {
-  height: 436px;
+  height: 516px;
   width: ${props => props.width  ? `${props.width}%` : '49.5%'};
   margin-top: ${props => props.adjustTop ? `-45%` : '0'};
   margin-bottom: 20px;
