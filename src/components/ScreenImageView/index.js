@@ -56,10 +56,10 @@ function ScreenImageView({ setOpen }) {
         <StyledClose />
       </CloseButton>
       <TransformWrapper
-        defaultScale={0.8}
+        defaultScale={1}
         defaultPositionX={0}
         defaultPositionY={0}
-        options={{limitToWrapper : true}}
+
       >
         <LeftButton onClick={() => handleSubtract()}>
             <StyledLeft />
