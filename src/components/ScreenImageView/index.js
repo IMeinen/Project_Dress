@@ -56,7 +56,7 @@ function ScreenImageView({ setOpen }) {
         <StyledClose />
       </CloseButton>
       <TransformWrapper
-        defaultScale={1}
+        defaultScale={0.8}
         defaultPositionX={0}
         defaultPositionY={0}
         options={{limitToWrapper : true}}
