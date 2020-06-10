@@ -118,7 +118,7 @@ export default function SlideShow() {
         <OnlifeContainer>
           {dresses[counter].Onlife && <img src={OnlifeLogo} alt="onLife" />}
           {dresses[counter].Onlife && (
-            <div className="description-onlife" top={dresses[counter].top}>
+            <div className="de-onlife" top={dresses[counter].top}>
               <p>
                 // Com a praticidade do pronta entrega e a exclusividade do
                 sob-medida.

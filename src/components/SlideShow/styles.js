@@ -98,7 +98,7 @@ export const OnlifeContainer = styled.div`
 
   } */
 
-  .description-onlife {
+  .de-onlife {
     position: absolute;
     width: 100%;
     top: 90%;
