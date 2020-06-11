@@ -11,7 +11,7 @@ export const CustomImage = styled.div`
   }
   @media only screen and (min-width: 1025px) {
     width: 550px;
-    min-height: 450px;
+    min-height: ${props => props.type === 'dress' ? '600px' : '450px'};
   }
 `;
 

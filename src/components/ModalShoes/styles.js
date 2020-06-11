@@ -49,7 +49,7 @@ export const ModalContainer = styled.div`
     justify-content: space-between;
     background: #fff;
     width: 55%;
-    height: 85%;
+    height: 100%;
     padding: 0 1%;
     @media only screen and (max-width: 1025px) {
       width: 100%;
