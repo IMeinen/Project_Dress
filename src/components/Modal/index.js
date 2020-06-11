@@ -40,7 +40,7 @@ export default function Modal({ modalOpened }) {
       </StyledClose>
       <div className="images-container">
         <PhotoScroller listImages={currentList} setImage={setCurrentImage} />
-        <ImageChanger image={currentList[currentImage]} />
+        <ImageChanger image={currentList[currentImage]} type="dress" />
         <MobilePhotoScroller
           listImages={currentList}
           setImage={setCurrentImage}

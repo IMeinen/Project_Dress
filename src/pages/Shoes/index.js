@@ -46,8 +46,8 @@ export default function Shoes() {
           {(currentCollection.images || []).map((image) => {
             return (
               <ShoesImage
-                src={image.image}
-                alt="test"
+                image={image.image}
+
                 width={image.width}
                 onClick={() => {
                   setCurrentList(image.listOfImages);

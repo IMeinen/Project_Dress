@@ -46,21 +46,7 @@ export const Container = styled.div`
     width: 1100px;
     height: 800px;
   }
-  .image {
 
-    width: 80%;
-    height: 80vh;
-    object-fit: cover;
-    margin-left: 10%;
-    margin-bottom: 10vh;
-
-    @media only screen and (min-width: 1025px) {
-      width:  600px;
-      height: 700px;
-      margin: 0;
-      margin-top: 100px;
-    }
-  }
 `;
 
 export const StyledRight = styled(FiChevronRight)`
@@ -104,4 +90,22 @@ export const RightButton = styled.div`
   transform: translateY(-50%);
   z-index: 1007;
   opacity: 0.6;
+`;
+
+export const CustomImage = styled.img`
+
+  width: 80%;
+  height: 80vh;
+  object-fit: cover;
+  margin-left: 10%;
+  margin-bottom: 10vh;
+
+  @media only screen and (min-width: 1025px) {
+    width:  ${props => props.type === "dress" ? "600px" : "800px"};
+    height: ${props => props.type === "dress" ? "700px" : "600px"};
+    margin: 0;
+    margin-top: 100px;
+  }
+
+
 `;

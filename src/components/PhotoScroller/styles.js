@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content:flex-start;
   background: #fff;
-  width: 200px;
+  width: 150px;
   height: 90%;
   overflow: hidden;
 
@@ -23,7 +23,7 @@ export const ImgItem = styled.div`
   border-bottom: ${props =>  props.active ? '2px solid #191919' : ''};
 
   margin: 10px;
-  background: ${props => `url(${props.image}) no-repeat`};
+  background: ${props => `url(${props.image}) no-repeat top center`};
   background-size: cover;
 `;
 

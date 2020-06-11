@@ -8,11 +8,12 @@ import {
   StyledLeft,
   LeftButton,
   RightButton,
+  CustomImage
 } from './styles';
 import { ButtonContext } from '../../contexts/buttonContext';
 import { ImagesContext } from '../../contexts/imagesContext';
 
-function ScreenImageView({ setOpen }) {
+function ScreenImageView({ setOpen,type }) {
   const { showRightButton, setShowRightButton } = useContext(ButtonContext);
   const { currentImage, setCurrentImage } = useContext(ImagesContext);
   const { currentList, setCurrentList } = useContext(ImagesContext);
@@ -58,7 +59,7 @@ function ScreenImageView({ setOpen }) {
           <StyledLeft />
         </LeftButton>
         <TransformComponent >
-          <img src={currentList[currentImage]} alt="dress" className="image" />
+          <CustomImage src={currentList[currentImage]} alt="dress" className="image" type={type} />
         </TransformComponent>
         <RightButton onClick={() => handleAdd()}>
           <StyledRight />

@@ -7,11 +7,11 @@ export const CustomImage = styled.div`
 
 
   @media only screen and (max-width: 1025px) {
-    height: 60vh;
+    height: ${props => props.type === 'dress' ? '60vh' : '40vh'};
   }
   @media only screen and (min-width: 1025px) {
-    width: 400px;
-    min-height: 600px;
+    width: 550px;
+    min-height: 450px;
   }
 `;
 

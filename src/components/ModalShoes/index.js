@@ -39,7 +39,7 @@ export default function ModalShoes({ modalOpened }) {
       </StyledClose>
       <div className="images-container">
         <PhotoScroller listImages={currentList} setImage={setCurrentImage} />
-        <ImageChanger image={currentList[currentImage]} />
+        <ImageChanger image={currentList[currentImage]} type="shoe" />
         <MobilePhotoScroller
           listImages={currentList}
           setImage={setCurrentImage}

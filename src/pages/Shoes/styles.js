@@ -78,13 +78,18 @@ export const DescriptionContent = styled.div`
     }
   }
 `;
-export const ShoesImage = styled.img`
 
+
+export const ShoesImage = styled.div`
 
   width: 100%;
   margin: 6px 0;
-
+  display: block;
+  background: ${props => `url(${props.image}) no-repeat top center`};
+  background-size: cover;
+  height: 280px;
   @media only screen and (min-width: 469px) and (max-width: 1024px) {
+    height: 516px;
     width: ${props => props.width  ? `${props.width}%` : '100%'};
     margin-top: ${props => props.adjustTop ? `-45%` : '0'};
     margin-bottom: 20px;
@@ -94,6 +99,6 @@ export const ShoesImage = styled.img`
     width: ${props => props.width  ? `${props.width}%` : '49.5%'};
     margin-top: ${props => props.adjustTop ? `-45%` : '0'};
     margin-bottom: 20px;
-    height: 600px;
+    height: 476px;
   }
 `;
