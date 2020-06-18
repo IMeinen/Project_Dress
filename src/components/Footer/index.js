@@ -11,7 +11,7 @@ function Footer() {
   return (
     <FooterContainer>
       <div className="descriptions">
-        <h5>FALE CONOSCO</h5>
+        <h5>FALE CONOSCO </h5>
         <p>(51) 9 92614347</p>
         <p>contato@sandraferraz.com.br</p>
       </div>
