@@ -1,1 +1,1 @@
-CI=false
+command = "CI= yarn build"
