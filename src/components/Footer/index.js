@@ -60,7 +60,7 @@ function Footer() {
           <img src={PintrestIcon} alt="" width="40" height="40" />
         </a>
         <a
-          href="https://api.whatsapp.com/send?text=Artigo%20https://rockcontent.com/blog/o-que-e-inbound-marketing"
+          href="https://wa.me/5551992614347"
           target="_blank"
           rel="noopener noreferrer"
         >
