@@ -5,7 +5,7 @@ import { CustomMenu, ListLinks, StyledClose, Acordeon,IconActive } from './style
 
 export default function BarsMenu({ menuOpened }) {
   const [activeNoivas, setActiveNoivas] = useState(false);
-  const [activeLastChance, setActiveLastChance] = useState(false);
+  // const [activeLastChance, setActiveLastChance] = useState(false);
   const [activeShoes,setActiveShoes] = useState(false);
   return (
     <CustomMenu>
@@ -56,20 +56,20 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/contact" onClick={() => menuOpened(false)}>
           <h1>CONTATO</h1>
         </Link>
-        <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
-          <div className="title">
-          <h1>LAST CHANCE</h1>
-          <IconActive rotate={activeLastChance} />
-          </div>
-          <div className="internal-items">
-            <Link to="/collection/last-chance-festa" onClick={() => menuOpened(false)}>
-              <h1>FESTA</h1>
-            </Link>
-            <Link to="/collection/last-chance-noiva" onClick={() => menuOpened(false)}>
-              <h1>NOIVA</h1>
-            </Link>
-          </div>
-        </Acordeon>
+          {/* <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
+            <div className="title">
+            <h1>LAST CHANCE</h1>
+            <IconActive rotate={activeLastChance} />
+            </div>
+            <div className="internal-items">
+              <Link to="/collection/last-chance-festa" onClick={() => menuOpened(false)}>
+                <h1>FESTA</h1>
+              </Link>
+              <Link to="/collection/last-chance-noiva" onClick={() => menuOpened(false)}>
+                <h1>NOIVA</h1>
+              </Link>
+            </div>
+          </Acordeon> */}
 
         <div className="appointment">
           <a href="https://sandra-ferraz.reservio.com/">MARQUE SEU HORÁRIO</a>
