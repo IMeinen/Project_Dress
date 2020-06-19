@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import CollectionData from '../../constants/Shoes';
-import { Container, DescriptionContent, DressImage, ShoesImage } from './styles';
+import { Container, DescriptionContent, ShoesImage } from './styles';
 import ModalShoes from '../../components/ModalShoes';
 import Overlay from '../../components/Overlay';
 import Footer from '../../components/Footer';
@@ -12,14 +12,14 @@ export default function Shoes() {
   const { collection } = useParams();
   const [currentCollection, setCurrentCollection] = useState([]);
   const [modalOpened, setModalOpened] = useState(false);
-  const { currentList, setCurrentList } = useContext(ImagesContext);
-  const { currentName, setCurrentName } = useContext(ImagesContext);
-  const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
-  const { currentValue, setCurrentValue } = useContext(ImagesContext);
-  const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
-  const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
-  const { originalValue,setOriginalValue } = useContext(ImagesContext);
-  const { sizes,setSizes } = useContext(ImagesContext);
+  const { setCurrentList } = useContext(ImagesContext);
+  const { setCurrentName } = useContext(ImagesContext);
+  const { setCurrentDesc } = useContext(ImagesContext);
+  const { setCurrentValue } = useContext(ImagesContext);
+  const { setCurrent6xCard } = useContext(ImagesContext);
+  const { setCurrent6xCheck } = useContext(ImagesContext);
+  const { setOriginalValue } = useContext(ImagesContext);
+  const { setSizes } = useContext(ImagesContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -47,7 +47,6 @@ export default function Shoes() {
             return (
               <ShoesImage
                 image={image.image}
-
                 width={image.width}
                 onClick={() => {
                   setCurrentList(image.listOfImages);
@@ -58,7 +57,7 @@ export default function Shoes() {
                   setCurrent6xCard(image.parcelCard);
                   setCurrent6xCheck(image.parcelCheck);
                   setOriginalValue(image.originalValue);
-                  setSizes(image.sizes)
+                  setSizes(image.sizes);
                 }}
                 adjustTop={image.adjustTop}
               />

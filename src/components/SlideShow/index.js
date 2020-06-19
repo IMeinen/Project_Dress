@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useEffect, useContext } from 'react';
 
 import {
@@ -82,7 +83,7 @@ const collections = [
   },
 ];
 export default function SlideShow() {
-  const {currentSlide,setCurrentSlide} = useContext(ButtonContext);
+  const {currentSlide} = useContext(ButtonContext);
   const [counter, setCounter] = useState(0);
 
   const [dresses,setDresses] = useState(currentSlide === 'infos' ? [...infos] : [...collections]);
@@ -102,11 +103,11 @@ export default function SlideShow() {
         setCounter(counter + 1);
       }
     }, currentSlide === 'infos' ? 8500 : 4000);
-  }, [currentImage]);
+  }, [currentImage,currentSlide,dresses.length,counter]);
 
   useEffect(() => {
     setCurrentImage(dresses[counter].photo);
-  }, [counter]);
+  }, [counter,dresses]);
 
   return (
     <Container

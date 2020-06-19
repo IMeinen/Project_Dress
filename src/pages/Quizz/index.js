@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState, useContext, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,17 +32,17 @@ export default function CustomMade() {
     toppings: '',
     body: '',
   });
-  const { currentList, setCurrentList } = useContext(ImagesContext);
-  const { currentName, setCurrentName } = useContext(ImagesContext);
-  const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
-  const { currentValue, setCurrentValue } = useContext(ImagesContext);
-  const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
-  const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
-  const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
-  const { originalValue,setOriginalValue } = useContext(ImagesContext);
+  const { setCurrentList } = useContext(ImagesContext);
+  const { setCurrentName } = useContext(ImagesContext);
+  const { setCurrentDesc } = useContext(ImagesContext);
+  const { setCurrentValue } = useContext(ImagesContext);
+  const { setCurrentSlide } = useContext(ButtonContext);
+  const { setCurrent6xCard } = useContext(ImagesContext);
+  const { setCurrent6xCheck } = useContext(ImagesContext);
+  const { setOriginalValue } = useContext(ImagesContext);
   const [filteredAns, setFilteredAns] = useState();
   const [dressesSugestion, setDressesSugestion] = useState();
-  const { sizes, setSizes } = useContext(ImagesContext);
+  const { setSizes } = useContext(ImagesContext);
   const [modalOpened, setModalOpened] = useState(false);
 
   useEffect(() => {

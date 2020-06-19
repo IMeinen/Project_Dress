@@ -1,5 +1,4 @@
-import React from 'react';
-import { ExampleIcon } from './styles';
+
 import CampoIcon from '../../assets/icons/IconsQuizz/CAMPO.svg'
 import CidadeIcon from '../../assets/icons/IconsQuizz/CIDADE.svg'
 import PraiaIcon from '../../assets/icons/IconsQuizz/PRAIA.svg'

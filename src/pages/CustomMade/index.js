@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react';
+/* eslint-disable react/jsx-no-comment-textnodes */
+import React, {useEffect} from 'react';
 
 import { ContainerAbout, ContainerInfos } from './styles';
 import ContactContainer from '../../components/ContactInformations';

@@ -1,11 +1,12 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React,{useEffect} from 'react';
-import ReactPlayer from "react-player"
+
 
 import Footer from '../../components/Footer';
 import FaqItem from '../../components/FaqItem';
 import { Container} from './styles';
 import { FAQ } from '../../constants/Faq';
-import Video from '../../videos/Sandra_01.mp4';
+
 
 export default function Faq() {
   useEffect(() => {

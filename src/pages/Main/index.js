@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 
 
-import { Content, DescriptionContent } from './styles';
+import { Content} from './styles';
 import Modal from '../../components/Modal';
 import Overlay from '../../components/Overlay';
 import Loading from '../../components/Loading';
@@ -18,7 +18,7 @@ export default function Main() {
       setLoading(false);
     },750)
 
-  },[]);
+  },[setLoading]);
   return (
     <>
       {!loading &&

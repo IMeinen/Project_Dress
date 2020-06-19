@@ -1,11 +1,8 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 
 import {
   StyledClose,
-  ModalContainer,
-  Measure,
-  IconActive,
-  ContentMeasure,
+  ModalContainer
 } from './styles';
 import MobilePhotoScroller from '../MobilePhotoScroller';
 import PhotoScroller from '../PhotoScroller';
@@ -16,15 +13,15 @@ import { ImagesContext } from '../../contexts/imagesContext';
 
 export default function ModalShoes({ modalOpened }) {
   const { currentImage, setCurrentImage } = useContext(ImagesContext);
-  const { currentList, setCurrentList } = useContext(ImagesContext);
-  const { currentStart, setCurrentStart } = useContext(ImagesContext);
-  const { currentName, setCurrentName } = useContext(ImagesContext);
-  const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
-  const { currentValue, setCurrentValue } = useContext(ImagesContext);
-  const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
-  const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
-  const {originalValue,setOriginalValue} = useContext(ImagesContext);
-  const { sizes, setSizes } = useContext(ImagesContext);
+  const { currentList} = useContext(ImagesContext);
+  const { setCurrentStart } = useContext(ImagesContext);
+  const { currentName } = useContext(ImagesContext);
+  const { currentDesc } = useContext(ImagesContext);
+  const { currentValue } = useContext(ImagesContext);
+  const { current6xCard } = useContext(ImagesContext);
+
+  const {originalValue } = useContext(ImagesContext);
+
 
   return (
     <ModalContainer>

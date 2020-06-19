@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react';
+/* eslint-disable react/jsx-no-comment-textnodes */
+import React, { useContext, useEffect } from 'react';
 
 import Author from '../../images/sandra.jpg';
 import {
@@ -12,12 +13,11 @@ import ContactContainer from '../../components/ContactInformations';
 import VideoPlayer from '../../components/VideoPlayer';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
-import Overlay from '../../components/Overlay';
-import Loading from '../../components/Loading';
+
 import { ButtonContext } from '../../contexts/buttonContext';
 
 export default function About() {
-  const { currenSlide, setCurrentSlide } = useContext(ButtonContext);
+  const {  setCurrentSlide } = useContext(ButtonContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);

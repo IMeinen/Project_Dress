@@ -14,9 +14,9 @@ import { ButtonContext } from '../../contexts/buttonContext';
 import { ImagesContext } from '../../contexts/imagesContext';
 
 function ScreenImageView({ setOpen,type }) {
-  const { showRightButton, setShowRightButton } = useContext(ButtonContext);
+  const {  setShowRightButton } = useContext(ButtonContext);
   const { currentImage, setCurrentImage } = useContext(ImagesContext);
-  const { currentList, setCurrentList } = useContext(ImagesContext);
+  const { currentList } = useContext(ImagesContext);
   const [currentStart, setCurrentStart] = useState(currentImage);
 
   const handleSubtract = () => {
@@ -40,7 +40,7 @@ function ScreenImageView({ setOpen,type }) {
 
   useEffect(() => {
     setShowRightButton(false);
-  }, []);
+  }, [setShowRightButton]);
 
   return (
     <Container>

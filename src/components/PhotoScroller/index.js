@@ -1,4 +1,4 @@
-import React, { useState, useContext, useCallback } from 'react';
+import React, {  useContext } from 'react';
 
 
 import { Container,ImgItem,StyledUp,StyledDown } from './styles';

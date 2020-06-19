@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 
 import {
   StyledClose,
@@ -16,15 +16,15 @@ import { ImagesContext } from '../../contexts/imagesContext';
 
 export default function Modal({ modalOpened }) {
   const { currentImage, setCurrentImage } = useContext(ImagesContext);
-  const { currentList, setCurrentList } = useContext(ImagesContext);
-  const { currentStart, setCurrentStart } = useContext(ImagesContext);
-  const { currentName, setCurrentName } = useContext(ImagesContext);
-  const { currentDesc, setCurrentDesc } = useContext(ImagesContext);
-  const { currentValue, setCurrentValue } = useContext(ImagesContext);
-  const { current6xCard, setCurrent6xCard } = useContext(ImagesContext);
-  const { current6xCheck, setCurrent6xCheck } = useContext(ImagesContext);
-  const {originalValue,setOriginalValue} = useContext(ImagesContext);
-  const { sizes, setSizes } = useContext(ImagesContext);
+  const { currentList } = useContext(ImagesContext);
+  const {  setCurrentStart } = useContext(ImagesContext);
+  const { currentName } = useContext(ImagesContext);
+  const { currentDesc} = useContext(ImagesContext);
+  const { currentValue } = useContext(ImagesContext);
+  const { current6xCard } = useContext(ImagesContext);
+  const { current6xCheck } = useContext(ImagesContext);
+  const {originalValue} = useContext(ImagesContext);
+  const { sizes } = useContext(ImagesContext);
   const [activeMeasure, setActiveMeasure] = useState(false);
 
   return (

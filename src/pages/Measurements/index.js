@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React,{useEffect} from 'react';
 import Footer from '../../components/Footer';
 import { Container , VideoContainer} from './styles';
@@ -12,6 +13,7 @@ export default function Measurements() {
     <>
       <Container>
         <div className="description">
+
           <h1>// COMO TIRAR MINHAS PRÓPRIAS MEDIDAS?</h1>
           <div className="subdescription" />
 
