@@ -35,18 +35,19 @@ export default function HeaderGlobal() {
             <span>CONTATO</span>
           </PathLink>
           <div className="appointment" onClick={() => setSubMenuOpened(false)}>
-            <a href="https://sandra-ferraz.reservio.com/">MARQUE SEU HORÁRIO</a>
+            <a
+              href="https://sandra-ferraz.reservio.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MARQUE SEU HORÁRIO
+            </a>
           </div>
         </div>
         <StyledBars onClick={() => setMenuOpened(!menuOpened)} />
       </Header>
       <Gambia />
-      {subMenuOpened && (
-        <HeaderSubMenu
-          openSubMenu={setSubMenuOpened}
-
-        />
-      )}
+      {subMenuOpened && <HeaderSubMenu openSubMenu={setSubMenuOpened} />}
     </>
   );
 }

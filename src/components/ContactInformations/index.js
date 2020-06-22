@@ -10,7 +10,7 @@ import {
   StyledPhone,
 } from './styles';
 
-export default function ContactInformations({noHeader,isHeader}) {
+export default function ContactInformations({ noHeader, isHeader }) {
   return (
     <Container isHeader={isHeader}>
       {!noHeader && <h1>Entre em contato</h1>}
@@ -24,6 +24,8 @@ export default function ContactInformations({noHeader,isHeader}) {
         <a
           href="https://www.instagram.com/sandraferrazoficial/"
           className="anchor"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </ContainerIcon>
       <ContainerIcon>
@@ -33,7 +35,12 @@ export default function ContactInformations({noHeader,isHeader}) {
 
           <span>Nos contate via telefone</span>
         </div>
-        <a href="tel:+55%2051%2099261-4347%20" className="anchor" />
+        <a
+          href="tel:+55%2051%2099261-4347%20"
+          className="anchor"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
       </ContainerIcon>
       <ContainerIcon>
         <StyledMail />
@@ -42,7 +49,12 @@ export default function ContactInformations({noHeader,isHeader}) {
 
           <span>Entre em contato via E-mail</span>
         </div>
-        <a href="mailto:contato@sandraferraz.com.br" className="anchor" />
+        <a
+          href="mailto:contato@sandraferraz.com.br"
+          className="anchor"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
       </ContainerIcon>
     </Container>
   );

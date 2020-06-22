@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { CustomMenu, ListLinks, StyledClose, Acordeon,IconActive } from './styles';
+import {
+  CustomMenu,
+  ListLinks,
+  StyledClose,
+  Acordeon,
+  IconActive,
+} from './styles';
 
 export default function BarsMenu({ menuOpened }) {
   const [activeNoivas, setActiveNoivas] = useState(false);
   // const [activeLastChance, setActiveLastChance] = useState(false);
-  const [activeShoes,setActiveShoes] = useState(false);
+  const [activeShoes, setActiveShoes] = useState(false);
   return (
     <CustomMenu>
       <StyledClose onClick={() => menuOpened(false)} />
@@ -14,10 +20,13 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/about" onClick={() => menuOpened(false)}>
           <h1>SOBRE NÓS</h1>
         </Link>
-        <Acordeon active={activeNoivas} onClick={() => setActiveNoivas(!activeNoivas)}>
+        <Acordeon
+          active={activeNoivas}
+          onClick={() => setActiveNoivas(!activeNoivas)}
+        >
           <div className="title">
-          <h1>NOIVAS</h1>
-          <IconActive rotate={activeNoivas} />
+            <h1>NOIVAS</h1>
+            <IconActive rotate={activeNoivas} />
           </div>
           <div className="internal-items">
             <Link to="/collection/nevoa" onClick={() => menuOpened(false)}>
@@ -32,10 +41,13 @@ export default function BarsMenu({ menuOpened }) {
           </div>
         </Acordeon>
 
-        <Acordeon active={activeShoes} onClick={() => setActiveShoes(!activeShoes)}>
+        <Acordeon
+          active={activeShoes}
+          onClick={() => setActiveShoes(!activeShoes)}
+        >
           <div className="title">
-          <h1>SAPATOS</h1>
-          <IconActive rotate={activeShoes} />
+            <h1>SAPATOS</h1>
+            <IconActive rotate={activeShoes} />
           </div>
           <div className="internal-items">
             <Link to="/shoes/2019" onClick={() => menuOpened(false)}>
@@ -56,7 +68,7 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/contact" onClick={() => menuOpened(false)}>
           <h1>CONTATO</h1>
         </Link>
-          {/* <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
+        {/* <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
             <div className="title">
             <h1>LAST CHANCE</h1>
             <IconActive rotate={activeLastChance} />
@@ -72,7 +84,13 @@ export default function BarsMenu({ menuOpened }) {
           </Acordeon> */}
 
         <div className="appointment">
-          <a href="https://sandra-ferraz.reservio.com/">MARQUE SEU HORÁRIO</a>
+          <a
+            href="https://sandra-ferraz.reservio.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MARQUE SEU HORÁRIO
+          </a>
         </div>
       </ListLinks>
     </CustomMenu>
