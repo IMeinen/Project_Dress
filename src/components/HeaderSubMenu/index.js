@@ -27,7 +27,7 @@ export default function HeadersSubMenu({ openSubMenu }) {
   useOutsideAlerter(wrapperRef, openSubMenu);
   const [activeNoivas, setActiveNoivas] = useState(false);
   const [activeShoes, setActiveShoes] = useState(false);
-  // const [activeLastChance, setActiveLastChance] = useState(false);
+  const [activeLastChance, setActiveLastChance] = useState(false);
   return (
     <SubMenu ref={wrapperRef}>
       <ContainerLinks>
@@ -74,7 +74,7 @@ export default function HeadersSubMenu({ openSubMenu }) {
         <Link className="only-link" to="/custom-made" onClick={() => openSubMenu(false)} style={{marginBottom: '16px'}}>
           <h1 className="link-text">VESTIDO SOB MEDIDA</h1>
         </Link>
-        {/* <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
+         <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
           <div className="title">
           <h1 className="link-text">LAST CHANCE</h1>
           <IconActive rotate={activeLastChance} />
@@ -87,7 +87,7 @@ export default function HeadersSubMenu({ openSubMenu }) {
               <h1 className="link-text">NOIVA</h1>
             </Link>
           </div>
-        </Acordeon> */}
+        </Acordeon>
       </ContainerLinks>
     </SubMenu>
   );

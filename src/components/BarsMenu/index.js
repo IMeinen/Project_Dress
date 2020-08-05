@@ -11,7 +11,7 @@ import {
 
 export default function BarsMenu({ menuOpened }) {
   const [activeNoivas, setActiveNoivas] = useState(false);
-  // const [activeLastChance, setActiveLastChance] = useState(false);
+  const [activeLastChance, setActiveLastChance] = useState(false);
   const [activeShoes, setActiveShoes] = useState(false);
   return (
     <CustomMenu>
@@ -68,7 +68,7 @@ export default function BarsMenu({ menuOpened }) {
         <Link to="/contact" onClick={() => menuOpened(false)}>
           <h1>CONTATO</h1>
         </Link>
-        {/* <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
+        <Acordeon active={activeLastChance} onClick={() => setActiveLastChance(!activeLastChance)}>
             <div className="title">
             <h1>LAST CHANCE</h1>
             <IconActive rotate={activeLastChance} />
@@ -81,7 +81,7 @@ export default function BarsMenu({ menuOpened }) {
                 <h1>NOIVA</h1>
               </Link>
             </div>
-          </Acordeon> */}
+          </Acordeon>
 
         <div className="appointment">
           <a
